@@ -3,7 +3,6 @@
 <head>
      <meta charset="utf-8">
 	 <meta name="viewport" content="width=device-width">
-	 <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
 	 <link href="style.css" rel="stylesheet">
 	 <link href="http://allfont.ru/allfont.css?fonts=open-sans" rel="stylesheet" type="text/css"/>
 	 <link rel="stylesheet" href="owl.carousel.min.css">
@@ -67,12 +66,6 @@
 		</div>
 	</div>
 	<div id="categories">
-		<div class="arrow1"> <!--Стрелка влево-->
-			<a href=""><img src="img/arrow-left.png"></a>
-		</div>
-		<div class="arrow2"> <!--Стрелка вправо-->
-			<a href=""><img src="img/arrow-right.png"></a>
-		</div>
 		<div class="content clearfix">
 			<!--Категория 1-->
 		  <div class="owl-carousel">
@@ -257,21 +250,7 @@
 		Copyright &copy; 2017 Css Author
 	</div>
 </body>
-<script>
-	$(function() {
-			$('.menuToggle').on('click', function() {
-			$('#menu').slideToggle(300, function() {
-			if($(this).css('display') === 'none') {
-				$(this) .removeAttr('style');
-			}	
-		});
-	});
-});	
-</script>
-<script>
-	$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});
-</script>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
 <script src="owl.carousel.min.js"></script>
+<script src="main.js"></script>
 </html>	

@@ -13,3 +13,26 @@
 .owl-theme .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#D6D6D6;display:block;-webkit-backface-visibility:visible;transition:opacity .2s ease;border-radius:30px}
 .owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791}
 
+.owl-prev {
+	background: url("img/arrow-left.png") no-repeat;
+	width: 29px;
+	height: 88px;
+	position: absolute;
+	top: 50px;
+	left: -7%;
+}	
+.owl-next {
+	background: url("img/arrow-right.png") no-repeat;
+	width: 29px;
+	height: 88px;
+	position: absolute;
+	top: 50px;
+	right: -7%;
+}	
+@media (max-width: 1175px) {
+	.owl-prev,
+	.owl-next {
+		display: none;
+	}
+}	
+	
