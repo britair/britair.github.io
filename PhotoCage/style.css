@@ -1,0 +1,353 @@
+* {margin: 0; padding: 0;}
+html, 
+body {
+	height: 100%;
+}	
+a img {
+	outline: 0;
+	border: 0;
+}	
+.container{
+	max-width: 1024px; 
+    margin: 0 auto;
+	padding: 0 10px;
+}	
+/*Шапка*/
+#header {
+	background-color: #ddd;
+	background-image: linear-gradient(to bottom, #fff, #e0e0e0);
+	border-bottom: 1px solid #ccc;
+}
+#header .container {
+	display: flex;
+	justify-content: space-between;
+}	
+.logo {
+	margin: 40px 0 28px 30px;
+	max-width: 316px;
+	min-width: 165px;
+}
+.logo img {
+	width: 100%;
+}	
+#menu{ 
+	list-style: none;
+}	
+#menu li {
+	float: left;
+	text-align: center;
+	border-right: 1px solid #d5d5d5;
+}	
+#menu li a {
+	display: block;
+	width: 108px;
+	height: 120px;
+	box-sizing: border-box;
+	position: relative;
+	font: normal 16px/23px Helvetica CE;
+	color: #545454;
+	text-shadow: 1px 1px 0px rgba(255,255,255,1);
+	text-decoration: none;
+	padding-top: 76px;
+}
+#menu li a img {
+	position: absolute;
+	top: 45px;
+	left: 44px;
+}	
+#menu li:last-child {
+	border-right: 0;
+}	
+#menu li a:hover,
+#menu li a:active {
+	background-image: linear-gradient(to bottom, #fff, #c9c0c0);
+	border-bottom: 3px solid #ff7d00;
+}	
+.menuToggle {
+	display: none;
+	background-image: url("images/menu.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 5px;
+	margin: 35px 20px 0 60px;
+ } 
+ 
+/*Контент*/
+.container h2 {
+	margin: 41px 0 26px 17%;
+	font: bold 28px/23px Helvetica;
+	color: #565555;
+}	
+/*Форма загрузки файла*/
+.buttons {
+	display: flex;
+}	
+/*Верхняя оболочка input*/
+.file_upload {
+	position: relative;
+	overflow: hidden;
+	height: 48px;
+	width: 447px;
+	border: 1px solid #cacaca;
+	margin-left: 17%;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	box-sizing: border-box;
+	background-image: linear-gradient(to bottom, #e2dada 0%, #fff 10%, #fff 100%);
+}	
+/*Первая кнопка - Browse*/
+.file_upload button {
+	float: right;
+	font: normal 18px/23px HelveticaNeue;
+	color: #fff;
+	background-color: #c1bfbf;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	height: 33px;
+	width: 93px;
+	border: 0;
+	margin: 7px 9px 0 0;
+}
+.file_upload button:hover {
+	background-color: #696969;
+}	
+
+/*Настоящий input скрыт, имеет 100% прозрачность, растянут под
+оболочкой */
+.file_upload input[type=file] {
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	opacity: 0;
+}	
+/*Вторая кнопка - оранжевая Upload image*/
+.submit button {
+	background-image: linear-gradient(to bottom, #ffa400, #ff6600);
+	width: 209px;
+	height: 47px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	font: bold 24px/23px Helvetica;
+	color: white;
+	border: 0;
+	cursor: pointer;
+	margin: 0 15px;
+}	
+.submit button:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}	
+
+/*Изображения*/
+.images {
+	overflow: hidden;
+	margin-top: 7.2%;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.images-item {
+	margin: 0px 15px 2.8%;
+	border: 1px solid #d6d6d6;
+	flex-basis: 21%;
+	background-image: linear-gradient(to bottom, #fff 0%, rgba(253,254,255,0.1) 95%, rgba(0,0,0,0.1) 100%);
+	box-shadow: 0 0 5px rgba(0,0,0,0.17);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.17);
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.17);
+}	
+.images-item>.photo>a>img {
+	padding: 7px;
+	width: 203px;
+	height: 197px;
+	text-align: center;
+	object-fit: contain; /*центрирование и обрезка*/
+}	
+.images-item>.photo>a {
+	position: relative;
+	display: block;
+}
+/*Лупа при наведении на фото*/
+.images-item>.photo>a>span { 
+	display:none;
+	background-image:url("images/zoom.png"); 
+	background-repeat:no-repeat; 
+	width:28px; 
+	height:28px; 
+	position:absolute; 
+	left: 46%; 
+	bottom: 45%;
+}
+.images-item>.photo>a:hover>span {
+	display: block;
+}	
+.images-item>.desc {
+	float: left;
+	font: normal 15px/15px Helvetica CE;
+	color: #979393;
+	padding-left: 15px;
+	height: 18px;
+	width: 155px;
+	overflow: hidden;
+}	
+.images-item>.star>a {
+	background: url("images/star.png");
+	display: block;
+	width: 22px;
+	height: 22px;
+	float: left;
+	margin-left: 14px;
+	margin-top: -2px;
+}	
+.images-item>.star>a:hover {
+	background-image: url("images/star2.png");
+	background-repeat: no-repeat;
+}	
+.images-item>.line {
+	margin-left: 7px;
+	margin-top: 6px;
+	border-top: 1px solid #e0dfdf;
+	width: 95%;
+	float: left;
+}
+.images-item>.desc1 {
+	font: normal 14px/14px Helvetica CE;
+	color: #9f9898;
+	margin: 11px 13px 0px 55px;
+	width: 37px;
+	float: left;
+}
+.images-item>.social {
+	float: right;
+	margin: 5px 10px 3px 0;
+}	
+.images-item>.social>a>img {
+	background-color: #b1aeae;
+	box-shadow: inset 1px 1px 2px rgba(0,0,0,0.23);
+	-moz-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.23);
+	-webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.23);
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+}
+.images-item>.social>a:hover>img {
+	background-color: #283e8f;
+}	
+
+/*Подвал*/
+#footer {
+	font: normal 17px/17px Arial;
+	color: #8b8a8a;
+	padding: 30px 0;
+}
+#footer p {
+	text-align: right;
+	margin-right: 31px;
+}	
+
+/*Медиа-запросы*/
+@media (max-width: 1040px) {
+	.images {
+		justify-content: space-around;
+	}	
+	#footer p {
+		text-align: center;
+	}	
+}		
+@media (max-width: 900px) {
+	.menuToggle {
+		display: block;
+	}	
+	#menu {
+		display: none;
+		width: 100%;
+		text-align: left;
+		position: absolute;
+		top: 100px;
+		left: 0;
+		z-index:100;
+	}	
+	#menu li{
+		float: none;
+		border-right: 0;
+		background-image: linear-gradient(to bottom, #fff, #e0e0e0);
+	}
+	#menu li a{
+		height: 60px;
+		width: 100%;
+		padding-top: 13px;
+	}
+	#menu li a img {
+		display: none;
+	}
+	.container h2 {
+		margin: 30px 0;
+		font-size: 23px;
+		text-align: center;
+	}	
+	.buttons {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
+		align-content: space-between;
+	}	
+	.file_upload {
+		margin-left: 0;
+	}	
+}	
+@media (max-width: 783px) {
+	.images-item {
+		flex-basis: 41%;
+	}
+	.images-item>.photo>a {
+		text-align: center;
+	}
+	.images-item>.photo>a>img {
+		width: 94%;
+		height: 258px;
+	}
+	.images-item>.star>a {
+		margin: -5px 11px 0 0;
+		float: right;
+	}	
+	.images-item>.desc1 {
+		margin-left: 15px;
+	}	
+}
+@media (max-width: 702px) {
+	.submit button {
+	margin-top: 20px;
+	}	
+	.file_upload {
+		width: 90%;
+	}
+}
+@media (max-width: 573px) {
+	.images-item {
+		flex-basis: 95%;
+	}	
+}
+
+@-moz-document url-prefix() { /*В Mozilla Firefox не корректно отображаются отступы flex-элементов*/
+	.images-item {
+		margin-bottom: 20px;
+	}
+}	
+
+
+
+
+
+
+
+
+
+
+
+

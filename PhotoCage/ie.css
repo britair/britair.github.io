@@ -1,0 +1,25 @@
+.file_upload input[type=file] {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /* фильтр для IE8*/
+    filter: alpha(opacity=0); /*фильтр для IE6-7*/
+    opacity: 0 ;/*для остальных браузеров*/
+}
+button.submit {
+	background-color: #ffa400; /*IE 8 не понимает linear-gradient*/
+}	
+	
+#header>ul>li>a {
+	*height: 41px; /*IE 7 не понимает box-sizing:border box, поэтому пропишем высоту без учета отступов и границ */
+}	
+.file_upload {
+	*height: 39px; /*IE 7 не понимает box-sizing:border box, поэтому пропишем высоту и ширину без учета отступов и границ */
+	*width: 436px; /*IE 7 не понимает box-sizing:border box, поэтому пропишем высоту и ширину без учета отступов и границ */
+}	
+.images-item>.desc1 {
+	*margin-top: -8px;
+}	
+.images-item>.social {
+	*margin-top: -13px;
+}
+#content {
+	*margin-bottom: 40px;
+}	
