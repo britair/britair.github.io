@@ -1,0 +1,1366 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,body {
+	height: 100%;
+}
+body {
+	background-color: #f5f5f5;
+    font-family: Montserrat;
+}
+a {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+}
+.container{
+	max-width: 1200px; 
+	margin: 0 auto;
+    padding: 0 10px;
+}
+#wrap {
+	background-color: white;
+	min-height: 100%; 
+	position: relative;
+}	
+#header {
+	background-image: url(img/header-bg.jpg);
+    background-repeat: repeat-x;
+    background-position: top center;
+    min-height: 1000px;
+    position: relative;
+    color: white;
+}
+
+#footer {
+	width: 100%;
+	position: absolute; 
+	bottom: 0;
+}
+
+/*Шапка*/
+.logo {
+    padding-top: 29px;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    display: block;
+    float: left;
+}
+.menuToggle {
+    display: none;
+	cursor: pointer;
+	background: url("img/menuToggle.png") no-repeat;
+	width: 41px;
+	height: 29px;
+    float: right;
+    margin: 30px 20px 0 40px;
+}
+.basket {
+    margin-top: 41px;
+    margin-right: 42px;
+    width: 19px;
+    height: 15px;
+    display: inline-block;
+    background-image: url(img/sprite.png);
+    background-position: -2px -2px;
+    float: right;
+}
+
+#menu {
+    float: right;
+    width: 490px;
+}
+#menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 7.5%;
+    padding-top: 40px;
+}
+.menu-item {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    padding-bottom: 15px;
+    color: white;
+}
+.menu-item:hover {
+    border-bottom: 3px solid #fce38a;
+    color: #fce38a;
+    text-decoration: none;
+}
+.hide {
+    display: none;
+}
+.magnifier {
+    margin-top: 39px;
+    width: 19px;
+    height: 18px;
+    display: inline-block;
+    background-image: url(img/sprite.png);
+    background-position: -61px 0;
+    float: right;
+    cursor: pointer;
+}
+.form-inline {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 252px;
+    display: none;
+    z-index: 10;
+}
+.form-inline input {
+    border-radius: 5px;
+}
+.search {
+    background: transparent;
+    color: white;
+    border: 0;
+    font-family: Montserrat;
+    text-transform: uppercase;
+}
+.search:hover {
+    text-shadow: 0 0 5px rgba(0,0,0,1);
+}
+.hide:checked + label + form {
+    display: block;
+}
+
+
+/*Карусель*/
+.slider {
+    padding-top: 17%;
+    clear: both;
+}
+.desc {
+    font-family: 'Kaushan Script';
+    font-size: 72px;
+    text-align: center;
+    clear:both;
+    margin-bottom: 10px;
+}
+.desc1 {
+    font-family: 'Montserrat';
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 140px;
+}
+hr {
+    width: 60px;
+    height: 3px;
+    background: white;
+    margin: 6% auto 4%;
+    border: 0;
+}
+.learn {
+    text-align: center;
+ }
+.learn button {
+    width: 160px;
+    height: 40px;
+    background: transparent;
+    border: 3px solid white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+}
+.learn button:hover {
+    background:#bea06f;
+}
+.owl-dots {
+    margin-top: 10%;
+}
+.owl-dot {
+    border-top: 3px solid white;
+    padding-top: 25px;
+    margin-right: 3%;
+    width: 21%;
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    font-family: Montserrat;
+    cursor: pointer;
+}
+.owl-dot:last-child {
+    margin-right: 0;
+}
+.owl-dot span {
+    font-size: 24px;
+}
+.active:before {
+    content:"";
+    position:absolute;
+    top:-3px;
+    z-index: 100;
+    border-top: 3px solid #f38181;
+    width: 25%;
+}
+
+/*Второй блок*/
+.second-block {
+    color: #333;
+    background: white;
+}
+h1 {
+    font-family: 'Kaushan Script';
+    font-size: 24px;
+    line-height: 28px;
+    margin: 90px 0 24px;
+    text-align: center;
+}
+h2 {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+hr {
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    margin: 40px auto;
+    border: 0;
+    text-align: center;
+}
+.second-block p {
+    padding: 0 10% 9%;
+    color: #999;
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+}
+.second-block .images {
+    padding-bottom: 9%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.second-block .images a {
+    width: 380px;
+    height: 250px;
+    position: relative;
+    display: block;
+}
+.second-block .images a img {
+    width: 100%;
+    height: 100%;
+}
+.overlay {
+    background: linear-gradient(to top, rgba(252,227,138,0.9), rgba(243,129,129,1.0));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.image-text {
+    position: absolute;
+    top: 40%;
+    left: 33%;
+    display: none;
+    color: white;
+    font: bold 18px/18px Montserrat;
+    text-align: center;
+    z-index: 2;
+}
+.second-block .images a:hover img {
+    box-shadow: 10px 10px 0 0 rgba(149,255,211,1.0);
+}
+.second-block .images a:hover .overlay,
+.second-block .images a:hover .image-text {
+    display: block;
+}
+.second-block .images a:hover .image-text img {
+    box-shadow: none;
+}
+
+/*Третий блок*/
+.third-block {
+    background: #95e1d3;
+    color: white;
+}
+.third-block .container{
+    display: flex;
+    text-align: center;
+}
+.third-block .container p {
+    flex-basis: 20%;
+    border-right: 1px solid #b5eae0;
+    font: bold 72px/50px Montserrat;
+    padding: 90px 0;
+}
+.third-block .container p:last-child {
+    border-right: 0;
+}
+.third-block .container p span {
+    font: normal 14px/16px Montserrat;
+    text-transform: uppercase;
+}
+
+/*Четвертый блок*/
+.forth-block {
+    color: #333;
+    background: white;
+}
+.forth-block .container {
+    position: relative;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    position: relative;
+}
+.service-item {
+    width: 31%;
+    display: flex;
+    margin: 50px 0;
+}
+.service-item .image {
+    width: 38px;
+    height: 38px;
+    background-image: url(img/sprite1.png);
+    background-position: -2px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 20px;
+    margin-left: 10px;
+}
+#img2 {
+    background-position: -48px 0;
+}
+#img3 {
+    background-position: -98px 0;
+}
+#img4 {
+    background-position: -147px 0;
+}
+#img5 {
+    background-position: -194px 0;
+}
+#img6 {
+    background-position: -241px 0;
+}
+.service-item .desc2 {
+    margin-left: 20px;
+}
+.service-item .desc2 p {
+    font: normal 14px/14px Montserrat;
+    color: #333;
+    margin-bottom: 20px;
+}
+.service-item .desc2 span {
+    font: normal 15px/24px Roboto;
+    color: #999;
+}
+.forth-block .container hr {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: #e5e5e5;
+}
+
+/*Пятый блок*/
+.fifth-block {
+	background-image: url(img/5bg.jpg);
+    background-repeat: repeat-x;
+    background-position: top center;
+    min-height: 850px;
+    position: relative;
+    color: #333;
+}
+.overlay1 {
+    background: rgba(255,255,255,0.85);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.tablet {
+    background-image: url(img/tablet.png);
+    background-repeat: no-repeat;
+    min-height: 580px;
+    position: absolute;
+    min-width: 476px;
+    bottom: 0;
+    left: 30%;
+}
+.smartphone {
+    background-image: url(img/smartphone.png);
+    background-repeat: no-repeat;
+    min-height: 476px;
+    position: absolute;
+    min-width: 274px;
+    bottom: -11%;
+    right: 23%; 
+}
+
+/*Шестой блок*/
+.sixth-block .container p {
+    padding: 0 10% 9%;
+    color: #999;
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+}
+.whatWeDo {
+    display: flex;
+    justify-content: space-between;
+}
+.whatWeDo .left {
+    width: 49%;
+    height: auto;
+}
+.whatWeDo .left img {
+    width: 100%;
+}
+.whatWeDo .right {
+    width: 49%;
+    margin-left: 10px;
+}
+.whatWeDo .right ul {
+   list-style: none; 
+}
+.whatWeDo .right ul li {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+    position: relative;
+}
+.whatWeDo .right ul li:hover {
+    cursor: pointer;
+}
+.whatWeDo .right ul li h3 {
+    font: normal 14px/14px Montserrat;
+    color: #333;
+    padding: 24px 0 24px 60px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.whatWeDo .right ul li img {
+    width: 36px;
+    height: 36px;
+    background-image: url(img/sprite2.png);
+    background-position: -3px 0;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+.whatWeDo .right ul #creativity img {
+    background-position: -50px 0;
+}
+.whatWeDo .right ul #web_design img {
+    background-position: -97px 0;
+}
+.whatWeDo .right ul li h3::after {
+    content: "";
+    display: block;
+    background: url(img/up.png) no-repeat;
+    width: 22px;
+    height: 12px;
+    float: right;
+    margin-right: 20px;
+}
+.whatWeDo .right ul li p {
+    font: italic 15px/24px Roboto;
+    color: #333;
+    text-align: left;
+    padding: 20px 0 0;
+    height: 180px;
+    overflow: auto;
+    display: none;
+}
+/*Скроллинг*/
+.whatWeDo .right ul li p::-webkit-scrollbar-track {
+    background-color:#f5f5f5;
+}
+.whatWeDo .right ul li p::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color:#95e1d3;
+}
+.whatWeDo .right ul li p::-webkit-scrollbar-thumb:hover{
+    background-color:#6fd6c3;
+}
+.whatWeDo .right ul li p::-webkit-scrollbar{
+    width: 5px;
+}
+/*Слайдер с цитатами*/
+.slider2 {
+    background: #f8f8f8;
+    padding: 70px 0;
+    margin-top: 9%;
+}
+.slider2 .container {
+    position: relative;
+}
+.slider2 .container .quotes .quote {
+    align-items: center;
+    display: none;
+}
+.slider2 .container .quotes .quote:first-child {
+    display: flex;
+}
+.slider2 .container .quotes .quote .image {
+    background-image: url(img/quote.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 41px;
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #95e1d3;
+    margin-left: 9%;
+    margin-right: 60px;
+}
+.slider2 .container .quotes .quote .text {
+    width: 60%;
+}
+.slider2 .container .quotes .quote .text p {
+    font: italic 24px/36px Roboto;
+    color: #999;
+    display: block;
+    padding: 0;
+    text-align: left;
+}
+.slider2 .container .quotes .quote .text hr {
+    margin: 34px 10px 0 0;
+    display: inline-block;
+}
+.slider2 .container .quotes .quote .text span {
+    font: normal 24px/24px Kaushan Script;
+}
+.prev,
+.next {
+    position: absolute;
+    top: 44%;
+    width: 15px;
+    height: 22px;
+    background: transparent;
+    border: 0;
+    background-image: url(img/arrows.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.prev {
+    left: 2%;
+    background-position: -4px 0;
+}
+.next {
+    right: 2%;
+    background-position: -28px 0;
+}
+
+/*Седьмой блок*/
+.seventh-block .container p {
+    padding: 0 10% 6%;
+    color: #999;
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+}
+.people {
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+.man {
+    width: 380px;
+    min-width: 240px;
+    margin-right: 10px;
+}
+.man:last-child {
+    margin-right: 0;
+}
+.man .photo {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 40px;
+}
+.man .photo a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.man .photo:hover a img {
+    box-shadow: 10px 10px 0 0 rgba(149,255,211,1.0);
+}
+.man .photo:hover .overlay {
+    display: block;
+}
+.fb, .tw, .pint, .insta {
+    position: absolute;
+    display: block;
+    width: 56px;
+    height: 56px;
+    top: 44%;
+}
+.fb {
+    left: 17%;
+    background-image: url('img/sprite3.png');
+    background-position: 0 -56px;
+}
+.tw {
+    left: 32%;
+    background-image: url('img/sprite3.png');
+    background-position: -56px 0;
+}
+.pint {
+    left: 47%;
+    background-image: url('img/sprite3.png');
+    background-position: -112px 0;
+}
+.insta {
+    left: 62%;
+    background-image: url('img/sprite3.png');
+    background-position: -168px 0;
+}
+.fb:hover {
+    background-position: 0 0;
+}
+.tw:hover {
+   background-position: -56px -56px; 
+}
+.pint:hover {
+    background-position: -112px -56px; 
+}
+.insta:hover {
+    background-position: -168px -56px;
+}
+.man .text p {
+    font: normal 14px/14px Montserrat;
+    color: #333;    
+}
+.man .text .post {
+    font: italic 15px/24px Roboto;
+    color: #999;
+}
+/*Логотипы в седьмом блоке*/
+.seventh-block .logos {
+    background: #f8f8f8;
+}
+.logos .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0;
+}
+.logos .container a {
+    text-align: center;
+}
+
+/*Восьмой блоке*/
+.eighth-block .container p {
+    padding: 0 10% 6%;
+    color: #999;
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+}
+.pictures {
+    max-width: 1920px;
+    min-width: 300px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.picture-block {
+    width: 326px;
+}
+.pictures img {
+    width: 100%;
+}
+.picture-item {
+    position: relative;
+    cursor: pointer;
+}
+.picture-item:hover .overlay {
+    display: block;
+}
+.picture-text {
+    margin: 28% auto 0;
+    text-align: center;
+    color: white;
+}
+.picture-text img {
+    width: 30px;
+    height: 30px;
+}
+.picture-text h3 {
+    text-transform: uppercase;
+    font: normal 14px/14px Montserrat;
+    margin: 7px 0;
+}
+.picture-text h4 {
+    font: italic 15px/24px Rpboto;
+}
+
+/*Третий слайдер*/
+.slider3 {
+    padding: 70px 0;
+}
+.slider3 .container {
+    position: relative;
+}
+.slider3 .container .quotes .quote {
+    align-items: center;
+    display: none;
+}
+.slider3 .container .quotes .quote:first-child {
+    display: flex;
+}
+.slider3 .container .quotes .quote .image {
+    margin-left: 9%;
+    margin-right: 3%;
+}
+.slider3 .container .quotes .quote .image img {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.slider3 .container .quotes .quote .text {
+    width: 60%;
+}
+.slider3 .container .quotes .quote .text p {
+    font: italic 24px/36px Roboto;
+    color: #999;
+    display: block;
+    padding: 0;
+    text-align: left;
+}
+.slider3 .container .quotes .quote .text hr {
+    margin: 34px 10px 0 0;
+    display: inline-block;
+}
+.slider3 .container .quotes .quote .text span {
+    font: normal 24px/24px Kaushan Script;
+}
+.prev2,
+.next2 {
+    position: absolute;
+    top: 44%;
+    width: 15px;
+    height: 22px;
+    background: transparent;
+    border: 0;
+    background-image: url(img/arrows.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.prev2 {
+    left: 2%;
+    background-position: -4px 0;
+}
+.next2 {
+    right: 2%;
+    background-position: -28px 0;
+}
+
+/*Девятый блок*/
+.ninth-block {
+	background-image: url(img/9bg.jpg);
+    background-repeat: repeat-x;
+    background-position: top center;
+    min-height: 830px;
+}
+.ninth-block .container h1 {
+    margin: 0;
+    padding: 90px 0 24px;
+}
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+}
+.client {
+    display: flex;
+    flex-basis: 50%;
+    margin-bottom: 6%;
+}
+.client .image {
+    margin: 0 30px 0 40px;
+}
+.client .text {
+    text-align: left;
+    margin-right: 45px;
+}
+.client .text h4 {
+    font: normal 14px/14px Montserrat;
+    color: #333;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.client .text h5 {
+    font: italic 15px/24px Roboto;
+    color: #333;
+}
+.client .text hr {
+    margin: 18px 0;
+}
+.client .text p {
+    font: normal 15px/24px Roboto;
+    color: #999;
+}
+
+/*Десятый блок*/
+.stories {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12%;
+}
+.story {
+    flex-basis: 31%;
+    text-align: left;
+}
+.story .image {
+    position: relative;
+    display: block;
+}
+.story .image img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+.story .image p {
+    position: absolute;
+    background: #95e1d3;
+    color: white;
+    padding: 15px;
+    font: bold 30px/20px Roboto;
+    text-align: center;
+    bottom: 7%;
+    left: -3%;
+}
+.story .image p span {
+    font: italic 15px/15px Roboto;
+}
+.story .image img:hover {
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+}
+.story .text h2 {
+    font: normal 14px/14px Montserrat;
+    color: #333;
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-align: left;
+}
+.story .text h3 {
+    font: normal 15px/24px Roboto;
+    color: #999;
+}
+.story .text hr {
+    width: 100%;
+    height: 1px;
+    background: #e5e5e5;
+    margin: 20px 0;
+}
+.story .text span,
+.story .text a {
+    font: italic 15px/24px Roboto;
+    color: #999;
+    margin-right: 20px;
+}
+.views {
+    background-image: url(img/sprite4.png);
+    background-position: 0 2px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 12px;
+    padding-left: 27px;
+}
+.message {
+    background-image: url(img/sprite4.png);
+    background-position: 0 -15px;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 15px;
+    padding-left: 23px;
+}
+
+/*Карта в 10 блоке*/
+.map {
+    background-image: url(img/bg-map.jpg);
+    background-repeat: repeat-x;
+    background-position: top center;
+    min-height: 200px;
+    text-align: center;
+    padding-top: 57px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.map span {
+    font: bold 24px/24px Montserrat;
+    color: #f38181;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 10px;
+}
+.map hr {
+    margin: 22px auto 0;
+}
+.iframe_container {
+    text-align: center;
+    position: relative;
+    padding-bottom: 33.33%;
+    height: 0;
+    overflow: hidden;
+    display: none;
+}
+.iframe_container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*Одиннадцатый блок*/
+.eleventh-block {
+    padding-top: 6%;
+    background: #f8f8f8;
+}
+.eleventh-block .container {
+    display: flex;
+    justify-content: space-between;
+}
+.block1 {
+    flex-basis: 40%;
+    margin-right: 10px;
+    padding-bottom: 50px;
+}
+.block1 h1 {
+    font: bold 46px/34px Montserrat;
+    color: #ccc;
+    margin: 0;
+    text-align: left;
+}
+.block1 h2 {
+    margin: 45px 0;
+    font: normal 15px/24px Roboto;
+    color: #999;
+    text-align: left;
+}
+.block1 p {
+    color: #333;
+    font: normal 14px/14px Montserrat;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.block1 p span {
+    font-weight: bold;
+    font-size: 18px;
+}
+.social {
+    padding: 16px 0 30px;
+}
+.social span {
+    font: italic 15px/24px Montserrat;
+    color: #999;
+    margin-right: 15px;
+}
+.social a {
+    display: inline-block;
+    background-image: url(img/sprite5.png);
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.facebook {
+    background-position: 4px 3px;
+}
+.twitter {
+    background-position: -28px 3px;
+}
+.instagram {
+    background-position: -57px 3px;
+}
+.pinterest {
+    background-position: -86px 3px;
+}
+.google {
+    background-position: -117px 3px;
+}
+.youtube {
+    background-position: -147px 3px;
+}
+.network {
+    background-position: -177px 3px;
+}
+.tumbler {
+    background-position: -207px 3px;
+}
+input[type="text"] {
+    padding: 10px 0 10px 14px;
+    border: 1px solid #e7e7e7;
+    color: black;
+    font: italic 15px/0 Roboto;
+}
+input[type="submit"] {
+    width: 150px;
+    height: 40px;
+    padding: 15px 34px;
+    background: #95e1d3;
+    font: bold 14px/0 Montserrat;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    text-transform: uppercase;
+    margin-left: -4px;
+}
+input[type="submit"]:hover {
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+}
+/*Блок 2 в 11 блоке*/
+.block2 {
+    margin-right: 10px;
+}
+.block2 h5 {
+    color: #333;
+    margin-bottom: 40px;
+}
+.block2 .news {
+    display: flex;
+    margin-bottom: 30px;
+}
+.block2 .news .image {
+    width: 120px;
+    height: 80px;
+}
+.block2 .news .image img {
+    width: 100%;
+}
+.block2 .news .text {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 202px;
+}
+.block2 .news .text h6 {
+    text-transform: uppercase;
+    font: normal 12px/18px Montserrat;
+}
+.block2 .news .text p {
+    font: italic 13px/24px Roboto;
+    color: #999;
+}
+/*Блок 3 в 11 блоке*/
+.block3 {
+    padding-bottom: 15%;
+}
+.block3 h5 {
+    margin-bottom: 40px; 
+}
+.block3 p {
+    font: italic 13px/24px Roboto;
+    color: #333;
+    margin-top: 10px;
+}
+
+/*Подвал*/
+#footer .container {
+    text-align: center;
+    padding: 25px 0;
+    color: #333;
+    font: normal 14px/14px Montserrat;
+    border-top: 1px solid #e5e5e5;
+}
+#footer .container a {
+    color: #f38181;
+}
+
+/*Адаптив*/
+@media (max-width: 1200px) {
+    .second-block .images {
+        justify-content: space-around;
+    }   
+    .second-block .images a {
+        margin-bottom: 20px;
+    }
+    .tablet {
+        left: 25%;
+    }
+    .smartphone {
+        right: 13%;
+    }
+}
+@media (max-width: 992px) {
+    #header {
+        min-height: 900px;
+        background-size: cover;
+    }
+    .desc1 {
+        font-size: 110px;
+        line-height: 100px;
+    }
+    .third-block .container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .third-block .container p {
+        flex-basis: 33%;
+        border-right: 0;
+    }
+    .tablet {
+        left: 18%;
+    }
+    .smartphone {
+        right: 0;
+    }
+    .logos .container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .eleventh-block .container {
+        flex-wrap: wrap;
+    }
+    .block1 {
+        flex-basis: 100%;
+    }
+    
+}
+@media (max-width: 767px) {
+    #header {
+        min-height: 650px;
+    }
+    .form-inline {
+        width: 99%;
+    }
+    .form-inline input {
+        width: 86%;
+    }
+    .menuToggle {
+        display: block;
+    }
+    #menu {
+        display: none;
+        float: none;
+        width: 96%;
+        background: white;
+        position: absolute;
+        top: 78px;
+        z-index: 10;
+        border-radius: 20px;
+    }
+    #menu ul li {
+        display: block;
+        margin-right: 0;
+        padding: 25px 0;
+        text-align: center;
+    }
+    .menu-item {
+        font-size: 18px;
+        color: black;
+    }
+    .desc {
+        font-size: 55px;
+    }
+    .desc1 {
+        font-size: 75px;
+        line-height: 90px;
+    }
+    .third-block .container p {
+        flex-basis: 50%;
+        padding: 60px 0;
+    }
+    .forth-block .container hr {
+        display: none;
+    }
+    .service-item {
+        width: 50%;
+        margin: 30px 0;
+    }
+    .whatWeDo {
+        flex-wrap: wrap;
+    }
+    .whatWeDo .left,
+    .whatWeDo .right {
+        width: 98%;
+    }
+    .people {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .man {
+        margin-right: 0;
+    }
+    .man .photo {
+        margin-bottom: 17px;
+    }
+    .logos .container a {
+        flex-basis: 33%;
+    }
+    .pictures {
+        flex-wrap: wrap;
+    }
+    .ninth-block {
+        background-size: cover;
+    }
+    .client {
+        flex-basis: 100%;
+    }
+    .stories {
+        flex-wrap: wrap;
+    }
+    .story {
+        flex-basis: 48%;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        margin: 40px 0 24px;
+    }
+    .form-inline input {
+        width: 78%;
+    }
+    .basket {
+        margin-right: 30px;
+    }
+    .slider {
+        padding-top: 24%;
+    }
+    .owl-dot {
+        width: 20%;
+        font-size: 15px;
+    }
+    .desc {
+        font-size: 36px;
+    }
+    .desc1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .second-block .images a {
+        width: 300px;
+        height: 197px;
+    }
+    .third-block .container p {
+        flex-basis: 100%;
+        font-size: 60px;
+        padding: 40px 0;
+    }
+    .service-item {
+        width: 98%;
+    }
+    .fifth-block {
+        min-height: 615px;
+        background-size: cover;
+    }
+    .tablet {
+        min-height: 341px;
+        min-width: 280px;
+        background-size: cover;
+        left: 8%;
+    }
+    .smartphone {
+        min-height: 304px;
+        min-width: 175px;
+        background-size: cover;
+        right: 10%;
+        bottom: -8%;
+    }
+    .slider2,
+    .slider3 {
+        padding: 30px 0;
+    }
+    .slider2 .container .quotes .quote,
+    .slider3 .container .quotes .quote {
+        flex-wrap: wrap;
+    }
+    .slider2 .container .quotes .quote .image,
+    .slider3 .container .quotes .quote .image {
+        margin: 0 auto;
+    }
+    .slider2 .container .quotes .quote .text,
+    .slider3 .container .quotes .quote .text {
+        width: 100%;
+        margin: 15px 15px 0;
+        text-align: right;
+    }
+    .slider2 .container .quotes .quote .text p,
+    .slider3 .container .quotes .quote .text p{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .logos .container a {
+        flex-basis: 50%;
+    }
+    .picture-block {
+        margin: 0 10px;
+    }
+    .client {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+    .client .image {
+        flex-basis: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .client .text {
+        text-align: center;
+        margin-right: 0;
+    }
+    .client .text hr {
+        margin: 18px auto;
+    }
+    .client .text p {
+        text-align: left;
+    }
+    .story {
+        flex-basis: 98%;
+    }
+    .social a {
+        margin-right: 0;
+    }
+    input[type="text"] {
+        padding: 10px 0 10px 10px;
+    }
+    input[type="submit"] {
+        width: 100px;
+        padding: 15px 0;
+    }
+    .block2 .news .text {
+        width: 100%;
+        margin-top: 0;
+    }
+    .block3 {
+        padding-bottom: 100px;
+    }
+}
+
+@-moz-document url-prefix() { /*В Mozilla Firefox не корректно отображаются отступы flex-элементов*/
+	.block3 {
+        padding-bottom: 130px;
+    }
+    @media (max-width: 480px) {
+        input[type="text"] {
+            width: 175px;
+        }
+    }
+}	
+
+
+
+
+
+
+
+
+
+
+
+
