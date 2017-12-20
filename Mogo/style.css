@@ -201,6 +201,21 @@ hr {
     border-top: 3px solid #f38181;
     width: 25%;
 }
+/*Кнопка скроллинга вверх*/
+#scroller {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;   
+    background-image: url(img/totop.png);  
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1000;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    /*display:none;*/
+}
+
 
 /*Второй блок*/
 .second-block {
