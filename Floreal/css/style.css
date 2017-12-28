@@ -156,13 +156,13 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .menuMobile {
     display: none;
-    width: 92%;
+    width: 100%;
     height: 484px;
     background: white;
     position: absolute;
     top: 79px;
     z-index: 1000;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .menuMobile ul {
     position: relative;
@@ -174,6 +174,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .menuMobile ul li a {
     font: 50px/120px Roboto-Regular;
+    padding-left: 5%;
 }
 .menuMobile ul li a:active,
 .menuMobile ul li a:hover {
@@ -1273,6 +1274,7 @@ input[type="search"]::-webkit-search-cancel-button {
     }
     .menuMobile {
         top: 120px;
+        left: 0;
     }
     .banner {
         display: none;
