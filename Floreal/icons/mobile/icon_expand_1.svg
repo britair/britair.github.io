@@ -1,0 +1,16 @@
+<svg width="38" height="20" viewBox="0 0 38 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>icon_expand_1</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1444 109)">
+<g id="icon_expand_1">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 1481.14 -109)" fill="#333333"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0.909325 37.1429L -5.88347e-08 36.2589L 18.182 18.5714L -5.88347e-08 0.883967L 0.909325 0L 20 18.5714L 0.909325 37.1429Z"/>
+</defs>
+</svg>

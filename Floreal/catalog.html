@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ru">
+<head>
+     <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width">
+     <link href="css/fonts.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+	 <title>Floreal-shop</title>
+     <link rel="shortcut icon" href="icons/favicon.ico">
+</head>
+<body>
+    <div id="wrap">
+        <!--Шапка-->
+	    <div class="header shadow no-fix">
+			<div class="container">
+			    <div class="logo">
+                    <a href="main.html"></a>
+                </div>
+                <div class="phone">
+                    <a href="tel:73452601681">601-681</a>
+                </div>
+                <div id="search"></div>
+                <form id="search_open">
+                    <input type="search" placeholder="Поиск по каталогу">
+                    <span class="search_2"></span>
+                </form>
+                <div class="menu">
+                    <ul>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Оплата</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="basket">
+                    <a href="basket.html">4</a>
+                </div>
+                <div class="menuToggle"></div>
+                <div class="menuMobile">
+                    <ul>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="">Букеты</a></li>
+                        <li><a href="">Композиции</a></li>
+                        <li class="title_sub_menu2"><a href="">Свадьба</a></li>  
+                        <li class="title_sub_menu"><a href="">Поштучно</a></li>
+                            <ul class="sub_menu">
+                                <li><a href="">Розы</a></li>
+                                <li><a href="">Хризантемы</a></li>
+                                <li><a href="">Герберы</a></li>
+                                <li><a href="">Ирисы</a></li>
+                                <li><a href="">Тюльпаны</a></li>
+                                <li><a href="">Эустома</a></li>
+                                <li><a href="">Лилии</a></li>
+                                <li><a href="">Альстрамерия</a></li> 
+                                <li><a href="">Фрезия</a></li> 
+                                <li><a href="">Орхидея</a></li> 
+                            </ul>
+                        <li><a href="">Шары</a></li> 
+                        <li style="border: 0;"><a href="">Открытки</a></li> 
+                        <div class="footer_mobile">
+                            <a href="">Доставка</a>
+                            <a href="">Оплата</a>
+                            <a href="">Контакты</a>
+                            <div>
+                                <a href=""><img src="icons/mobile/icon_vkontakte_2.svg"></a>
+                                <a href=""><img src="icons/mobile/icon_instagram_2.svg"></a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+			</div>
+        </div>
+        <!--Меню над каталогом-->
+        <div class="shadow fix">
+            <div class="container">
+                <div class="catalog_menu">
+                    <h1>Букеты</h1>
+                    <ul>
+                        <li><a href="">Букеты</a></li>
+                        <li><a href="">Композиции</a></li>
+                        <li><a href="">Свадьба</a></li>
+                        <li><a href="">Поштучно</a>
+                            <ul class="sub_menu">
+                                <li><a href="">Розы</a></li>
+                                <li><a href="">Хризантемы</a></li>
+                                <li><a href="">Герберы</a></li>
+                                <li><a href="">Ирисы</a></li>
+                                <li><a href="">Тюльпаны</a></li>
+                                <li><a href="">Эустома</a></li>
+                                <li><a href="">Лилии</a></li>
+                                <li><a href="">Альстрамерия</a></li> 
+                                <li><a href="">Фрезия</a></li> 
+                                <li><a href="">Орхидея</a></li> 
+                            </ul></li>
+                        <li><a href="">Шары</a></li>
+                        <li><a href="">Открытки</a></li>
+                    </ul>
+                    <div class="breadcrumbs_right">
+                        <a href="" class="sorting">По цене</a>
+                        <a href="" class="sorting">По популярности</a>
+                        <a href="" class="sorting down">По дате добавления</a>
+                    </div> 
+                </div>
+            </div>
+        </div>    
+        <div class="container">  
+        <!--Хлебные крошки-->    
+            <div class="breadcrumbs">
+                <div class="breadcrumbs_left">
+                    <a href="">Каталог</a>
+                    <a href="">Букеты</a>
+                </div> 
+                <div class="breadcrumbs_right">
+                    <a href="" class="sorting">По цене</a>
+                    <a href="" class="sorting">По популярности</a>
+                    <a href="" class="sorting down">По дате добавления</a>
+                </div> 
+            </div>    
+        <!--Каталог-->    
+            <div class="catalog_goods">
+                <div class="catalog-item shadow">
+                    <div class="image">
+                        <a href=""><img src="img/buket240.jpg"></a>
+                    </div>
+                    <div class="description">
+                        <h3>Букет №240</h3>
+                        <span class="price">1 670 <s>Р</s></span>
+                    </div>  
+                    <div class="put-in-basket">
+                        <div class="quantity_goods">
+                            <input type="button" value="&ndash;" id="button_minus">
+                            <input type="number" step="1" min="0" max="100" id="num_count" name="quantity" value="0" title="i">
+                            <input type="button" value="+" id="button_plus">
+                        </div>
+                        <form action="/example/">
+                            <button type="submit">в корзину</button>
+                        </form>
+                    </div>    
+                </div> 
+                <div class="catalog-item shadow">
+                    <div class="image">
+                        <a href=""><img src="img/buket241.jpg"></a>
+                    </div>
+                    <div class="description">
+                        <h3>Букет №241</h3>
+                        <span class="price price_new">2 340 <s>Р</s></span>
+                        <span class="price price_old">2 700 Р</span>
+                    </div>  
+                    <div class="put-in-basket">
+                        <div class="quantity_goods">
+                            <input type="button" value="&ndash;" id="button_minus">
+                            <input type="number" step="1" min="0" max="100" id="num_count" name="quantity" value="0" title="i">
+                            <input type="button" value="+" id="button_plus">
+                        </div>
+                        <form action="/example/">
+                            <button type="submit">в корзину</button>
+                        </form>
+                    </div>    
+                </div> 
+                <div class="catalog-item shadow">
+                    <div class="image">
+                        <a href=""><img src="img/buket224.jpg"></a>
+                    </div>
+                    <div class="description">
+                        <h3>Букет №224</h3>
+                        <span class="price">2 050 <s>Р</s></span>
+                    </div>  
+                    <div class="put-in-basket">
+                        <div class="quantity_goods">
+                            <input type="button" value="&ndash;" id="button_minus">
+                            <input type="number" step="1" min="0" max="100" id="num_count" name="quantity" value="0" title="i">
+                            <input type="button" value="+" id="button_plus">
+                        </div>
+                        <form action="/example/">
+                            <button type="submit">в корзину</button>
+                        </form>
+                    </div>    
+                </div> 
+                <div class="catalog-item shadow">
+                    <div class="image">
+                        <a href=""><img src="img/buket53.jpg"></a>
+                    </div>
+                    <div class="description">
+                        <h3>Букет №53</h3>
+                        <span class="price">1 000 <s>Р</s></span>
+                    </div>  
+                    <div class="put-in-basket">
+                        <div class="quantity_goods">
+                            <input type="button" value="&ndash;" id="button_minus">
+                            <input type="number" step="1" min="0" max="100" id="num_count" name="quantity" value="0" title="i">
+                            <input type="button" value="+" id="button_plus">
+                        </div>
+                        <form action="/example/">
+                            <button type="submit">в корзину</button>
+                        </form>
+                    </div>    
+                </div> 
+                <div class="catalog-item shadow">
+                    <div class="image">
+                        <a href=""><img src="img/buket243.jpg"></a>
+                    </div>
+                    <div class="description">
+                        <h3>Букет №243</h3>
+                        <span class="price">15 411 <s>Р</s></span>
+                    </div>  
+                    <div class="put-in-basket">
+                        <div class="quantity_goods">
+                            <input type="button" value="&ndash;" id="button_minus">
+                            <input type="number" step="1" min="0" max="100" id="num_count" name="quantity" value="0" title="i">
+                            <input type="button" value="+" id="button_plus">
+                        </div>
+                        <form action="/example/">
+                            <button type="submit">в корзину</button>
+                        </form>
+                    </div>    
+                </div> 
+                <div class="catalog-item shadow">
+                    <div class="image">
+                        <a href=""><img src="img/buket262.jpg"></a>
+                    </div>
+                    <div class="description">
+                        <h3>Букет №262</h3>
+                        <span class="price">1 980 <s>Р</s></span>
+                    </div>  
+                    <div class="put-in-basket">
+                        <div class="quantity_goods">
+                            <input type="button" value="&ndash;" id="button_minus">
+                            <input type="number" step="1" min="0" max="100" id="num_count" name="quantity" value="0" title="i">
+                            <input type="button" value="+" id="button_plus">
+                        </div>
+                        <form action="/example/">
+                            <button type="submit">в корзину</button>
+                        </form>
+                    </div>    
+                </div> 
+                <div class="catalog-item shadow">
+                    <div class="image">
+                        <a href=""><img src="img/buket92.jpg"></a>
+                    </div>
+                    <div class="description">
+                        <h3>Букет №92</h3>
+                        <span class="price">3 260 <s>Р</s></span>
+                    </div>  
+                    <div class="put-in-basket">
+                        <div class="quantity_goods">
+                            <input type="button" value="&ndash;" id="button_minus">
+                            <input type="number" step="1" min="0" max="100" id="num_count" name="quantity" value="0" title="i">
+                            <input type="button" value="+" id="button_plus">
+                        </div>
+                        <form action="/example/">
+                            <button type="submit">в корзину</button>
+                        </form>
+                    </div>    
+                </div> 
+                <div class="catalog-item shadow">
+                    <div class="image">
+                        <a href=""><img src="img/buket37.jpg"></a>
+                    </div>
+                    <div class="description">
+                        <h3>Букет №37</h3>
+                        <span class="price price_new">4 005 <s>Р</s></span>
+                        <span class="price price_old">4 800 Р</span>
+                    </div>  
+                    <div class="put-in-basket">
+                        <div class="quantity_goods">
+                            <input type="button" value="&ndash;" id="button_minus">
+                            <input type="number" step="1" min="0" max="100" id="num_count" name="quantity" value="0" title="i">
+                            <input type="button" value="+" id="button_plus">
+                        </div>
+                        <form action="/example/">
+                            <button type="submit">в корзину</button>
+                        </form>
+                    </div>    
+                </div> 
+                <div class="catalog-item shadow">
+                    <div class="image">
+                        <a href=""><img src="img/buket126.jpg"></a>
+                    </div>
+                    <div class="description">
+                        <h3>Букет №126</h3>
+                        <span class="price">11 753 <s>Р</s></span>
+                    </div>  
+                    <div class="put-in-basket">
+                        <div class="quantity_goods">
+                            <input type="button" value="&ndash;" id="button_minus">
+                            <input type="number" step="1" min="0" max="100" id="num_count" name="quantity" value="0" title="i">
+                            <input type="button" value="+" id="button_plus">
+                        </div>
+                        <form action="/example/">
+                            <button type="submit">в корзину</button>
+                        </form>
+                    </div>    
+                </div> 
+            </div>    
+            <div class="text">
+                <h3>Не можете выбрать какие цветы подарить?</h3>    
+                <p>Хотите порадовать маму, но не можете определиться, какие цветы подойдут лучше всего? У милой коллеги по работе день рождения и вы хотели бы подарить ей прекрасные цветы, а какие прекрасней выбрать не можете? Для самых нежных, утонченных, милых и потрясающих существ в мире, независимо от возраста и статуса подойдет букет тюльпанов. Эти нежнейшие весенние цветы олицетворяют хрупкость, женственность и грациозность – главные качества, которыми наделена прекрасная половина человечества.<br><br>Купить букет тюльпанов в Тюмени вы можете в нашем интернет-магазине «Флореаль». На нашем сайте представлены букеты, собранные квалифицированными флористами. Если же дизайн букета придуман вами самостоятельно, то наши сотрудники оформят его по вашему индивидуальному заказу.</p>
+            </div>    
+            <div id="scroller"></div>
+        </div>   
+        <!--Подвал--> 
+        <div class="footer">
+            <div class="container">
+                <a href="http://www.alivedream.ru/"><img src="icons/logo_dp.svg"></a>
+                <a href="" class="footer-text">Политика конфиденциальности</a>
+                <div class="phone">
+                    <a href="tel:73452601681">601-681</a>
+                </div>
+                <a href="http://www.floreal-shop.ru" class="footer-text">Бесплатная доставка цветов в Тюмени</a>
+                <div>
+                    <a href="" class="vk"><img src="icons/icon_vkontakte.svg"></a>
+                    <a href=""><img src="icons/icon_instagram.svg"></a>
+                </div>
+            </div>
+        </div>		
+	</div>
+<script src="js/jquery-3.2.1.min.js"></script>   
+<script src="js/main.js"></script>
+<script src="js/cal.js"></script>
+<script src="js/jquery.selectric.min.js"></script> 
+<script src="js/jquery.maskedinput.min.js"></script>
+</body>
+</html>	

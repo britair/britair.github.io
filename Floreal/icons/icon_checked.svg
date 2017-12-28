@@ -1,0 +1,14 @@
+<svg width="14" height="10" viewBox="0 0 14 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>icon_checked</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-913 47)">
+<g id="icon_checked">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(913 -47)" fill="#C93259"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 5.1871 9.89061C 5.2791 9.96411 5.3896 10.0001 5.4996 10.0001C 5.6376 10.0001 5.7751 9.94311 5.8736 9.83211L 13.8736 0.832069C 14.0571 0.626068 14.0386 0.309567 13.8321 0.126566C 13.6251 -0.0574348 13.3096 -0.0384346 13.1261 0.168066L 5.4416 8.8131L 0.812078 5.10959C 0.597077 4.93709 0.281576 4.97309 0.109575 5.18759C -0.0629257 5.40359 -0.0279254 5.71809 0.187575 5.89059L 5.1871 9.89061Z"/>
+</defs>
+</svg>

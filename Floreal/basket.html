@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ru">
+<head>
+     <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width">
+     <link href="css/fonts.css" rel="stylesheet">
+     <link href="css/cal.css" rel="stylesheet">
+     <link href="css/selectric.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+	 <title>Floreal-shop</title>
+     <link rel="shortcut icon" href="icons/favicon.ico">
+</head>
+<body>
+    <div id="wrap">
+        <!--Шапка-->
+	    <div class="header shadow">
+			<div class="container">
+			    <div class="logo">
+                    <a href="main.html"></a>
+                </div>
+                <div class="phone">
+                    <a href="tel:73452601681">601-681</a>
+                </div>
+                <div id="search"></div>
+                <form id="search_open">
+                    <input type="search" placeholder="Поиск по каталогу">
+                    <span class="search_2"></span>
+                </form>
+                <div class="menu">
+                    <ul>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Оплата</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="basket">
+                    <a href="basket.html">4</a>
+                </div>
+                <div class="menuToggle"></div>
+                <div class="menuMobile">
+                    <ul>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="">Букеты</a></li>
+                        <li><a href="">Композиции</a></li>
+                        <li class="title_sub_menu2"><a href="">Свадьба</a></li>  
+                        <li class="title_sub_menu"><a href="">Поштучно</a></li>
+                            <ul class="sub_menu">
+                                <li><a href="">Розы</a></li>
+                                <li><a href="">Хризантемы</a></li>
+                                <li><a href="">Герберы</a></li>
+                                <li><a href="">Ирисы</a></li>
+                                <li><a href="">Тюльпаны</a></li>
+                                <li><a href="">Эустома</a></li>
+                                <li><a href="">Лилии</a></li>
+                                <li><a href="">Альстрамерия</a></li> 
+                                <li><a href="">Фрезия</a></li> 
+                                <li><a href="">Орхидея</a></li> 
+                            </ul>
+                        <li><a href="">Шары</a></li> 
+                        <li style="border: 0;"><a href="">Открытки</a></li> 
+                        <div class="footer_mobile">
+                            <a href="">Доставка</a>
+                            <a href="">Оплата</a>
+                            <a href="">Контакты</a>
+                            <div>
+                                <a href=""><img src="icons/mobile/icon_vkontakte_2.svg"></a>
+                                <a href=""><img src="icons/mobile/icon_instagram_2.svg"></a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+			</div>
+        </div>
+        <div class="container">
+        <!--Хлебные крошки-->     
+            <div class="breadcrumbs">
+                <div class="breadcrumbs_left">
+                    <a href="">Каталог</a>
+                    <a href="">Букеты</a>
+                    <a href="">Корзина</a>
+                </div> 
+                <div class="breadcrumbs_right">
+                    <a href="">Вернуться в каталог</a>
+                </div> 
+            </div> 
+        </div>    
+        <!--Заказ--> 
+        <div class="shadow-mobile">
+        <div class="container">    
+            <div class="order shadow">
+                <h1>Ваш заказ</h1>
+                <div class="title">
+                    <span>Фото</span>
+                    <span>Наименование</span>
+                    <span>Количество</span>
+                    <span>Цена</span>
+                    <span>Удалить</span>
+                </div>
+                <!--Товар 1-->
+                <div class="order_item">
+                    <div class="image">
+                        <a href=""><img src="img/buket243.jpg"></a>
+                    </div>
+                    <div class="basket_info">
+                        <h2>Букет №243</h2>
+                        <div class="quantity_goods">
+                            <input type="button" value="&ndash;" id="button_minus">
+                            <input type="number" step="1" min="0" max="100" id="num_count" name="quantity" value="0" title="i">
+                            <input type="button" value="+" id="button_plus">
+                        </div>
+                        <div class="price">
+                            <div class="price_new">14 200 <s>P</s></div>
+                            <div class="price_old"><s>17 200 P</s></div>
+                        </div>
+                    </div>
+                    <div class="delete"></div>
+                </div> 
+                <hr>
+                 <!--Товар 2-->
+                <div class="order_item">
+                    <div class="image">
+                        <a href=""><img src="img/buket53.jpg"></a>
+                    </div>
+                    <div class="basket_info">
+                        <h2>Букет №53</h2>
+                        <div class="quantity_goods">
+                            <input type="button" value="&ndash;" id="button_minus">
+                            <input type="number" step="1" min="0" max="100" id="num_count" name="quantity" value="0" title="i">
+                            <input type="button" value="+" id="button_plus">
+                        </div>
+                        <div class="price">
+                            <div class="price_black">3 000 <s>P</s></div>
+                        </div>
+                    </div>
+                    <div class="delete"></div>
+                </div> 
+            </div> 
+        </div> 
+        </div>    
+        <!--Форма заказа--> 
+        <div class="shadow-mobile">    
+        <div class="container">
+            <div class="order_info shadow">
+                <h1>Информация</h1>
+                <h2>О покупателе</h2>
+                <div class="buyer">
+                    <form action="" method="post">
+                        <sup>*</sup>
+                        <p>Имя</p>
+                        <input type="text" required>
+                    </form>
+                    <form action="" method="post">
+                        <sup>*</sup>
+                        <p>Телефон</p>
+                        <input type="text" id="phone_buyer" required>
+                    </form>
+                    <span>Для получения СМС - уведомлений о заказе, укажите мобильный телефон.</span>
+                </div>
+                <h2>О получателе</h2>
+                <div class="receiver">
+                    <form action="" method="post">
+                        <input type="text" placeholder="Имя">
+                    </form>
+                    <form action="" method="post">
+                        <input type="text" id="phone_receiver" placeholder="Телефон">
+                    </form>
+                </div>
+                <div class="receiver">
+                    <form action="" method="post">
+                        <sup>*</sup>
+                        <input type="text" id="calendar" placeholder="Дата доставки" required>
+                    </form>
+                    <form action="" method="post">
+                        <sup>*</sup>
+                        <select id="delivery_time" required>
+                            <option>Время доставки</option>
+                            <option>00:00 ― 01:00</option>
+                            <option>01:00 ― 02:00</option>
+                            <option>02:00 ― 03:00</option>
+                            <option>03:00 ― 04:00</option>
+                            <option>04:00 ― 05:00</option>
+                            <option>05:00 ― 06:00</option>
+                            <option>06:00 ― 07:00</option>
+                            <option>07:00 ― 08:00</option>
+                            <option>08:00 ― 09:00</option>
+                            <option>09:00 ― 10:00</option>
+                            <option>10:00 ― 11:00</option>
+                            <option>11:00 ― 12:00</option>
+                            <option>12:00 ― 13:00</option>
+                            <option>13:00 ― 14:00</option>
+                            <option>14:00 ― 15:00</option>
+                            <option>15:00 ― 16:00</option>
+                            <option>16:00 ― 17:00</option>
+                            <option>17:00 ― 18:00</option>
+                            <option>18:00 ― 19:00</option>
+                            <option>19:00 ― 20:00</option>
+                            <option>20:00 ― 21:00</option>
+                            <option>21:00 ― 22:00</option>
+                            <option>22:00 ― 23:00</option>
+                            <option>23:00 ― 24:00</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="receiver">
+                    <form action="" method="post" class="address">
+                        <sup>*</sup>
+                        <input type="text" placeholder="Адрес доставки, улица, дом, квартира" required>
+                    </form>
+                    <span>Если адрес не будет найден, мы перезвоним вам по номеру: <span id="phone_buyer">+7 (922) 876-54-32</span></span>
+                </div>
+                <div class="receiver">
+                    <form action="" method="post" class="comments">
+                        <textarea placeholder="Текст для открытки"></textarea>
+                    </form>
+                </div>
+                <div class="receiver">
+                    <form action="" method="post" class="comments">
+                        <textarea placeholder="Пожелания, комментарии к заказу"></textarea>
+                    </form>
+                </div>
+                <form class="checkbox">
+                    <label><input type="checkbox" class="hide" required><span></span>Даю согласие на обработку моих персональных данных в соответствии с условиями и <a href="">политикой конфиденциальности</a></label>
+                </form>
+            </div>
+        </div> 
+        </div>    
+        <div class="container">
+            <div class="order_info shadow">
+                <h1>Cпособ оплаты</h1>
+                <div class="payment">
+                    <form>
+                        <input type="radio" id="online" name="payment" value="online" hidden>
+                        <label for="online">Банковской картой<br>онлайн<span class="check-mark"></span></label>
+                        <input type="radio" id="cash" name="payment" value="cash" hidden>
+                        <label for="cash">Наличными курьеру<br>при получении<span class="check-mark"></span></label>
+                    </form>
+                    <div class="total">
+                        <p>Итого на сумму:<span>17 200 <s>Р</s></span></p>
+                        <form action="order_sent.html">
+                            <button type="submit">Оформить заказ</button>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+            <div class="empty"></div>
+            <div id="scroller"></div>
+        </div>    
+        <!--Подвал--> 
+        <div class="footer">
+            <div class="container">
+                <a href="http://www.alivedream.ru/"><img src="icons/logo_dp.svg"></a>
+                <a href="" class="footer-text">Политика конфиденциальности</a>
+                <div class="phone">
+                    <a href="tel:73452601681">601-681</a>
+                </div>
+                <a href="http://www.floreal-shop.ru" class="footer-text">Бесплатная доставка цветов в Тюмени</a>
+                <div>
+                    <a href="" class="vk"><img src="icons/icon_vkontakte.svg"></a>
+                    <a href=""><img src="icons/icon_instagram.svg"></a>
+                </div>
+            </div>
+        </div>		
+	</div>
+<script src="js/jquery-3.2.1.min.js"></script>   
+<script src="js/main.js"></script>
+<script src="js/cal.js"></script>
+<script src="js/jquery.selectric.min.js"></script> 
+<script src="js/jquery.maskedinput.min.js"></script>    
+</body>
+</html>	

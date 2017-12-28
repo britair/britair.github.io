@@ -1,0 +1,38 @@
+<svg width="40" height="37" viewBox="0 0 40 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>icon_calendar</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1549 -46)">
+<g id="icon_calendar">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(1549 46)" fill="#7A7A7A"/>
+<use xlink:href="#path1_fill" transform="translate(1549 46)" fill="#7A7A7A"/>
+<use xlink:href="#path2_fill" transform="translate(1549 46)" fill="#7A7A7A"/>
+<use xlink:href="#path3_fill" transform="translate(1549 46)" fill="#7A7A7A"/>
+<use xlink:href="#path4_fill" transform="translate(1549 46)" fill="#7A7A7A"/>
+<use xlink:href="#path5_fill" transform="translate(1549 46)" fill="#7A7A7A"/>
+<use xlink:href="#path6_fill" transform="translate(1549 46)" fill="#7A7A7A"/>
+<use xlink:href="#path7_fill" transform="translate(1549 46)" fill="#7A7A7A"/>
+<use xlink:href="#path8_fill" transform="translate(1549 46)" fill="#7A7A7A"/>
+<use xlink:href="#path9_fill" transform="translate(1549 46)" fill="#7A7A7A"/>
+<use xlink:href="#path10_fill" transform="translate(1549 46)" fill="#7A7A7A"/>
+<use xlink:href="#path11_fill" transform="translate(1549 46)" fill="#7A7A7A"/>
+<use xlink:href="#path12_fill" transform="translate(1549 46)" fill="#7A7A7A"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 1.19644e-08 3L 40 3L 40 5L 1.19644e-08 5L 1.19644e-08 3Z"/>
+<path id="path1_fill" d="M 1.19644e-08 10L 40 10L 40 12L 1.19644e-08 12L 1.19644e-08 10Z"/>
+<path id="path2_fill" d="M 1.19644e-08 35L 40 35L 40 37L 1.19644e-08 37L 1.19644e-08 35Z"/>
+<path id="path3_fill" d="M 2 3L 2 36L 0 36L 1.19644e-08 3L 2 3Z"/>
+<path id="path4_fill" d="M 40 3L 40 36L 38 36L 38 3L 40 3Z"/>
+<path id="path5_fill" d="M 28 8.74228e-08L 28 8L 26 8L 26 0L 28 8.74228e-08Z"/>
+<path id="path6_fill" d="M 14 8.74228e-08L 14 8L 12 8L 12 0L 14 8.74228e-08Z"/>
+<path id="path7_fill" d="M 16 17L 16 22L 11 22L 11 17L 16 17Z"/>
+<path id="path8_fill" d="M 23 17L 23 22L 18 22L 18 17L 23 17Z"/>
+<path id="path9_fill" d="M 30 17L 30 22L 25 22L 25 17L 30 17Z"/>
+<path id="path10_fill" d="M 30 25L 30 30L 25 30L 25 25L 30 25Z"/>
+<path id="path11_fill" d="M 23 25L 23 30L 18 30L 18 25L 23 25Z"/>
+<path id="path12_fill" d="M 16 25L 16 30L 11 30L 11 25L 16 25Z"/>
+</defs>
+</svg>

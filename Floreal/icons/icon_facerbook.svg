@@ -1,0 +1,18 @@
+<svg width="30" height="30" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>icon_facerbook</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-721 -56)">
+<g id="icon_facerbook">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(721 56)" fill="#3B5998"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(732.239 63.4709)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 14.9999 0C 23.2847 0 30 6.71625 30 15.0001C 30 23.2848 23.2847 30 14.9999 30C 6.71522 30 0 23.2847 0 15.0001C 0 6.71625 6.71532 0 14.9999 0Z"/>
+<path id="path1_fill" d="M 5.58748 2.85563L 7.52062 2.85563L 7.52062 -3.01699e-07L 5.24816 -3.01699e-07L 5.24816 0.0102983C 2.49469 0.10782 1.93036 1.65561 1.88062 3.28125L 1.87496 3.28125L 1.87496 4.70721L 1.6342e-07 4.70721L 1.6342e-07 7.50373L 1.87496 7.50373L 1.87496 14.9999L 4.70062 14.9999L 4.70062 7.50373L 7.0153 7.50373L 7.46244 4.70721L 4.70155 4.70721L 4.70155 3.84568C 4.70155 3.29628 5.06713 2.85563 5.58748 2.85563Z"/>
+</defs>
+</svg>

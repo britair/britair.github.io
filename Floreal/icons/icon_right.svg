@@ -1,0 +1,34 @@
+<svg width="6" height="11" viewBox="0 0 6 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>icon_right</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-926 -17)">
+<g id="icon_right">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(926 17)" fill="#010101"/>
+<use xlink:href="#path1_fill" transform="translate(926 17)" fill="#010101"/>
+<use xlink:href="#path2_fill" transform="translate(926 17)" fill="#010101"/>
+<use xlink:href="#path3_fill" transform="translate(926 17)" fill="#010101"/>
+<use xlink:href="#path4_fill" transform="translate(926 17)" fill="#010101"/>
+<use xlink:href="#path5_fill" transform="translate(926 17)" fill="#010101"/>
+<use xlink:href="#path6_fill" transform="translate(926 17)" fill="#010101"/>
+<use xlink:href="#path7_fill" transform="translate(926 17)" fill="#010101"/>
+<use xlink:href="#path8_fill" transform="translate(926 17)" fill="#010101"/>
+<use xlink:href="#path9_fill" transform="translate(926 17)" fill="#010101"/>
+<use xlink:href="#path10_fill" transform="translate(926 17)" fill="#010101"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 5 5L 6 5L 6 6L 5 6L 5 5Z"/>
+<path id="path1_fill" d="M 5 6L 4 6L 4 7L 5 7L 5 6Z"/>
+<path id="path2_fill" d="M 4 7L 3 7L 3 8L 4 8L 4 7Z"/>
+<path id="path3_fill" d="M 3 8L 2 8L 2 9L 3 9L 3 8Z"/>
+<path id="path4_fill" d="M 2 9L 1 9L 1 10L 2 10L 2 9Z"/>
+<path id="path5_fill" d="M 1 10L 0 10L 0 11L 1 11L 1 10Z"/>
+<path id="path6_fill" d="M 4 4L 5 4L 5 5L 4 5L 4 4Z"/>
+<path id="path7_fill" d="M 3 3L 4 3L 4 4L 3 4L 3 3Z"/>
+<path id="path8_fill" d="M 2 2L 3 2L 3 3L 2 3L 2 2Z"/>
+<path id="path9_fill" d="M 1 1L 2 1L 2 2L 1 2L 1 1Z"/>
+<path id="path10_fill" d="M 0 0L 1 0L 1 1L 0 1L 0 0Z"/>
+</defs>
+</svg>

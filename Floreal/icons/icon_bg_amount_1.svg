@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>icon_bg_amount_1</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-976 128)">
+<g id="icon_bg_amount_1">
+<g id="Ellipse">
+<use xlink:href="#path0_fill" transform="translate(976 -128)" fill="#C93259"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 24 12C 24 18.6274 18.6274 24 12 24C 5.37258 24 0 18.6274 0 12C 0 5.37258 5.37258 0 12 0C 18.6274 0 24 5.37258 24 12Z"/>
+</defs>
+</svg>

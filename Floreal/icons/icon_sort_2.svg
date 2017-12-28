@@ -1,0 +1,22 @@
+<svg width="5" height="9" viewBox="0 0 5 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>icon_sort_2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1091 14)">
+<g id="icon_sort_2">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 1096 -13.5)" fill="#505050"/>
+<use xlink:href="#path1_fill" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 1096 -13.5)" fill="#505050"/>
+<use xlink:href="#path2_fill" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 1096 -13.5)" fill="#505050"/>
+<use xlink:href="#path3_fill" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 1096 -13.5)" fill="#505050"/>
+<use xlink:href="#path4_fill" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 1096 -13.5)" fill="#505050"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 6 1L 7 1L 7 2L 6 2L 6 1Z"/>
+<path id="path1_fill" d="M 6 3L 7 3L 7 4L 6 4L 6 3Z"/>
+<path id="path2_fill" d="M 5 4L 6 4L 6 5L 5 5L 5 4Z"/>
+<path id="path3_fill" d="M 5 0L 6 0L 6 1L 5 1L 5 0Z"/>
+<path id="path4_fill" d="M 0 2L 8 2L 8 3L 0 3L 0 2Z"/>
+</defs>
+</svg>

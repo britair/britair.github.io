@@ -1,0 +1,236 @@
+/*======================================
+  Selectric v1.13.0
+======================================*/
+
+.selectric-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.selectric-responsive {
+  width: 100%;
+}
+
+.selectric {
+  border-radius: 2px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  width: 100%; 
+}
+
+.selectric .label {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 21px 0 19px 24px;
+  font-size: 12px;
+  line-height: 38px;
+  color: #444;
+  font: normal 16px/18px Roboto-Regular;
+  color: #3e3e3e;  
+    background-image: url(../icons/icon_time.svg);
+    background-repeat: no-repeat;
+    background-position: 94% 50%;
+    -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.selectric-open {
+  z-index: 11;
+}
+
+.selectric-open .selectric {
+  border-color: white;
+}
+
+.selectric-open .selectric-items {
+  display: block;
+}
+
+.selectric-disabled {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.selectric-hide-select {
+  position: relative;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
+.selectric-hide-select select {
+  position: absolute;
+  left: -100%;
+}
+
+.selectric-hide-select.selectric-is-native {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.selectric-hide-select.selectric-is-native select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  border: none;
+  z-index: 1;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+.selectric-input {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  outline: none !important;
+  border: none !important;
+  *font: 0/0 a !important;
+  background: none !important;
+}
+
+.selectric-temp-show {
+  position: absolute !important;
+  visibility: hidden !important;
+  display: block !important;
+}
+
+/* Items box */
+.selectric-items {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  z-index: -1;
+}
+
+.selectric-items .selectric-scroll {
+  height: 100%;
+  overflow: auto;
+}
+
+.selectric-above .selectric-items {
+  top: auto;
+  bottom: 100%;
+}
+
+.selectric-items ul, .selectric-items li {
+  font: normal 16px/34px Roboto-Regular;
+  color: #3e3e3e;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.selectric-items li {
+  display: block;
+  padding-left: 21px;
+  color: #3e3e3e;
+  cursor: pointer;
+}
+
+.selectric-items li.selected {
+  background: white;
+  color: #c93259;
+}
+
+.selectric-items li.highlighted {
+  background: white;
+  color: #3e3e3e;
+}
+
+.selectric-items li:hover {
+  background: white;
+  color: #c93259;
+}
+
+.selectric-items .disabled {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  cursor: default !important;
+  background: none !important;
+  color: #666 !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.selectric-items .selectric-group .selectric-group-label {
+  font-weight: bold;
+  padding-left: 10px;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: none;
+  color: #444;
+}
+
+.selectric-items .selectric-group.disabled li {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.selectric-items .selectric-group li {
+  padding-left: 25px;
+}
+
+@media (max-width: 768px) {
+    .selectric .label {
+        font: normal 36px/36px Roboto-Regular;
+        background-image: url(../icons/mobile/icon_time.svg);
+        background-position: 100% 50%;
+        padding: 12px 0 12px 10px;
+        width: 90%;
+    }
+    .selectric-items li {
+        font: normal 34px/73px Roboto-Regular;
+        padding-left: 35px;
+    }
+    
+}
+@media (max-width: 600px) {
+    .selectric .label {
+        font: normal 16px/18px Roboto-Regular;
+        background-position: 98% 50%;
+    }
+    .selectric-items li {
+        font: normal 16px/34px Roboto-Regular;
+    }
+}
+@media (max-width: 500px) {
+    .selectric .label {
+        font: normal 16px/18px Roboto-Regular;
+        background-position: 95% 50%;
+    }
+}
+@media (max-width: 400px) {
+    .selectric .label {
+        margin: 28px 0 24px 35px;
+        background-image: url(../icons/icon_time.svg);
+        width: 85%;
+        margin: 15px 0 7px 26px;
+    }
+}
