@@ -9,8 +9,6 @@ $(document).click( function(event){
 
 $('#search').click( function() {
     $(this).siblings("#search_open").slideToggle("fast");
-    $('#search').toggleClass('no_display');
-    $('.menu').toggleClass('no_display');
     return false;
 });
 
@@ -58,6 +56,14 @@ var minusBtn = document.getElementById('button_minus');
     }
     numCount.value = i;
 }
+
+/*Если адрес не будет найден, мы перезвоним вам по номеру*/
+$(document).ready ( function(){
+    $("#phone_buyer").keyup(function() {
+        $('#phone_buyer_number').text($("#phone_buyer").val());
+    });
+});   
+    
 /*Календарь*/
 $(document).ready(function(){
     $('#calendar').simpleDatepicker();  
