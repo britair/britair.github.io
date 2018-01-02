@@ -502,20 +502,20 @@ input[type="search"]::-webkit-search-cancel-button {
     color: #a9a9a9;
     cursor: pointer;
 }
-.quantity_goods #button_minus {
+.quantity_goods .button_minus {
     margin-left: 20px;
 }
-.quantity_goods #button_plus {
+.quantity_goods .button_plus {
     margin-right: 20px;
 }
-.quantity_goods #num_count::-webkit-outer-spin-button,
-.quantity_goods #num_count::-webkit-inner-spin-button {
+.quantity_goods .num_count::-webkit-outer-spin-button,
+.quantity_goods .num_count::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-.quantity_goods #num_count {
+.quantity_goods .num_count {
     -moz-appearance: textfield; /*убрать стрeлки в Mozilla*/
 }
-.quantity_goods #num_count {
+.quantity_goods .num_count {
     text-align: center;
     width: 55px;
     font: 200 20px/20px Roboto-Bold;
@@ -1168,7 +1168,7 @@ phone_buyer_number {
         display: block;
     }
     .menu {
-        display: none;
+        display: none!important;
     }
     .menuMobile ul li a {
         font: 35px/50px Roboto-Regular;
@@ -1396,21 +1396,21 @@ phone_buyer_number {
         height: 18%;
         position: relative;
     }
-    .quantity_goods #button_minus {
+    .quantity_goods .button_minus {
         font: 44px/44px Roboto-Regular;
         margin: 0;
         position: absolute;
         top: 25%;
         left: 15%;
     }
-    .quantity_goods #num_count {
+    .quantity_goods .num_count {
         font: 44px/44px Roboto-Bold;
         margin: 0;
         position: absolute;
         top: 16%;
         left: 40%;
     }
-    .quantity_goods #button_plus {
+    .quantity_goods .button_plus {
         font: 100 44px/38px Roboto-Regular;
         margin: 0;
         position: absolute;
@@ -1588,7 +1588,7 @@ phone_buyer_number {
         margin-bottom: 16px;
         position: relative;
     }
-    .order_item .basket_info .quantity_goods #button_minus {
+    .order_item .basket_info .quantity_goods .button_minus {
         top: 11px;
         left: 23px;
         font: 35px/35px Roboto-Regular;
@@ -1596,7 +1596,7 @@ phone_buyer_number {
         position: absolute;
         color: #a9a9a9;
     }
-    .order_item .basket_info .quantity_goods #num_count {
+    .order_item .basket_info .quantity_goods .num_count {
         top: 10px;
         left: 66px;
         text-align: center;
@@ -1606,7 +1606,7 @@ phone_buyer_number {
         position: absolute;
         color: #3e3e3e;
     }
-    .order_item .basket_info .quantity_goods #button_plus {
+    .order_item .basket_info .quantity_goods .button_plus {
         top: 10px;
         right: 26px;
         font: 100 35px/35px Roboto-Regular;
@@ -1869,17 +1869,17 @@ phone_buyer_number {
     .quantity_goods {
         height: 48px;
     }
-    .quantity_goods #button_minus {
+    .quantity_goods .button_minus {
         font: 25px/30px Roboto-Regular;
         top: 20%;
         left: 15%;
     }
-    .quantity_goods #num_count {
+    .quantity_goods .num_count {
         font: 25px/30px Roboto-Bold;
         top: 18%;
         left: 39%;
     }
-    .quantity_goods #button_plus {
+    .quantity_goods .button_plus {
         font: 25px/30px Roboto-Regular;
         top: 20%;
     }
@@ -1947,17 +1947,17 @@ phone_buyer_number {
         height: 42px;
         width: 105px;
     }
-    .order_item .basket_info .quantity_goods #button_minus {
+    .order_item .basket_info .quantity_goods .button_minus {
         top: 6px;
         left: 10px;
         font: 25px/30px Roboto-Regular;
     }
-    .order_item .basket_info .quantity_goods #num_count {
+    .order_item .basket_info .quantity_goods .num_count {
         top: 6px;
         left: 26px;
         font: 25px/30px Roboto-Bold;
     }
-    .order_item .basket_info .quantity_goods #button_plus {
+    .order_item .basket_info .quantity_goods .button_plus {
         top: 6px;
         right: 12px;
         font: 25px/30px Roboto-Regular;
@@ -2079,7 +2079,7 @@ phone_buyer_number {
         width: 45px;
         height: 45px; 
     }
-    .quantity_goods #num_count {
+    .quantity_goods .num_count {
         left: 36%;
     }
     .text h3 {
@@ -2177,24 +2177,24 @@ phone_buyer_number {
         top: 7.5%;
         font: 200 20px/25px Roboto-Medium;
     }
-    .quantity_goods #num_count {
+    .quantity_goods .num_count {
         left: 30%;
     }
     .hide + label + div a {
         width: 32px;
         height: 32px;
     }
-    .quantity_goods #button_minus {
+    .quantity_goods .button_minus {
         font: 25px/30px Roboto-Regular;
         top: 20%;
         left: 15%;
     }
-    .quantity_goods #num_count {
+    .quantity_goods .num_count {
         font: 25px/30px Roboto-Bold;
         top: 18%;
         left: 31%;
     }
-    .quantity_goods #button_plus {
+    .quantity_goods .button_plus {
         font: 25px/30px Roboto-Regular;
         top: 20%;
     }

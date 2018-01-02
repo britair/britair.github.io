@@ -1,14 +1,23 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
+
+$(function () {
+    jQuery.fx.speeds.fast = 10;
+});
+
 $(document).click( function(event){
 	if( $(event.target).closest("#search_open").length ) 
 	return;
 	$("#search_open").slideUp("fast");
+    $(".header .menu").slideDown("fast");
+    $("#search").slideDown("fast");
 	event.stopPropagation();
 });
 
 $('#search').click( function() {
     $(this).siblings("#search_open").slideToggle("fast");
+    $(this).siblings(".menu").slideToggle("fast");
+    $(this).slideToggle();
     return false;
 });
 
@@ -40,22 +49,23 @@ $(function () {
 
 
 /*Счетчик количества товаров*/
-var numCount = document.getElementById('num_count');
-var plusBtn = document.getElementById('button_plus');
-var minusBtn = document.getElementById('button_minus');
-    plusBtn.onclick = function() {
-        var i = parseInt(numCount.value);
-        i++;
-    numCount.value = i;
-}
-    minusBtn.onclick = function() {
-        var i = parseInt(numCount.value);
-        i--;
-        if(i < 0){
+var plusBtn = $('.button_plus');
+var minusBtn = $('.button_minus');
+plusBtn.click(function() {
+    var numCount = $(this).siblings(".num_count");
+    var i = parseInt(numCount.val());
+    i++;
+    numCount.val(i);
+});
+minusBtn.click(function() {
+    var numCount = $(this).siblings(".num_count");
+    var i = parseInt(numCount.val());
+    i--;
+    if(i < 0){
         i = 0;
     }
-    numCount.value = i;
-}
+    numCount.val(i);
+});
 
 /*Если адрес не будет найден, мы перезвоним вам по номеру*/
 $(document).ready ( function(){
@@ -66,7 +76,10 @@ $(document).ready ( function(){
     
 /*Календарь*/
 $(document).ready(function(){
-    $('#calendar').simpleDatepicker();  
+    $('#calendar').simpleDatepicker({
+        enddate:2020,
+        firstDay: 1
+    });  
 });    
 
 /*Выбор времени - Selectric*/

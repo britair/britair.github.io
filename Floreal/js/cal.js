@@ -94,7 +94,7 @@
 				yearselect += '</select>';
 			
 			jQuery("thead",table).append('<tr class="controls"><th colspan="7"><span class="prevMonth"></span>'+monthselect+yearselect+'<span class="nextMonth"></span></th></tr>');
-			jQuery("thead",table).append('<tr class="days"><th>ВС</th><th>ПН</th><th>ВТ</th><th>СР</th><th>ЧТ</th><th>ПТ</th><th>СБ</th></tr>');
+			jQuery("thead",table).append('<tr class="days"><th>ПН</th><th>ВТ</th><th>СР</th><th>ЧТ</th><th>ПТ</th><th>СБ</th><th>ВС</th></tr>');
 			jQuery("tfoot",table).append('<tr><td colspan="2"><span class="today">сегодня</span></td><td colspan="3">&nbsp;</td><td colspan="2"><span class="close">закрыть</span></td></tr>');
 			for (var i = 0; i < 6; i++) jQuery("tbody",table).append('<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>');	
 			return table;
@@ -179,7 +179,7 @@
 			// walk through the index and populate each cell, binding events too
 			for (var i = 0; i < numdays; i++) {
 			
-				var cell = jQuery(cells.get(i+startindex)).removeClass('chosen');
+				var cell = jQuery(cells.get(i+startindex-1)).removeClass('chosen');
 				
 				// test that the date falls within a range, if we have a range
 				if ( 
@@ -297,7 +297,7 @@
 		// date string matching /^\d{1,2}\/\d{1,2}\/\d{2}|\d{4}$/
 		// or four digit year
 		startdate : today.getFullYear(), 
-		enddate : today.getFullYear() + 1,
+		enddate : today.getFullYear() + 4,
 		
 		// offset from the top left corner of the input element
 		x : 18, // must be in px
