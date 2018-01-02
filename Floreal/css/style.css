@@ -448,8 +448,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /*Карточка товара*/
 .product_card {
-    margin-top: 50px;
-    padding-top: 50px;
+    padding-top: 40px;
     display: flex;
 }
 .product_card .product_image {
@@ -462,7 +461,7 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 100%;
 }
 .product_card .product_description {
-    margin: 7% 0 0 9%;
+    margin: 7% 0 0 8%;
     width: 308px;
     color: #3e3e3e;
 }
@@ -473,7 +472,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .product_card .product_description p {
     font: 100 18px/30px Roboto-Light;
-    margin: 37px 0;
+    margin: 30px 0;
 }
 .product_card .product_description .price_new {
     font: 200 26px/30px Roboto-Medium;
@@ -490,7 +489,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .quantity_goods {
     border: 1px solid #d5d5d5;
     display: inline-block;
-    margin: 40px 20px 0 0;
+    margin: 33px 20px 0 0;
     height: 42px;
     vertical-align: bottom;
 }
@@ -520,7 +519,7 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 55px;
     font: 200 20px/20px Roboto-Bold;
     color: #3e3e3e;
-    vertical-align: baseline;
+    vertical-align: text-bottom;
 }
 .product_card .product_description form {
     display: inline-block;
@@ -529,7 +528,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .product_description .share {
     margin-top: 40px;
     border-top: 1px dashed #e0dfdf;
-    padding-top: 35px;
+    padding: 35px 0;
     position: relative;
 }
 .hide {
@@ -558,6 +557,14 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .empty {
     padding-bottom: 205px;
+}
+.product_card + .text {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.product_card + .text h3 {
+    margin: 0;
+    padding: 48px 0 32px;
 }
 
 /*Меню над каталогом*/
@@ -1045,7 +1052,7 @@ phone_buyer_number {
 .search_title {
     display: flex;
     align-items: center;
-    margin: 38px 0 30px;
+    margin: 30px 0 30px;
     padding: 55px 48px;
 }
 .search_title h1 {
@@ -1164,6 +1171,29 @@ phone_buyer_number {
     }    
 }
 @media (max-width: 979px) {
+    #search_open {
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        box-shadow: 1px 0px 16px 0px rgba(12,12,12,0.04);
+    }
+    input[type="search"] {
+        height: 79px;
+        padding: 0 7% 0;
+        border-radius: 0;
+    }
+    input[type="search"]::placeholder {
+        font: 14px/16px Roboto-Regular;
+        color: #7c7c7c;
+    }
+    .search_2 {
+        top: 31px;
+    }
+    input[type="search"]::-webkit-search-cancel-button {
+        top: 31px;
+    }
     .menuToggle {
         display: block;
     }
@@ -1191,7 +1221,6 @@ phone_buyer_number {
         display: none;
     }
     .search_title {
-        padding-left: 0;
         flex-wrap: wrap;
     }
     .search_title h1 {
@@ -1201,7 +1230,7 @@ phone_buyer_number {
 @media (max-width: 768px) {
     button[type="submit"] {
         font: 200 34px/34px Roboto-Medium;
-        width: 319px;
+        width: 278px;
         height: 92px;
         float:right;
     }
@@ -1375,7 +1404,7 @@ phone_buyer_number {
         font: 200 50px/50px Roboto-Medium;
         border-bottom: 0;
         position: absolute;
-        top: 8.5%;
+        top: 7%;
         left: 5%;
     }
     .product_card .product_description p {
@@ -1395,6 +1424,7 @@ phone_buyer_number {
         width: 47%;
         height: 18%;
         position: relative;
+        vertical-align: baseline;
     }
     .quantity_goods .button_minus {
         font: 44px/44px Roboto-Regular;
@@ -1420,6 +1450,7 @@ phone_buyer_number {
     .product_description .share {
         border-top: 0;
         margin-top: 6%;
+        padding: 35px 0 0;
     }
     .hide + label {
         background-image: url(../icons/mobile/icon_share_2.svg);
@@ -1436,18 +1467,13 @@ phone_buyer_number {
     .hide + label + div a img {
         width: 100%;
     }
-    .text2 {
-        box-shadow: none;
-        padding: 22% 0 9%;
+    .product_card + .text {
+        padding-top: 16%;   
+        padding-left: 0;
+        padding-right: 0;
     }
-    .text2 h3 {
-        font: 34px/40px Roboto-Regular;
-    }
-    .text2 p {
-        font: 24px/30px Roboto-Regular;
-    }
-    .empty {
-        padding-bottom: 0;
+    .product_card + .text h3 {
+        padding: 11% 0 4%;
     }
 /*Контакты*/
     .company-info {
@@ -1545,6 +1571,7 @@ phone_buyer_number {
     }
     .search_title h1 {
         font: 200 50px/55px Roboto-Medium;
+        margin-top: 10px;
     }
 /*Корзина и заказ*/
     .order {
@@ -1801,6 +1828,9 @@ phone_buyer_number {
     .search_title h1 {
         font: 200 32px/32px Roboto-Medium;
     }
+    button[type="submit"] {
+        font: 200 34px/34px Roboto-Medium;
+        width: 253px;
 }
 
 @media (max-width: 600px) {
@@ -1856,6 +1886,7 @@ phone_buyer_number {
 /*Карточка товара*/    
     .product_card .product_description h2 {
         font: 200 32px/30px Roboto-Medium;
+        top: 8%;
     }
     .product_card .product_description p {
         font: 100 20px/30px Roboto-Light;
@@ -1887,11 +1918,8 @@ phone_buyer_number {
         font: 16px/18px Roboto-Regular;
         padding: 2% 0 2% 14%;
     }
-    .text2 h3 {
-        font: 25px/30px Roboto-Regular;
-    }
-    .text2 p {
-        font: 20px/30px Roboto-Regular;
+    .product_card + .text {
+        padding-top: 5%;
     }
 /*Текстовая страница*/    
     .text_page {
@@ -1920,7 +1948,6 @@ phone_buyer_number {
     }
     .catalog_goods {
         margin-right: -15px;
-        padding-top: 15px;
     }
     .catalog_goods .catalog-item {
         padding: 20px 10px 0;
@@ -2269,7 +2296,7 @@ phone_buyer_number {
         font: 200 16px/30px Roboto-Medium;
     }
 }
-@media (orientation: landscape) {
+@media screen and (max-device-width:1024px) and (orientation:landscape) {
     .header {
         position: static;
     }
