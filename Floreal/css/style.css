@@ -1616,7 +1616,7 @@ phone_buyer_number {
     .order_item .basket_info {
         flex-wrap: wrap;
         flex-direction: column;
-        flex-basis: auto;
+        flex-basis: inherit;
         align-items: left;
         margin-left: 10px;
     }
