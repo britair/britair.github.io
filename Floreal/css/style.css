@@ -1333,14 +1333,13 @@ phone_buyer_number {
     }
     .catalog {
         margin-top: 20px;
-        margin-right: -10px; 
+        margin-right: -40px; 
     }
     .catalog-item {
-        flex-basis: 45%;
+        flex-basis: 44%;
     }
     .catalog .catalog-item {
-        margin-right: 15px;
-        margin-bottom: 15px;
+        margin: 20px 40px 20px 0;
     }
     .catalog .catalog-item h2 {
         font-size: 35px;
