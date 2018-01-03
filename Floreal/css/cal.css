@@ -108,36 +108,4 @@
     }
 }
 
-@media (max-width: 600px) {
-    .datepicker select {
-        font: 100 26px/44px Roboto-Medium;
-    }
-    .datepicker th, .datepicker tfoot td {
-        font: 23px/51px Roboto-Regular; 
-    }
-    .datepicker tbody td {
-        font: 23px/51px Roboto-Regular;
-    }
-}
-@media (max-width: 400px) {
-    .datepicker {
-        margin-top: 64px;
-    }
-    .datepicker select {
-        font: 100 16px/25.65px Roboto-Medium;
-    }
-    .prevMonth {
-        width: 6px;
-        height: 11px;
-    }
-    .nextMonth {
-        width: 6px;
-        height: 11px;
-    }
-    .datepicker th {
-        font: 14px/45px Roboto-Regular;
-    }
-    .datepicker tbody td {
-        font: 14px/34px Roboto-Regular;
-    }
-}
+
