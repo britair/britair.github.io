@@ -791,7 +791,7 @@ input[type="search"]::-webkit-search-cancel-button {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-basis: 60%;
+    
 }
 .basket_info h2 {
     color: #3e3e3e;
@@ -1616,7 +1616,6 @@ phone_buyer_number {
     .order_item .basket_info {
         flex-wrap: wrap;
         flex-direction: column;
-        flex-basis: inherit;
         align-items: left;
         margin-left: 10px;
     }
