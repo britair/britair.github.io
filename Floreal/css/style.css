@@ -773,6 +773,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .order_item {
     display: flex;
+    display: -webkit-flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px 0 11px;
