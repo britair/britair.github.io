@@ -157,7 +157,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .menuMobile {
     display: none;
     width: 100%;
-    height: 900px;
+    height: 950px;
     background: white;
     position: absolute;
     top: 79px;
@@ -1544,11 +1544,13 @@ phone_buyer_number {
         padding: 34px 0;
     }
     .catalog_goods {
-        margin-right: -50px;
+        margin-right: -40px;
+        margin-top: 20px;
+        padding-top: 0;
     }
     .catalog_goods .catalog-item {
         padding: 20px 15px 0;
-        margin-right: 30px;
+        margin: 20px 40px 20px 0;
     }
     .catalog-item .description h3 {
         font: 100 24px/9px Roboto-Light;
