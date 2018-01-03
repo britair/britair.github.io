@@ -85,7 +85,7 @@ $(document).ready(function(){
 /*Выбор времени - Selectric*/
 $(function() {
   $('#delivery_time').selectric({
-      /*nativeOnMobile: true,*/
+      nativeOnMobile: true,
   });
 }); 
 
