@@ -1801,6 +1801,15 @@ phone_buyer_number {
     }
 }
 
+@media screen and (max-device-width:1024px) and (orientation:landscape) {
+    .header {
+        position: static;
+    }
+    .fix {
+        position: static;
+    }
+}
+
 @-moz-document url-prefix() { /*для Mozilla*/
     .total p {
         margin: 6% 0 4%;
