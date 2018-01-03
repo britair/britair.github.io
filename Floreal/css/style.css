@@ -157,7 +157,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .menuMobile {
     display: none;
     width: 100%;
-    height: 950px;
+    height: 920px;
     background: white;
     position: absolute;
     top: 79px;
@@ -190,6 +190,7 @@ input[type="search"]::-webkit-search-cancel-button {
     justify-content: space-around;
     align-items: center;
     padding: 4% 0;
+    box-shadow: 1px 0px 16px 0px rgba(12,12,12,0.1);
 }
 .footer_mobile a {
     font-size: 34px;
@@ -1458,6 +1459,9 @@ phone_buyer_number {
         padding-left: 9%;
         background-position: left;
     }
+    .hide + label + div {
+        bottom: -18px;
+    }
     .hide + label + div a {
         display: inline-block;
         width: 60px;
@@ -1497,6 +1501,9 @@ phone_buyer_number {
     .company-info .contact:nth-child(2) div ul:first-child {
         margin-right: 15%;
     }   
+    .map_container {
+        padding-bottom: 70%;
+    }
 /*Текстовая страница*/    
     .text_page {
         box-shadow: none;
