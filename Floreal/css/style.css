@@ -157,7 +157,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .menuMobile {
     display: none;
     width: 100%;
-    height: 920px;
+    height: 945px;
     background: white;
     position: absolute;
     top: 79px;
@@ -1233,7 +1233,7 @@ phone_buyer_number {
 @media (max-width: 768px) {
     button[type="submit"] {
         font: 200 34px/34px Roboto-Medium;
-        width: 278px;
+        width: 319px;
         height: 92px;
         float:right;
     }
@@ -1374,6 +1374,7 @@ phone_buyer_number {
     }
     .order_sent .container {
         padding: 25% 0;
+        box-shadow: none;
     }
     .order_sent .container h2 {
         font: normal 42px/45px Roboto-Regular;
@@ -1405,7 +1406,7 @@ phone_buyer_number {
         font: 200 50px/50px Roboto-Medium;
         border-bottom: 0;
         position: absolute;
-        top: 7%;
+        top: 165px;
         left: 5%;
     }
     .product_card .product_description p {
@@ -1422,8 +1423,9 @@ phone_buyer_number {
     }
     .quantity_goods {
         margin: 11% 3% 0 0;
-        width: 47%;
-        height: 18%;
+        width: 319px;
+        height: 92px;
+        box-sizing: border-box;
         position: relative;
         vertical-align: baseline;
     }
@@ -1472,7 +1474,6 @@ phone_buyer_number {
         width: 100%;
     }
     .product_card + .text {
-        padding-top: 16%;   
         padding-left: 0;
         padding-right: 0;
     }
