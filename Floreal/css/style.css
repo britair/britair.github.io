@@ -449,6 +449,7 @@ input[type="search"]::-webkit-search-cancel-button {
 /*Карточка товара*/
 .product_card {
     padding-top: 40px;
+    margin-top: 50px;
     display: flex;
 }
 .product_card .product_image {
@@ -537,7 +538,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .hide + label + div {
     display: none;
     position: absolute;
-    bottom: -10px;
+    bottom: 25px;
     background: white;
     width: 100%;
 }
@@ -1222,6 +1223,7 @@ phone_buyer_number {
     }
     .search_title {
         flex-wrap: wrap;
+        padding: 20px 48px;
     }
     .search_title h1 {
         margin-bottom: 20px;
@@ -1334,8 +1336,7 @@ phone_buyer_number {
         margin-right: -10px; 
     }
     .catalog-item {
-        flex-basis: 42%;
-        flex-grow: 1;
+        flex-basis: 45%;
     }
     .catalog .catalog-item {
         margin-right: 15px;
@@ -1528,7 +1529,7 @@ phone_buyer_number {
         width: 100%;
     }
     .catalog_menu .breadcrumbs_right .sorting {
-        margin: 0 10px 0 0;
+        margin: 0 20px 0 0;
     }
     .catalog_menu .breadcrumbs_right .sorting::after {
         content: url(../icons/mobile/icon_sort_1.svg);
@@ -1544,7 +1545,7 @@ phone_buyer_number {
         padding: 34px 0;
     }
     .catalog_goods {
-        margin-right: -30px;
+        margin-right: -50px;
     }
     .catalog_goods .catalog-item {
         padding: 20px 15px 0;
@@ -1794,6 +1795,9 @@ phone_buyer_number {
     .total form button {
         width: 100%;
         font: 200 46px/46px Roboto-Medium;
+    }
+    .empty {
+        padding-bottom: 30px;
     }
 }
 
