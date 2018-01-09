@@ -1374,6 +1374,7 @@ phone_buyer_number {
     }
     .text h3, .text h4 {
         font: normal 34px/36px Roboto-Regular;
+        margin: 3% 0 5%;
     }
     .text p {
         font: normal 24px/30px Roboto-Regular;
