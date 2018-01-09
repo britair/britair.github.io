@@ -75,7 +75,7 @@ button[type="submit"]:hover {
 .phone {
     background-image: url(../icons/icon_call.svg);
     background-repeat: no-repeat;
-    margin-left: 28px;
+    margin-left: 25px;
 }
 .phone a {
     padding-left: 29px;
@@ -157,7 +157,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .menuMobile {
     display: none;
     width: 100%;
-    height: 945px;
+    height: 1247px;
     background: white;
     position: absolute;
     top: 79px;
@@ -168,7 +168,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .menuMobile ul {
     position: relative;
-    padding-bottom: 250px;
+    padding-bottom: 395px;
 }
 .menuMobile ul li {
     display: block;
@@ -277,14 +277,14 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .banner .container .right {
     flex-basis: 45%;
-    margin: 120px 0 0 169px;
+    margin: 123px 0 0 174px;
 }
 .banner .container .right h1 {
     font: 200 32px/38px Roboto-Medium;
 }
 .banner .container .right p {
     font: 100 22px/26px Roboto-Light;
-    margin: 26px 0 0 5px;
+    margin: 27px 0 0 4px;
 }
 .banner .container .right button {
     margin: 35px 0 0 6px;
@@ -330,7 +330,12 @@ input[type="search"]::-webkit-search-cancel-button {
 .text h3 {
     font: normal 20px/22px Roboto-Regular;
     color: #3e3e3e;
-    margin: 3% 0;
+    margin: 3% 0 2%;
+}
+.text h4 {
+    font: normal 20px/22px Roboto-Regular;
+    color: #3e3e3e;
+    margin: 2% 0 2%;
 }
 .text p {
     font: normal 16px/22px Roboto-Regular;
@@ -358,6 +363,21 @@ input[type="search"]::-webkit-search-cancel-button {
 .footer-text {
     font-family: Roboto-Light;
     font-size: 16px;
+    margin-left: 10px;
+}
+.footer-text1 {
+    font-family: Roboto-Light;
+    font-size: 16px;
+}
+.phone1 {
+    background-image: url(../icons/icon_call.svg);
+    background-repeat: no-repeat;
+}
+.phone1 a {
+    padding-left: 29px;
+    font-family: Roboto-Medium;
+    font-size: 18px;
+    line-height: 18px;
 }
 .vk {
     margin-right: 20px;
@@ -1159,7 +1179,7 @@ phone_buyer_number {
     .order_info .receiver form {
         width: 100%;
         margin-right: 0;
-        margin-bottom: 23px; 
+        margin-bottom: 31px; 
     }
     .order_info .receiver form input {
         width: 92%;
@@ -1221,7 +1241,7 @@ phone_buyer_number {
         padding: 61px 40px;
         justify-content: space-around;
     }
-    .footer-text {
+    .footer-text, .footer-text1 {
         display: none;
     }
     .search_title {
@@ -1343,16 +1363,17 @@ phone_buyer_number {
     }
     .catalog .catalog-item {
         margin: 20px 40px 20px 0;
+        padding: 18px 15px 0;
     }
     .catalog .catalog-item h2 {
-        font-size: 35px;
+        font: 38px/40px Roboto-Medium;
     }
     .text {
         padding-bottom: 35px;
         padding-top: 20px;
         box-shadow: none;
     }
-    .text h3 {
+    .text h3, .text h4 {
         font: normal 34px/36px Roboto-Regular;
     }
     .text p {
@@ -1759,15 +1780,15 @@ phone_buyer_number {
         margin-bottom: 18px;
     }
     .order_info .payment #online + label {
-        font: 36px/36px Roboto-Regular;
+        font: 36px/42px Roboto-Regular;
         width: 100%;
         border: 2px solid #e0e0e0;
         height: 176px;
         margin-right: 0;
-        padding-left: 33%;
-        padding-top: 7%;
+        padding-left: 32%;
+        padding-top: 6%;
         background-image: url(../icons/mobile/icon_card_1.svg);
-        background-position: 10% 50%;
+        background-position: 9% 46%;
     }
     .order_info .payment label .check-mark {
         width: 42px;
@@ -1779,15 +1800,15 @@ phone_buyer_number {
         border-color: #c93259;
     }
     .order_info .payment #cash + label {
-        font: 36px/36px Roboto-Regular;
+        font: 36px/42px Roboto-Regular;
         width: 100%;
         border: 2px solid #e0e0e0;
         height: 176px;
         margin-right: 0;
-        padding-left: 33%;
+        padding-left: 32%;
         padding-top: 7%;
         background-image: url(../icons/mobile/icon_wallet_1.svg);
-        background-position: 10% 50%;
+        background-position: 11% 46%;
     }
     .order_info .payment #cash:checked + label {
         background-image: url(../icons/mobile/icon_wallet_2.svg);
@@ -1797,7 +1818,7 @@ phone_buyer_number {
         margin-right: 0;
         text-align: center;
         width: 100%;
-        margin-top: 6%;
+        margin-top: 6.5%;
     }
     .total p {
         font: 100 43px/43px Roboto-Light;
