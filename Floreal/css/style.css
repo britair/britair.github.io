@@ -157,7 +157,6 @@ input[type="search"]::-webkit-search-cancel-button {
 .menuMobile {
     display: none;
     width: 100%;
-    height: 1247px;
     background: white;
     position: absolute;
     top: 79px;
@@ -168,7 +167,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .menuMobile ul {
     position: relative;
-    padding-bottom: 395px;
+    padding-bottom: 250px;
 }
 .menuMobile ul li {
     display: block;
