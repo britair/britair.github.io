@@ -1293,7 +1293,7 @@ phone_buyer_number {
     button[type="submit"] {
         font: 200 34px/34px Roboto-Medium;
         width: 319px;
-        height: 92px;
+        height: 113px;
         float:right;
     }
     .successfully + h2 + p + form button[type="submit"] {
