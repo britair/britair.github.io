@@ -1,25 +1,16 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
 
-$(function () {
-    jQuery.fx.speeds.fast = 10;
-});
-
-$(document).click( function(event){
-	if( $(event.target).closest("#search_open").length ) 
-	return;
-	$("#search_open").slideUp("fast");
-    $(".header .menu").slideDown("fast");
-    $("#search").slideDown("fast");
-	event.stopPropagation();
-});
-
-$('#search').click( function() {
-    $(this).siblings("#search_open").slideToggle("fast");
-    $(this).siblings(".menu").slideToggle("fast");
-    $(this).slideToggle();
-    return false;
-});
+var search = document.querySelector("#search");
+var search_open = document.querySelector("#search_open");
+var search_close = document.querySelector("#search_close");
+        search.onclick = function() {
+        search_open.style.display = "block";
+        };
+        search_close.onclick = function() {
+        search_open.style.display = "none";
+        };
+        
 
 /*Мобильное меню*/
 $(function () {
@@ -66,6 +57,7 @@ minusBtn.click(function() {
     }
     numCount.val(i);
 });
+
 
 /*Если адрес не будет найден, мы перезвоним вам по номеру*/
 $(document).ready ( function(){

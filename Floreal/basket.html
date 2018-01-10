@@ -25,6 +25,7 @@
                 <form id="search_open">
                     <input type="search" placeholder="Поиск по каталогу">
                     <span class="search_2"></span>
+                    <span id="search_close"></span>
                 </form>
                 <div class="menu">
                     <ul>
@@ -160,16 +161,19 @@
                 <h2>О получателе</h2>
                 <div class="receiver">
                     <form action="" method="post">
-                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Имя" >
+                        <p class="plh-up">Имя</p>
                     </form>
                     <form action="" method="post">
                         <input type="tel" id="phone_receiver" placeholder="Телефон">
+                        <p class="plh-up">Телефон</p>
                     </form>
                 </div>
                 <div class="receiver">
                     <form action="" method="post">
                         <sup>*</sup>
                         <input type="text" id="calendar" placeholder="Дата доставки" required>
+                        <p class="plh-up">Дата доставки</p>
                     </form>
                     <form action="" method="post">
                         <sup>*</sup>
@@ -206,6 +210,7 @@
                     <form action="" method="post" class="address">
                         <sup>*</sup>
                         <input type="text" placeholder="Адрес доставки, ул, дом, кв" required>
+                        <p class="plh-up">Адрес доставки, ул, дом, кв</p>
                     </form>
                     <span>Если адрес не будет найден, мы перезвоним вам по номеру: <span id="phone_buyer_number"></span></span>
                 </div>
@@ -220,7 +225,7 @@
                     </form>
                 </div>
                 <form class="checkbox">
-                    <label><input type="checkbox" class="hide" required><span></span>Даю согласие на обработку моих персональных данных в соответствии с условиями и <a href="">политикой конфиденциальности</a></label>
+                    <label><input type="checkbox" class="hide" required checked><span></span>Даю согласие на обработку моих персональных данных в соответствии с условиями и <a href="">политикой конфиденциальности</a></label>
                 </form>
             </div>
         </div> 
