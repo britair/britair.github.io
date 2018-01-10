@@ -1784,6 +1784,15 @@ phone_buyer_number {
         margin-left: 35px;
         width: 90%;
     }
+    .order_info .receiver form .plh-up {
+        top: 12px;
+        left: 35px;
+        font: 28px/28px Roboto-Regular;
+    }
+    .order_info .receiver form input:focus {
+        height: 60px;
+        margin-top: 37px;
+    }
     #calendar {
         background-image: url(../icons/mobile/icon_calendar.svg);
     }
