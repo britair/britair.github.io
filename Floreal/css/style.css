@@ -99,7 +99,7 @@ button[type="submit"]:hover {
 }
 input[type="search"] {
     border: 1px solid #eaeaea;
-    font: 14px/14px Roboto-Regular;
+    font: 14px/18px Roboto-Regular;
     width: 100%;
     height: 43px;
     border-radius: 8px;
@@ -1342,9 +1342,10 @@ phone_buyer_number {
         height: 120px;
         padding: 15px 16% 0;
         border-radius: 0;
+        font: 35px/42px Roboto-Regular;
     }
     input[type="search"]::placeholder {
-        font: 35px/38px Roboto-Regular;
+        font: 35px/42px Roboto-Regular;
         color: #7c7c7c;
     }
     .search_2 {
@@ -1813,12 +1814,12 @@ phone_buyer_number {
         display: block;
     }
     .order_info .checkbox label input[type="checkbox"] + span {
-        width: 22px;
-        height: 22px;
+        width: 26px;
+        height: 24px;
         background-size: cover;
     }
     .order_info .checkbox label input[type="checkbox"]:checked + span {
-        background-position: -56px 0;
+        background-position: -60px 0;
     }
     .order_info .payment {
         flex-wrap: wrap;
