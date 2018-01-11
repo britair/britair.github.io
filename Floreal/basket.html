@@ -161,19 +161,19 @@
                 <h2>О получателе</h2>
                 <div class="receiver">
                     <form action="" method="post">
-                        <input type="text" placeholder="Имя" >
-                        <p class="plh-up">Имя</p>
+                        <input type="text" required>
+                        <label>Имя</label>
                     </form>
                     <form action="" method="post">
-                        <input type="tel" id="phone_receiver" placeholder="Телефон">
-                        <p class="plh-up">Телефон</p>
+                        <input type="tel" id="phone_receiver" required>
+                        <label>Телефон</label>
                     </form>
                 </div>
                 <div class="receiver">
                     <form action="" method="post">
                         <sup>*</sup>
-                        <input type="text" id="calendar" placeholder="Дата доставки" required>
-                        <p class="plh-up">Дата доставки</p>
+                        <input type="text" id="calendar" required>
+                        <label>Дата доставки</label>
                     </form>
                     <form action="" method="post">
                         <sup>*</sup>
@@ -204,13 +204,14 @@
                             <option>22:00 ― 23:00</option>
                             <option>23:00 ― 24:00</option>
                         </select>
+                        <p class="label-up">Время доставки</p>
                     </form>
                 </div>
                 <div class="receiver">
                     <form action="" method="post" class="address">
                         <sup>*</sup>
-                        <input type="text" placeholder="Адрес доставки, ул, дом, кв" required>
-                        <p class="plh-up">Адрес доставки, ул, дом, кв</p>
+                        <input type="text" required>
+                        <label>Адрес доставки, ул, дом, кв</label>
                     </form>
                     <span>Если адрес не будет найден, мы перезвоним вам по номеру: <span id="phone_buyer_number"></span></span>
                 </div>

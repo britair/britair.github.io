@@ -5,8 +5,9 @@
     z-index:1000;
     color: #3e3e3e;
     background: white;
-    margin-top: -16px;
-    margin-left: -35px;
+    margin-top: -18px;
+    margin-left: -39px;
+    box-shadow: 1px 0px 16px 0px rgba(12,12,12,0.04);
 }
 .datepicker tr.controls th {
     height: 22px; 
@@ -26,7 +27,7 @@
 }
 .datepicker tr.days th { 
     height: 18px; 
-    width: 45px;
+    width: 46px;
 }
 .datepicker tfoot td { 
     display: none;
@@ -80,8 +81,8 @@
 @media (max-width: 768px) {
     .datepicker {
         margin-top: 102px;
-        margin-left: -44px;
-        width: 87%;
+        margin-left: -53px;
+        width: 90%;
     }
     .datepicker select {
         font: 100 34px/55px Roboto-Medium;
