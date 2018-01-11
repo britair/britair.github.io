@@ -202,7 +202,7 @@
         font: normal 36px/36px Roboto-Regular;
         background-image: url(../icons/mobile/icon_time.svg);
         background-position: 100% 50%;
-        padding: 12px 0 12px 10px;
+        padding: 12px 0 12px 15px;
         width: 90%;
     }
     .selectric-items li {
