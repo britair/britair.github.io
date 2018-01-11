@@ -1363,6 +1363,7 @@ phone_buyer_number {
         height: 40px;
         right: 5%;
         top: 33%;
+        font-size: 20px;
     }
     .basket {
         background-image: url(../icons/mobile/icon_basket_2.svg);
