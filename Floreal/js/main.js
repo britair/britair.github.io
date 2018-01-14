@@ -77,13 +77,16 @@ $(document).ready(function(){
 /*Выбор времени - Selectric*/
 $(function() {
   $('#delivery_time').selectric({
-      nativeOnMobile: true,
+      nativeOnMobile: false,
+      disableOnMobile:false,
       onChange: function() {
           $('.selectric .prepend_label').remove();
           var select_val = $('.selectric .label').text();
           if(select_val != 'Время доставки'){
               $('.selectric').prepend("<span class='prepend_label'>Время доставки</span>");
           }
+          console.log(select_val);
+          console.log("2");
       }
   });
 }); 

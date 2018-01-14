@@ -1610,6 +1610,13 @@ input[type="search"]::-webkit-search-cancel-button {
         font: 30px/54px Roboto-Regular;
     }
 /*Каталог*/
+    .fix {
+       position: static;
+    }
+    .no-fix {
+        position: sticky;
+        position: -webkit-sticky;
+    }
     .catalog_menu h1 {
         font: 200 50px/55px Roboto-Medium;
         margin-bottom: 20px;
@@ -1824,7 +1831,21 @@ input[type="search"]::-webkit-search-cancel-button {
         font: 28px/28px Roboto-Regular;
         color: #a9a9a9;
     }
-    
+    .prepend_label {
+        top: 12px;
+        font: 28px/28px Roboto-Regular;
+        color: #a9a9a9;
+        left: 35px;
+    }
+    .selectric .label{
+
+    }
+    .selectric .prepend_label~.label{
+        margin: 31px 0 6px 19px;
+        padding: 16px 0 0 15px;
+        background-position: 92% 8%;
+        width: 98%;
+    }
     #calendar {
         background-image: url(../icons/mobile/icon_calendar.svg);
     }
