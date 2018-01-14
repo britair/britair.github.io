@@ -954,6 +954,21 @@ input[type="search"]::-webkit-search-cancel-button {
     font: normal 12px/14px Roboto-Regular;
     color: #a9a9a9;
 }
+.order_info .receiver form textarea:focus~label {
+    top: 12px;
+    font: normal 12px/14px Roboto-Regular;
+    color: #a9a9a9;
+}
+/*.order_info .receiver form textarea:not([value=""]):not(:focus)~label {
+    top: 12px;
+    font: normal 12px/14px Roboto-Regular;
+    color: #a9a9a9;
+}*/
+.order_info .receiver form textarea~.empty_label{
+    top: 12px;
+    font: normal 12px/14px Roboto-Regular;
+    color: #a9a9a9;
+}
 .order_info .receiver form .label-up { /*Время доставки*/
     position: absolute;
     font: normal 12px/14px Roboto-Regular;
@@ -962,7 +977,24 @@ input[type="search"]::-webkit-search-cancel-button {
     left: 19px;
     display: none;
 }
-phone_buyer_number {
+.prepend_label {
+    position: absolute;
+    left: 19px;
+    pointer-events: none;
+    top: 11px;
+    font: normal 12px/14px Roboto-Regular;
+    color: #a9a9a9;
+}
+.selectric .label{
+    margin: 14px 0 14px 19px;
+    padding:10px 0 0 0;
+}
+.selectric .prepend_label~.label{
+    margin: 14px 0 6px 19px;
+    padding: 16px 0 0 0;
+    background-position: 94% 36%;
+}
+.phone_buyer_number {
     white-space: nowrap;
 }
 #calendar {
@@ -1880,6 +1912,10 @@ phone_buyer_number {
     }
     .empty {
         padding-bottom: 30px;
+    }
+    .selectric .label{
+        margin: 19px 0 14px 39px;
+        padding-bottom: 10px;
     }
 }
 

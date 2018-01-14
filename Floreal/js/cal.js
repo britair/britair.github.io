@@ -159,7 +159,7 @@
 			// figure out what month and year to load
 			var m = jQuery("select[name=month]", datepicker).val();
 			var y = jQuery("select[name=year]", datepicker).val();
-			var d = new Date(y, m, 1);
+			var d = new Date(y, m, 0);
 			var startindex = d.getDay();
 			var numdays = monthlengths[m];
 			
@@ -179,7 +179,7 @@
 			// walk through the index and populate each cell, binding events too
 			for (var i = 0; i < numdays; i++) {
 			
-				var cell = jQuery(cells.get(i+startindex-1)).removeClass('chosen');
+				var cell = jQuery(cells.get(i+startindex)).removeClass('chosen');
 				
 				// test that the date falls within a range, if we have a range
 				if ( 
@@ -287,9 +287,14 @@
     // way to do this is to add a property to the already-public plugin fn
 
 	jQuery.fn.simpleDatepicker.formatOutput = function (dateObj) {
-		return  dateObj.getDate() + "/" + (dateObj.getMonth() + 1) + "/" + dateObj.getFullYear();	
+		var month = dateObj.getMonth();
+		var string_month = month.toString();
+		var add_zero = "0";
+		if(string_month.length > 1){
+			add_zero = "";
+		}
+		return  dateObj.getDate() + "/" + add_zero + (month + 1) + "/" + dateObj.getFullYear();
 	};
-	
 	jQuery.fn.simpleDatepicker.defaults = {
 		// date string matching /^\d{1,2}\/\d{1,2}\/\d{2}|\d{4}$/
 		chosendate : today,

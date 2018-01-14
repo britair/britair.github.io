@@ -78,6 +78,13 @@ $(document).ready(function(){
 $(function() {
   $('#delivery_time').selectric({
       nativeOnMobile: true,
+      onChange: function() {
+          $('.selectric .prepend_label').remove();
+          var select_val = $('.selectric .label').text();
+          if(select_val != 'Время доставки'){
+              $('.selectric').prepend("<span class='prepend_label'>Время доставки</span>");
+          }
+      }
   });
 }); 
 
@@ -102,4 +109,13 @@ $(document).ready(function(){
         }, 400);
         return false;
     });
+});
+$('.order_info .receiver form textarea').change(function () {
+    if ($.trim($(this).val()).length < 1) {
+        console.log("Поле не заполнено");
+        $(this).siblings('label').removeClass('empty_label');
+    } else {
+        console.log("Поле заполнено");
+        $(this).siblings('label').addClass('empty_label');
+    }
 });
