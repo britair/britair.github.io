@@ -207,8 +207,12 @@
         padding: 12px 0 12px 15px;
     }
     .selectric-items li {
-        font: normal 34px/73px Roboto-Regular;
+        font: normal 28px/68px Roboto-Regular;
         padding-left: 35px;
     }
-    
+    .selectric-items .selectric-scroll {
+        height: 200%;
+        overflow: auto;
+        background: white;
+    }
 }
