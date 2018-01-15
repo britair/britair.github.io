@@ -959,11 +959,6 @@ input[type="search"]::-webkit-search-cancel-button {
     font: normal 12px/14px Roboto-Regular;
     color: #a9a9a9;
 }
-/*.order_info .receiver form textarea:not([value=""]):not(:focus)~label {
-    top: 12px;
-    font: normal 12px/14px Roboto-Regular;
-    color: #a9a9a9;
-}*/
 .order_info .receiver form textarea~.empty_label{
     top: 12px;
     font: normal 12px/14px Roboto-Regular;
@@ -1837,14 +1832,14 @@ input[type="search"]::-webkit-search-cancel-button {
         color: #a9a9a9;
         left: 35px;
     }
-    .selectric .label{
-
-    }
     .selectric .prepend_label~.label{
         margin: 31px 0 6px 19px;
         padding: 16px 0 0 15px;
         background-position: 92% 8%;
         width: 98%;
+    }
+    .order_info .receiver form textarea~.empty_label{
+        font: normal 28px/28px Roboto-Regular;
     }
     #calendar {
         background-image: url(../icons/mobile/icon_calendar.svg);
@@ -1858,10 +1853,13 @@ input[type="search"]::-webkit-search-cancel-button {
     }
     .order_info .receiver .comments textarea {
         font: normal 36px/36px Roboto-Regular;
-        padding: 23px 0 0 35px;
+        padding: 38px 0 0 35px;
+    }
+    .order_info .receiver form textarea:focus~label {
+        font: normal 28px/28px Roboto-Regular;
     }
     .order_info .checkbox label {
-        font: 26px/30px Roboto-Light;
+        font: 25px/30px Roboto-Light;
         padding-left: 35px;
         display: block;
     }
