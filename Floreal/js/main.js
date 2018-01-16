@@ -113,6 +113,8 @@ $(document).ready(function(){
         return false;
     });
 });
+
+/*Подъем label при фокусе на форме*/
 $('.order_info .receiver form textarea').change(function () {
     if ($.trim($(this).val()).length < 1) {
         console.log("Поле не заполнено");
