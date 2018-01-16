@@ -1574,20 +1574,17 @@ input[type="search"]::-webkit-search-cancel-button {
         padding-left: 0;
         width: 100%;
     }
-    .company-info .contact:first-child {
-        padding-bottom: 0;
-    }
     .company-info .contact h1 {
         font: 50px/55px Roboto-Medium;
     }
     .company-info .contact div ul {
-        font: 30px/54px Roboto-Regular;
+        font: 29px/54px Roboto-Regular;
     }
     .company-info .contact div ul:first-child {
-        margin-right: 0;
+        margin-right: 60px;
     }
     .company-info .contact:last-child div ul:first-child {
-        margin-right: 56px;
+        margin-right: 104px;
     }
     .map_container {
         padding-bottom: 70%;
