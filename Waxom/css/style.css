@@ -1,0 +1,931 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,body {
+	min-height: 100%;
+}
+body {
+    position: relative;
+}
+button {
+    cursor: pointer;
+}
+img {
+    width: 100%;
+}
+.header {
+    background: url(../img/bg-header.jpg) no-repeat center top;
+    background-size: cover;
+    min-height: 720px;
+    padding-top: 20px;
+}
+.footer {
+	width: 100%;
+	background-color: #ddd;
+}
+/*Шапка*/
+.navbar {
+    font-family: Montserrat-Light;
+    font-size: 14px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #c7b299;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../img/menuToggle.png);
+}
+.navbar-toggler {
+    border: 0;
+}
+.logo-short {
+    width: 64px;
+    height: 56px;
+    display: none;
+}
+.icon-cart {
+    cursor: pointer;
+    display: inline-block;
+    height: 24px;
+    width: 18px;
+    background: url(../img/icon-header.png) no-repeat 0 0;
+    margin-right: 28px;
+}
+.icon-search {
+    cursor: pointer;
+    display: inline-block;
+    height: 24px;
+    width: 26px;
+    background: url(../img/icon-header.png) no-repeat -45px 0;
+    margin-bottom: 0;
+}
+.hide {
+    display: none;
+}
+input[type="search"] {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    padding-left: 10px;
+    display: none;
+}
+.hide:checked + form input {
+    display: block;
+}
+.navbar-expand-lg .navbar-collapse {
+    margin-right: 60px;
+}
+.carousel-inner {
+    margin: 0 auto;
+}
+.carousel-item {
+    padding: 180px 0;
+    color: white;
+}
+.carousel-item h1 {
+    font: 36px/40px Raleway-Medium;
+}
+.carousel-item h2 {
+    font: 800 52px/56px Raleway-Bold;
+}
+.carousel-item p {
+    font: 16px/24px Montserrat-Light;
+}
+.carousel-item button {
+    font: 800 14px/23px Raleway-Bold;
+    width: 170px;
+    height: 53px;
+    background: #998675;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    margin-top: 20px;
+    box-shadow: inset 0 -3px 0 #736357;
+}
+.carousel-item button:hover {
+    background: #7c746c;
+}
+.carousel-indicators li {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #8f8f92;
+}
+.carousel-indicators .active {
+    background-color: transparent;
+    border: 2px solid #d3c1ad;
+    border-radius: 50%;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+}
+.carousel-control-prev-icon {
+    width: 40px;
+    height: 73px;
+    background: url(../img/arrows.png) no-repeat 0 0;
+}
+.carousel-control-next-icon {
+    width: 40px;
+    height: 73px;
+    background: url(../img/arrows.png) no-repeat -49px 0;
+}
+.services {
+    text-align: center;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.services h1 {
+    font: 22px/26px Raleway-Semibold;
+    color: #555;
+    margin-top: 29px;
+}
+.services p {
+    font: 14px/24px Montserrat-Light;
+    color: #8c8c8c;    
+}
+.services hr {
+    width: 70px;
+    height: 3px;
+    background: #f1eee9;
+    margin: 0 auto;
+    border: 0;
+}
+.services a {
+    display: block;
+    margin: 0 auto;
+}
+.web-app {
+    width: 49px;
+    height: 49px;
+    background: url(../img/services.png) no-repeat -5px -3px;
+}
+.development {
+    background: url(../img/services.png) no-repeat -58px -11px;
+    width: 44px;
+    height: 40px;
+}
+.customiz {
+    background: url(../img/services.png) no-repeat -103px -8px;
+    width: 44px;
+    height: 44px;
+}
+.marketing {
+    background: url(../img/services.png) no-repeat -156px -12px;
+    width: 52px;
+    height: 36px;
+}
+.services:hover h1 {
+    color: #c7b299;
+}
+.services:hover hr {
+    background: #c7b299;
+}
+.services:hover .web-app {
+    background: url(../img/services.png) no-repeat -2px -54px;
+}
+.services:hover .development {
+    background: url(../img/services.png) no-repeat -58px -59px;
+}
+.services:hover .customiz {
+    background: url(../img/services.png) no-repeat -103px -55px;
+}
+.services:hover .marketing {
+    background: url(../img/services.png) no-repeat -156px -59px;
+}
+
+/*Блок 2*/
+.waxom-is {
+    background: #fbfaf8;
+    padding-top: 83px;
+}
+.waxom-is .container div {
+    margin: 0 auto;
+}
+.waxom-is .container div h1 {
+    font: 30px/36px Raleway-Semibold;
+    color: #555;
+}
+.waxom-is .container div p {
+    font: 16px/28px Montserrat-Light;
+    color: #8c8c8c; 
+    padding-bottom: 20px;
+}
+.waxom-is .container div img {
+    width: 100%;
+}
+
+/*Блок 3*/
+.text-boxes {
+    background-image: linear-gradient(to right, #211b19, #4e3427);
+    height: 150px; 
+    padding-top: 49px;
+}
+.text-boxes .container .row .col-12 h1 {
+    font: 28px/30px Raleway-Regular;
+    color: white;
+}
+.text-boxes .container .row .col-12 h1 span {
+    color: #c7b299;
+}
+.text-boxes .container .row .col-12 p {
+    font: 18px/20px Montserrat-Light;
+    color: #615855;
+}
+.text-boxes .container .row .col-12 button {
+    font: 800 14px/23px Raleway-Bold;
+    width: 170px;
+    height: 50px;
+    background: #998675;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    box-shadow: inset 0 -3px 0 #736357;
+}
+.text-boxes .container .row .col-12 button:hover {
+    background: #7c746c;
+}
+
+/*Блок 4*/
+.our-projects .container {
+    padding-top: 82px;
+}
+.our-projects .container .col-lg-8 {
+    margin: 0 auto;
+}
+.our-projects .container .col-lg-8 h1 {
+    font: 30px/36px Raleway-Semibold;
+    color: #555;
+}
+.our-projects .container .col-lg-8 p {
+    font: 16px/28px Montserrat-Light;
+    color: #8c8c8c; 
+    padding-bottom: 20px;
+}
+.our-projects .container .col-lg-8 .category {
+    font: 14px/21px Montserrat-Light;
+    color: #8c8c8c; 
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background: transparent;
+    height: 32px;
+    padding: 0 17px;
+    margin-right: 10px;
+}
+.our-projects .container .col-lg-8 .category:hover {
+    color: white;
+    background: #998675;
+    border: 1px solid #998675;
+}
+.projects {
+    padding: 40px 0;
+    margin-right: -15px;
+}
+.project-item {
+    margin-bottom: 30px;
+}
+.project-item .image {
+    position: relative;
+}
+.project-item .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17,17,17,0.7);
+    display: none;
+}
+.project-item .overlay .link,
+.project-item .overlay .lupa {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 45%;
+}
+.project-item .overlay .link {
+    background-image: url(../img/projects-icon.png);
+    left: 38%;
+}
+.project-item .overlay .lupa {
+    background-image: url(../img/projects-icon.png);
+    background-position: -54px 0;
+    left: 52%;
+}
+.project-item .description {
+    background: #fbfaf8;
+    padding: 30px 0 4px 29px;
+}
+.project-item .description h3 {
+    font: 20px/22px Raleway-Medium;
+    color: #c7b299; 
+}
+.project-item .description p {
+    font: 14px/20px Raleway-Medium;
+    color: #d1d1d1; 
+}
+.project-item:hover .overlay {
+    display: block;
+}
+.project-item:hover .description {
+    background: #362f2d;
+}
+.project-item:hover .description h3 {
+    color: white; 
+}
+.project-item:hover .description p {
+    color: #c7b299; 
+}
+.projects div button {
+    font: 800 14px/23px Raleway-Bold;
+    width: 170px;
+    height: 53px;
+    background: #998675;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    box-shadow: inset 0 -3px 0 #736357;
+}
+.projects div button:hover {
+    background: #7c746c;
+}
+/*Блок 5*/
+.presentation {
+    background: url(../img/presentation.jpg) no-repeat center top;
+    background-size: cover;
+    min-height: 705px;
+}
+.presentation .container .col-lg-7 {
+    padding-top: 209px;
+    margin: 0 auto;
+}
+.presentation .container .col-lg-7 a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url(../img/icon-play.png);
+    margin: 0 auto;
+}
+.presentation .container .col-lg-7 h1 {
+    font: 30px/36px Raleway-Medium;
+    color: white;
+    margin-top: 35px;
+}
+.presentation .container .col-lg-7 h2 {
+    font: 16px/28px Montserrat-Light;
+    color: white;
+    margin-bottom: 40px;
+}
+.presentation .container .col-lg-7 p {
+    font: 14px/24px Montserrat-Regular;
+    color: #c7b299;
+}
+
+/*Блок 6*/
+.excellent {
+    background: url(../img/mobile-in-hand.jpg) no-repeat center top;
+    background-size: cover;
+    min-height: 695px;
+}
+.excellent .container .col-lg-7 {
+    padding: 0;
+}
+.excellent .container .col-lg-7 h1 {
+    padding-top: 12rem;
+    font: 30px/36px Raleway-Semibold;
+    color: #555;
+}
+.excellent .container .col-lg-7 p {
+    font: 16px/28px Montserrat-Light;
+    color: #8c8c8c;
+}
+.excellent .container .col-lg-7 ul {
+    margin: 40px 0 0 50px;
+    list-style: none;
+}
+.excellent .container .col-lg-7 ul li {
+    background: url(../img/arrows2.png) no-repeat center left; 
+    font: 16px/32px Montserrat-Light;
+    color: #8c8c8c;
+    padding-left: 45px;
+}
+
+/*Блок 7*/
+.counters {
+    background-image: linear-gradient(to right, #211b19, #4e3427);
+    height: 300px;
+    padding-top: 69px;
+}
+.counter span {
+    display: block;
+    margin: 0 auto 30px;
+    width: 54px;
+    height: 44px;
+    background: url(../img/counters-icon.png) 0 -3px;
+}
+.counter .counter-2 {
+    background-position: -62px -3px;
+}
+.counter .counter-3 {
+    background-position: -127px -3px;
+}
+.counter .counter-4 {
+    background-position: -188px -3px;
+}
+.counter .counter-5 {
+    background-position: -259px -3px;
+}
+.counter h1 {
+    font: 100 48px/36px Montserrat-Light;
+    color: white;
+}
+.counter p {
+    text-transform: uppercase;
+    font: 14px/20px Montserrat-Light;
+    color: #c7b299;
+    margin-top: 20px;
+}
+.counter hr {
+    width: 30px;
+    height: 2px;
+    background: white;
+    margin: 20px auto 0;
+    border: 0;
+}
+
+/*Блок 8*/
+.recent-posts .container {
+    padding-top: 82px;
+}
+.recent-posts .container .col-lg-8 {
+    margin: 0 auto;
+}
+.recent-posts .container .col-lg-8 h1 {
+    font: 30px/36px Raleway-Semibold;
+    color: #555;
+}
+.recent-posts .container .col-lg-8 p {
+    font: 16px/28px Montserrat-Light;
+    color: #8c8c8c; 
+    padding-bottom: 20px;
+}
+.post .image {
+    position: relative;
+}
+.post .image .date {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.post .image .date h4 {
+    background: #363636;
+    border-radius: 2px 2px 0 0;
+    width: 50px;
+    padding: 7px 0;
+    text-align: center;
+    font: 24px/20px Montserrat-Light;
+    color: white; 
+    margin-bottom: 0;
+}
+.post .image .date p {
+    border-radius: 0 0 2px 2px;
+    background: #252525;
+    width: 50px;
+    padding: 7px 0;
+    text-align: center;
+    font: 12px/20px Raleway-Regular;
+    color: white; 
+}
+.post .description {
+    padding: 30px 0 15px 29px;
+    border: 1px solid #f8f8f8;
+    border-top: 0;
+    box-sizing: border-box;
+}
+.post .description h3 {
+    font: 20px/22px Raleway-Medium;
+    color: #555; 
+}
+.post .description p {
+    font: 14px/22px Montserrat-Light;
+    color: #8c8c8c; 
+    margin-bottom: 18px;
+}
+.post .description a {
+    font: 14px/20px Montserrat-Light;
+    color: #c7b299; 
+    text-decoration: none;
+}
+.post .description a:hover {
+    text-decoration: underline;
+}
+.post .image .date + .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(17,17,17,0.7);
+    display: none;
+}
+.post .image .date + .overlay .date-hover {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.post .image .date + .overlay .date-hover h4 {
+    background: #c7b299;
+    border-radius: 2px 2px 0 0;
+    width: 50px;
+    padding: 7px 0;
+    text-align: center;
+    font: 24px/20px Montserrat-Light;
+    color: white; 
+    margin-bottom: 0;
+}
+.post .image .date + .overlay .date-hover p {
+    border-radius: 0 0 2px 2px;
+    background: #a48d72;
+    width: 50px;
+    padding: 7px 0;
+    text-align: center;
+    font: 12px/20px Raleway-Regular;
+    color: white; 
+}
+.post:hover .description {
+    background: #362f2d;
+    border-color: #362f2d;
+}
+.post:hover .description h3 {
+    color: #c7b299;
+}
+.post:hover .description p {
+    color: white;
+}
+.post:hover .image .date + .overlay {
+    display: block;
+}
+
+.pagination {
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+}
+.pagination .page-item .previous {
+    border: 0;
+    background: url(../img/arrows3.png) no-repeat -2px -1px;
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+}
+.pagination .page-item .next {
+    border: 0;
+    background: url(../img/arrows3.png) no-repeat -31px -1px;
+    width: 22px;
+    height: 22px;
+}
+
+/*Блок 9*/
+.partners {
+    background: url(../img/bg-partners.jpg) no-repeat center top;
+    background-size: cover;
+    padding: 6rem 0;
+}
+.partners .container .row .col-3 {
+    flex-basis: 20.5%;
+}
+/*Футер1*/
+.footer1 {
+    background: url(../img/bg-footer.jpg) repeat;
+}
+.footer1 .container {
+    padding: 80px 15px;
+}
+.about-waxom a img {
+    width: 180px;
+}
+.about-waxom p {
+    font: 14px/24px Montserrat-Light;
+    color: #555;
+    padding: 30px 0;
+}
+.about-waxom a {
+    font: 14px/20px Montserrat-Regular;
+    color: #d1d1d1;
+}
+.recent-posts-footer h2, .our-twitter h2,
+.dribbble-widget h2 {
+    padding-top: 26px;
+    font: 24px/26px Raleway-Bold;
+    color: white;
+}
+.recent-posts-footer hr,
+.our-twitter hr {
+    width: 100%;
+    height: 2px;
+    background: #252525;
+    border: 0;
+    margin: 0;
+}
+.post-item-footer {
+    padding: 21px 0;
+}
+.post-item-footer h5 {
+    font: 12px/20px Montserrat-Light;
+    color: #363636;
+}
+.post-item-footer a {
+    font: 14px/20px Montserrat-Light;
+    color: #555;
+}
+.post-item-footer span {
+    color: #00bff3;
+}
+.post-item-footer .file {
+    color: #959595;
+}
+.post-item-footer:hover h5 {
+    color: white;
+}
+.post-item-footer:hover a {
+    color: #c7b299;
+    text-decoration: none;
+}
+.dribbble-widget h2 {
+    padding-bottom: 30px;
+}
+
+/*Футер2*/
+.footer2 {
+    background: url(../img/bg-footer2.jpg) repeat;
+}
+.footer2 .container .row {
+    padding: 45px 0;
+}
+.footer-link {
+    font: 13px/20px Montserrat-Light;
+    color: #555;
+    padding: 0 12px;
+    border-left: 1px solid #252525;
+}
+.no-border {
+    border-left: 0;
+}
+.footer-link span {
+    color: #959595;
+}
+.footer-link:hover {
+    color: #c7b299;
+}
+.footer-link span:hover {
+    text-decoration: underline;
+}
+
+/*Адаптив*/
+@media (max-width: 1200px) {
+    .services p {
+        font: 13px/24px Montserrat-Light
+    }
+}
+@media (max-width: 991px) {
+    .logo {
+        display: none;
+    }
+    .logo-short {
+        display: block;
+    }
+    .navbar-light .navbar-toggler {
+        order: 1;
+    }
+    .navbar-light .navbar-brand {
+        order: 2;
+    }
+    .header-icons {
+        order: 3;
+    }
+    .header-icons .icon-cart {
+        display: none;
+    }
+    input[type="search"] {
+        width: 98%;
+        height: 30px;
+        bottom: -29px;
+        z-index:1;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        order: 4;
+        position: absolute;
+        top: 80px;
+        background-image: linear-gradient(to bottom, rgba(61,63,64,.9), rgba(110,111,112,.9));
+        z-index: 1;
+        width: 96%;
+    }
+    .services {
+        padding: 50px 0;
+    }
+    .services h1 {
+        font: 20px/22px Raleway-Semibold;
+    }
+    .text-boxes {
+        padding-top: 20px;
+    }
+    .presentation {
+        min-height: 500px;
+    }
+    .presentation .container .col-lg-7 {
+        padding-top: 110px;
+    }
+    .excellent {
+        background: none;
+        min-height: auto;
+        padding-bottom: 40px;
+    }
+    .excellent .container .col-lg-7 h1 {
+        padding-top: 40px;
+    }
+    .counter h1 {
+        font-size: 43px;
+    }
+    .counter hr {
+        display: none;
+    }
+    .logo-partner {
+        margin-bottom: 30px;
+    }
+    
+}
+@media (max-width: 768px) {
+    .header {
+        min-height: 520px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        text-align: center;
+    }
+    .carousel-item {
+        padding: 100px 0;
+    }
+    .carousel-item h1 {
+        font: 30px/36px Raleway-Medium;
+    }
+    .carousel-item h2 {
+        font: 800 40px/46px Raleway-Bold;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        display: none;
+    }
+    .services {
+        padding: 30px 0 10px;
+    }
+    .services h1 {
+        font: 18px/22px Raleway-Semibold;
+    }
+    .our-projects .container .col-lg-8 .category {
+        margin-bottom: 20px;
+    }
+    .excellent .container .col-lg-7 h1 {
+        padding-top: 50px;
+    }
+    .counters {
+        height: auto;
+        padding: 30px 0;
+    }
+    
+}
+@media (max-width: 576px) {
+    .header {
+        min-height: 320px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        text-align: center;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        width: 94%;
+    }
+    .carousel-item {
+        padding: 50px 0;
+    }
+    .carousel-item h1 {
+        font: 25px/30px Raleway-Medium;
+    }
+    .carousel-item h2 {
+        font: 800 30px/36px Raleway-Bold;
+    }
+    .waxom-is {
+        padding-top: 40px;
+    }
+    .services h1 {
+        font-size: 16px;
+    }
+    .waxom-is .container div h1 {
+        font: 25px/30px Raleway-Semibold;
+    }
+    .waxom-is .container div p {
+        font: 13px/24px Montserrat-Light;
+    }
+    .text-boxes  {
+        height: 210px;
+    }
+    .text-boxes .container .row {
+        text-align: center;
+    }
+    .text-boxes .container .row .col-12 h1 {
+        font-size: 25px;
+    }
+    .our-projects .container {
+        padding-top: 50px;
+    }
+    .our-projects .container .col-lg-8 h1 {
+        font: 25px/30px Raleway-Semibold;
+    }
+    .our-projects .container .col-lg-8 p {
+        font: 13px/24px Montserrat-Light;
+    }
+    .our-projects .container .col-lg-8 .category {
+        padding: 0 8px;
+        margin-bottom: 10px;
+    }
+    .project-item .description h3 {
+        font-size: 18px;
+    }
+    .project-item {
+        margin-bottom: 10px;
+    }
+    .presentation {
+        min-height: 280px;
+    }
+    .presentation .container .col-lg-7 a {
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+    }
+    .presentation .container .col-lg-7 h1 {
+        font: 25px/30px Raleway-Medium;
+        margin-top: 8px;
+    }
+    .presentation .container .col-lg-7 {
+        padding-top: 42px;
+    }
+    .presentation .container .col-lg-7 p {
+        display: none;
+    }
+    .presentation .container .col-lg-7 h2 {
+        font: 13px/24px Montserrat-Light;
+    }
+    .excellent .container .col-lg-7 h1 {
+        padding-top: 0px;
+        font: 25px/30px Raleway-Semibold;
+        text-align: center;
+    }
+    .excellent .container .col-lg-7 p {
+        font: 13px/24px Montserrat-Light;
+    }
+    .excellent .container .col-lg-7 ul li {
+        font: 13px/30px Montserrat-Light;
+    }
+    .excellent .container .col-lg-7 ul {
+        margin: 20px 0 0 0px;
+    }
+    .counter h1 {
+        font: 100 25px/30px Montserrat-Light;
+    }
+    .recent-posts .container .col-8 h1 {
+        font: 25px/30px Raleway-Semibold;
+    }
+    .recent-posts .container {
+        padding-top: 38px;
+    }
+    .recent-posts .container .col-lg-8 p {
+        font: 13px/24px Montserrat-Light;
+    }
+    .pagination {
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    .partners .container .row {
+        justify-content: space-around !important;
+    }
+    .footer1 .container {
+        padding: 40px 15px;
+    }
+}
+@media (max-width: 400px) {
+    .partners {
+        padding: 3rem 0;
+    }
+    .footer2 .container .row {
+        padding: 25px 0;
+    }
+}
