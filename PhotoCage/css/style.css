@@ -12,13 +12,17 @@ a img {
     margin: 0 auto;
 	padding: 0 10px;
 }	
+.wrap {
+    position: relative;
+    min-height: 100%;
+}
 /*Шапка*/
-#header {
+.header {
 	background-color: #ddd;
 	background-image: linear-gradient(to bottom, #fff, #e0e0e0);
 	border-bottom: 1px solid #ccc;
 }
-#header .container {
+.header .container {
 	display: flex;
 	justify-content: space-between;
 }	
@@ -65,7 +69,7 @@ a img {
 }	
 .menuToggle {
 	display: none;
-	background-image: url("images/menu.png");
+	background-image: url("../images/menu.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	width: 20px;
@@ -114,8 +118,8 @@ a img {
 	border: 0;
 	margin: 7px 9px 0 0;
 }
-.file_upload button:hover {
-	background-color: #696969;
+.file_upload:hover button {
+	box-shadow: 0 0 10px rgba(0,0,0,0.7);
 }	
 
 /*Настоящий input скрыт, имеет 100% прозрачность, растянут под
@@ -125,6 +129,7 @@ a img {
 	height: inherit;
 	position: absolute;
 	opacity: 0;
+    cursor: pointer;
 }	
 /*Вторая кнопка - оранжевая Upload image*/
 .submit button {
@@ -161,21 +166,25 @@ a img {
 	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.17);
 	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.17);
 }	
-.images-item>.photo>a>img {
+.images-item:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+.images-item .photo a img {
 	padding: 7px;
 	width: 203px;
 	height: 197px;
 	text-align: center;
-	object-fit: contain; /*центрирование и обрезка*/
+	object-fit: cover; 
 }	
-.images-item>.photo>a {
+.images-item .photo a {
 	position: relative;
 	display: block;
+    outline: 0;
 }
 /*Лупа при наведении на фото*/
-.images-item>.photo>a>span { 
+.images-item .photo a span { 
 	display:none;
-	background-image:url("images/zoom.png"); 
+	background-image:url("../images/zoom.png"); 
 	background-repeat:no-repeat; 
 	width:28px; 
 	height:28px; 
@@ -183,10 +192,10 @@ a img {
 	left: 46%; 
 	bottom: 45%;
 }
-.images-item>.photo>a:hover>span {
+.images-item .photo a:hover span {
 	display: block;
 }	
-.images-item>.desc {
+.images-item .desc {
 	float: left;
 	font: normal 15px/15px Helvetica CE;
 	color: #979393;
@@ -195,8 +204,8 @@ a img {
 	width: 155px;
 	overflow: hidden;
 }	
-.images-item>.star>a {
-	background: url("images/star.png");
+.images-item .star a {
+	background: url("../images/star.png");
 	display: block;
 	width: 22px;
 	height: 22px;
@@ -204,29 +213,29 @@ a img {
 	margin-left: 14px;
 	margin-top: -2px;
 }	
-.images-item>.star>a:hover {
-	background-image: url("images/star2.png");
+.images-item .star a:hover {
+	background-image: url("../images/star2.png");
 	background-repeat: no-repeat;
 }	
-.images-item>.line {
+.images-item .line {
 	margin-left: 7px;
 	margin-top: 6px;
 	border-top: 1px solid #e0dfdf;
 	width: 95%;
 	float: left;
 }
-.images-item>.desc1 {
+.images-item .desc1 {
 	font: normal 14px/14px Helvetica CE;
 	color: #9f9898;
 	margin: 11px 13px 0px 55px;
 	width: 37px;
 	float: left;
 }
-.images-item>.social {
+.images-item .social {
 	float: right;
 	margin: 5px 10px 3px 0;
 }	
-.images-item>.social>a>img {
+.images-item .social a img {
 	background-color: #b1aeae;
 	box-shadow: inset 1px 1px 2px rgba(0,0,0,0.23);
 	-moz-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.23);
@@ -235,17 +244,22 @@ a img {
 	-moz-border-radius: 12px;
 	-webkit-border-radius: 12px;
 }
-.images-item>.social>a:hover>img {
+.images-item .social a:hover img {
 	background-color: #283e8f;
 }	
-
+.empty {
+    padding-bottom: 77px;
+}
 /*Подвал*/
-#footer {
+.footer {
 	font: normal 17px/17px Arial;
 	color: #8b8a8a;
 	padding: 30px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
-#footer p {
+.footer p {
 	text-align: right;
 	margin-right: 31px;
 }	
@@ -255,7 +269,7 @@ a img {
 	.images {
 		justify-content: space-around;
 	}	
-	#footer p {
+	.footer p {
 		text-align: center;
 	}	
 }		
