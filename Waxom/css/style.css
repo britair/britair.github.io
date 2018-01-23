@@ -298,6 +298,14 @@ input[type="search"] {
 .project-item .image {
     position: relative;
 }
+.triangle {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 30px;
+    height: 10px;
+    background: url(../img/triangle.png) no-repeat 0 -10px;
+}
 .project-item .overlay {
     position: absolute;
     top: 0;
@@ -335,6 +343,10 @@ input[type="search"] {
 .project-item .description p {
     font: 14px/20px Raleway-Medium;
     color: #d1d1d1; 
+}
+.project-item:hover .image .triangle {
+    background-position: 0 0;
+    z-index: 1;
 }
 .project-item:hover .overlay {
     display: block;
