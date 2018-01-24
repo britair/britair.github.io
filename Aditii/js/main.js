@@ -1,11 +1,13 @@
 /*Слайдер новостей*/
 $(document).ready(function(){
    $(".owl-carousel").owlCarousel({
-   loop: true,
-   nav: true,
-   navText: [""],
-  
-   });
+       loop: true,
+       nav: true,
+       navText: [""],
+       autoplay:true,
+       autoplayTimeout:2000,
+       lazyLoad: true,
+    });
 });
  
  

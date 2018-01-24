@@ -39,14 +39,15 @@ form {
 	width: 434px;
 }	
 input[type="text"] {
-	border: none;
-	outline: none;
-	width: 89%;
-	height: 30px;
-	vertical-align: top;
+    border: none;
+    outline: none;
+    width: 89%;
+    height: 33px;
+    vertical-align: bottom;
+    padding-left: 10px;
 }	
 form button {
-	background: url(img/zoom.png) no-repeat 50% 50%;
+	background: url(../img/zoom.png) no-repeat 50% 50%;
 	border: none;
 	width: 30px;
 	height: 31px;
@@ -97,7 +98,7 @@ form button {
  } 
 /*<Баннеры*/
 #banners {
-	background-image: url("img/banner-bg.jpg");
+	background-image: url("../img/banner-bg.jpg");
 }
 #banners .content {
 	display: flex;
@@ -139,25 +140,7 @@ form button {
 .description button:hover {
 	background: #079685;
 }	
-/*Переключатель картинок*/	
-.radio {
-	margin: 13% 0 3%;
-}
-.radio ul li {
-	display: inline-block;
-	margin-right: 13px;
-}
-.radio ul li a {
-	display: inline-block;
-	background-color: white;
-	border-radius: 5px;
-	height: 9px;
-	width: 9px;
-}
-.radio ul li a:hover,
-.radio ul li a :active {
-	background-color: #78d4cd;
-}	
+
 /*Категории*/
 .category-item {
 	/*float: left;
@@ -207,7 +190,7 @@ form button {
 }
 /*FEATURED PRODUCTS*/
 #products .featured {
-	background-image: url("img/banner-bg.jpg");
+	background-image: url("../img/banner-bg.jpg");
 	padding: 20px 0 20px 58px;
 }	
 #products .featured h1 {
@@ -314,62 +297,77 @@ form button {
 		position: absolute;
 	}	
 	#menu .content ul {
-	display: block;
+	   display: block;
 	}
 	#menu .content ul li{
-	padding: 5px 0;
-	border-bottom: 1px solid #9bf1e8;
+	   padding: 5px 0;
+	   border-bottom: 1px solid #9bf1e8;
 	}
 	#menu .content ul li a{
-	border-right: 0;
-	display: block;
+	   border-right: 0;
+	   display: block;
 	}
 	#categories .arrow1,
 	#categories .arrow2 {
 		display: none;
 	}	
 	#footer1 .content {
-	justify-content: space-around;
+	   justify-content: space-around;
 	}
 	#footer1 .content .menu {
-	margin: 4% 0;
+	   margin: 4% 0;
 	}
 }	
 @media (max-width: 960px) {
 	#products .content {
-    justify-content: space-around;
+        justify-content: space-around;
 	}
 	.product-item {
-	margin: 2% 1% 2% 0;
+	   margin: 2% 1% 2% 0;
 	}
 }	
 @media (max-width: 860px) {
 	form {
-	width: 300px;
+	   width: 300px;
 	}
 	#banners .description h1 {
-	font-size: 50px;
+	   font-size: 50px;
 	}
 	.category-item {
-	text-align: center;
-	padding: 0 0 20px 0;
+	   text-align: center;
+	   padding: 0 0 20px 0;
 	}
 	.category-item .image{
-	display: none;
+	   display: none;
 	}
 	.category-item p {
-    margin: 0;
-    padding: 30px 0 20px 0;
+        margin: 0;
+        padding: 30px 0 20px 0;
 	}	
 	#products .featured {
-	padding: 20px 0;
+	   padding: 20px 0;
 	}
 	#products .featured h1 {
-	text-align: center;
+	   text-align: center;
 	}
 	.product-item {
 		flex-basis: 45%;
 	}
+}
+@media (max-width: 675px) {
+    #banners .content {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    #banners .content .image {
+        flex-basis: 60%;
+        padding: 25px 0 0;
+    }
+    #banners .content .description {
+        flex-basis: 100%;
+        margin-bottom: 25px;
+    }
 }
 @media (max-width: 560px){
 	.product-item {
@@ -378,58 +376,54 @@ form button {
 }	
 @media (max-width: 480px){
 	.logo {      /*Изменяем порядок расположения flex-элементов в Шапке*/
-	order: 0;
+	   order: 0;
 	}
 	form {
-	order: 2;	
-	width: 250px;
+        order: 2;	
+        width: 250px;
 	}
 	input[type="text"] {
-	width: 85%;
+	   width: 85%;
 	}
 	.basket {
-	order: 1;
+	   order: 1;
 	}
 	.menuToggle {
-	order: 3;
-	margin-right: 0;
+	   order: 3;
+	   margin-right: 0;
 	}
 	#banners .content {
-	align-items: center;
-	}
-	#banners .content .description {
-	flex-basis: 56%;
-	margin-left: 10px;
+	   align-items: center;
 	}
 	#banners .description h1 {
-	font-size: 41px;
-	line-height: 47px;
+	   font-size: 41px;
+	   line-height: 47px;
 	}
 	#footer1 .content .menu {
-	text-align: center;
+	   text-align: center;
 	}
 	#footer1 .content .menu h1 {
-	font-size: 20px;
+	   font-size: 20px;
 	}
 	#footer1 .content .menu ul li a {
-	font-size: smaller;
+	   font-size: smaller;
 	}
 }	
 @media (max-width: 450px){
 	form {
-	order: 2;	
-	width: 220px;
+	   order: 2;	
+	   width: 220px;
 	}
 }
 
 @-moz-document url-prefix() { /*В Mozilla Firefox не корректно отображаются отступы flex-элементов*/
 	#banners .content { 
-	padding: 5%;
+	   padding: 5%;
 	}
 	.product-item {
-	margin: 20px 0 20px 5%;
+	   margin: 20px 0 20px 5%;
 	}
 	#footer1 .content {
-	padding: 3%;
+	   padding: 3%;
 	}	
 }	

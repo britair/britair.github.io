@@ -14,7 +14,7 @@
 .owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791}
 
 .owl-prev {
-	background: url("img/arrow-left.png") no-repeat;
+	background: url("../img/arrow-left.png") no-repeat;
 	width: 29px;
 	height: 88px;
 	position: absolute;
@@ -22,7 +22,7 @@
 	left: -7%;
 }	
 .owl-next {
-	background: url("img/arrow-right.png") no-repeat;
+	background: url("../img/arrow-right.png") no-repeat;
 	width: 29px;
 	height: 88px;
 	position: absolute;
