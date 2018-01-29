@@ -1,0 +1,715 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,body {
+	height: 100%;
+}
+body {
+	background-color: #f5f5f5;
+}
+.container {
+	max-width: 1280px; 
+    width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+ }
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+.btn-violet {
+    cursor: pointer;
+    background-color: #cb89d7;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 3px #9b4ea9;
+    border: 0;
+    outline: 0;
+}
+.btn-violet:hover,
+.btn-violet:active {
+    background-color: #9b4ea9;
+}
+img {
+    width: 100%;
+}
+.wrap {
+	background-color: white;
+	min-height: 100%; 
+	position: relative;
+}	
+.main {
+	display: flex;
+}
+.leftcol {
+	flex-basis: 23%;
+    padding: 0 20px;
+}
+.centercol {
+	overflow: hidden;
+    flex-basis: 74%;
+    padding: 20px 20px 0 0;
+    color: #000;
+}
+.footer {
+	width: 100%;
+	background-color: #cb89d7;
+	position: absolute; 
+	bottom: 0;
+}
+.empty {
+    padding-bottom: 400px;
+}
+/*Шапка*/
+.header {
+	background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-height: 240px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.logo h6 {
+    font: 14px/28px Roboto-Regular;
+    color: #9162a4;
+}
+.contacts {
+    text-align: center;
+}
+.contacts a {
+    display: block;
+    font: 24px/40px Roboto-Regular;
+    color: #000;
+}
+.contacts button {
+    background-image: url(../img/icon-call.png);
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    height: 40px;
+    width: 190px;
+    font: 16px/40px Roboto-Regular;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+.basket {
+    background: #f4e1f7;
+    border-radius: 12px;
+    font: 18px/30px Roboto-Regular;
+    color: #000;
+    padding-right: 15px;
+}
+.basket button {
+    position: relative;
+    background-image: url(../img/icon-basket.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80px;
+    width: 80px;
+    font: 16px/38px Roboto-Regular;
+    vertical-align: text-bottom;
+}
+.basket button span {
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #9d52ab;
+    width: 38px;
+    background: white;
+    color: #000;
+}
+.basket p {
+    display: inline-block;
+    vertical-align: super;
+    padding-left: 10px;
+}
+.menuToggle {
+    background-image: url(../img/menuToggle.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    background-color: #cb89d7;
+    border-radius: 12px;
+    box-shadow: 0 3px 3px #9b4ea9;
+    display: none;
+}
+.menuToggle:hover {
+    background-color: #9b4ea9;
+}
+.header-top + hr {
+    width: 100%;
+    border:0;
+    background: #cb89d7;
+    height: 1px;
+    margin-top: 37px;
+}
+/*Меню*/
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 20px;
+    position: relative;
+}
+.header-menu ul li {
+    display: inline-block;
+    vertical-align: bottom;
+}
+.header-menu ul li a {
+    text-transform: uppercase;
+    font: 18px/40px Roboto-Light;
+    color: #000;
+    margin-right: 23px;
+}
+.header-menu ul li a:hover,
+.header-menu ul li a:active {
+    color: #9b4ea9;
+}
+.header-menu form {
+    position: relative;
+}
+.header-menu input {
+    background: #f4e1f7;
+    font: 16px/40px Roboto-Light;
+    color: #000;
+    border-radius: 12px;
+    border: 0;
+    outline: 0;
+    padding-bottom: 4px;
+    width: 295px;
+    padding-left: 70px;
+}
+.header-menu input::placeholder {
+    text-align: right;
+    padding-right: 20px;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+.header-menu form button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 41px;
+    width: 54px;
+    background-image: url(../img/icon-search.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/*Слайдер*/
+.slider {
+    background-color: #fdf2ff;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+    position: relative;
+}
+.owl-prev {
+	background: url("../img/owl-dots.png") no-repeat -3px -2px;
+    width: 63px;
+	height: 60px;
+	position: absolute;
+	top: 50%;
+	left: 30px;
+}	
+.owl-next {
+	background: url("../img/owl-dots.png") no-repeat -66px -2px;
+	width: 63px;
+	height: 60px;
+	position: absolute;
+	top: 50%;
+	right: 30px;
+}	
+/*Основная часть*/
+.content {
+    background-image: url(../img/content-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+/*Категории*/
+.leftcol h2 {
+    background-color: #cb89d7;
+    text-align: center;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 3px #9b4ea9;
+    font: 16px/40px Roboto-Regular;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+.categories {
+    padding: 24px 0 50px;
+}
+.categories h2 {
+    background-image: url(../img/icon-categories.png);
+    background-repeat: no-repeat;
+    background-position: 28% center;
+}
+.hide, .hide + label + ul {
+    display: none;
+}
+.hide + label {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f4e1f7;
+    padding-left: 27px;
+    font: 16px/40px Roboto-Light;
+    color: #000;
+    background-image: url(../img/icon-plus.png);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    cursor: pointer;
+    border-bottom: 1px solid #cb89d7;
+}
+.hide + label:hover,
+.hide:checked + label {
+    color: #9b4ea9;
+}
+.hide + label + ul {
+    list-style-image: url(../img/icon-submenu.png);
+    list-style-position: inside;
+}
+.hide + label + ul li {
+    padding-left: 27px;
+} 
+.hide + label + ul li:last-child {
+    border-radius: 0 0 12px 12px;
+}
+.hide + label + ul li a {
+    font: 16px/40px Roboto-Light;
+    color: #010101;
+    vertical-align: middle;
+}
+.hide + label + ul li a:hover {
+    text-decoration: underline;
+}
+.hide:checked + label + ul {
+    display: block;
+} 
+.hide:checked + label {
+    background-image: url(../img/icon-minus.png);
+    border-radius: 0 0 12px 12px;
+    border: 0;
+}
+/*Распродажа, Рекомендуем, Идеи подарков*/
+.sale, .recommed, .ideas, .article {
+    border-left: 1px solid #9b4ea9;
+    border-bottom: 1px solid #9b4ea9;
+    border-right: 1px solid #9b4ea9;
+    border-radius: 0 0 12px 12px;
+    position: relative;
+    padding-top: 52px;
+    margin-bottom: 50px;
+}
+.sale h2, .recommed h2, .ideas h2, .article h2 {
+    width: 101%;
+    position: absolute; 
+    top: -10px;
+    left: -1px;
+}
+.sale-item, .recommed-item, .idea-item, .article-item {
+    display: flex;
+    padding: 0 7px 20px 10px;
+}
+.sale-item img, .recommed-item img, .idea-item img {
+    width: 92px;
+    height: 80px;
+    object-fit: cover;
+}
+.sale-item p, .recommed-item p, .idea-item p, .article-item p {
+    font: 16px/20px Roboto-Regular;
+    color: #000;
+    padding-left: 10px;
+}
+.sale-item:hover p, .recommed-item:hover p, .idea-item:hover p, .article-item:hover p {
+    text-decoration: underline;
+}
+.article {
+    padding-top: 32px;
+}
+.article-item {
+    padding: 20px 7px 20px 10px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 3px 16px rgba(0,0,0,0.13);
+}
+.article-item span {
+    display: block;
+    text-align: center;
+    width: 76px;
+    height: 40px;
+    font: 16px/20px Roboto-Regular;
+    color: #000;
+    border-right: 1px solid #9b4ea9;
+}
+
+/*Центральная колонка*/
+.centercol h1 {
+    font: 22px/40px Roboto-Regular;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.centercol h6 {
+    font: 14px/20px Roboto-Light;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+/*Карточка товара*/
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: -20px;
+}
+.block-item {
+    flex-basis: 31%;
+    text-align: center;
+    background: #f3f3f3;
+    margin: 0 20px 20px 0;
+}
+.block-item .image {
+    height: 200px;
+    object-fit: cover;
+}
+.block-item p {
+    font: 16px/20px Roboto-Light;
+    margin: 20px 0;
+}
+.block-item .rate {
+    height: 22px;
+    width: auto;
+}
+.block-item span {
+    display: block;
+    margin: 20px 0;
+    font: 24px/20px Roboto-Regular;
+}
+.block-item button {
+    background-image: url(../img/icon-basket2.png);
+    background-repeat: no-repeat;
+    background-position: 22% center;
+    width: 190px;
+    height: 40px;
+    font: 16px/40px Roboto-Regular;
+    padding-left: 20px;
+}
+.block-item a {
+    display: block;
+    font: 16px/40px Roboto-Regular;
+    color: #000;
+    margin: 20px 0 40px;
+}
+.block-item a:hover {
+    text-decoration: underline;
+}
+/*Пагинация*/
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.pagination a {
+    display: inline-block;
+    font: 24px/40px Roboto-Regular;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 1px solid transparent;
+}
+.pagination .active {
+    border-bottom: 1px solid #9b4ea9;
+}
+/*Ссылки*/
+.links {
+    margin-bottom: 40px;
+}
+.link-item {
+    margin-bottom: 20px;
+}
+.link-item h3 {
+    font: 18px/20px Roboto-Regular;
+    color: #000;
+    margin-bottom: 20px;
+}
+.link-item a {
+    font: 16px/20px Roboto-Light;
+    color: #9b4ea9;
+    text-decoration: underline;
+}
+.link-item a:hover {
+    color: #000;
+}
+/*Подвал*/
+.footer-menu ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0 40px;
+}
+.footer-menu ul li a {
+    text-transform: uppercase;
+    font: 18px/40px Roboto-Regular;
+    color: white;
+}
+.footer-menu ul li a:hover {
+    text-decoration: underline;
+}
+.custom {
+    display: flex;
+    justify-content: center;
+}
+.custom a {
+    display: block;
+    margin-right: 17px;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+.social a {
+    margin-right: 3px;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.social a:nth-child(1) {
+    background: url(../img/social.png) no-repeat 0px 0px;
+}
+.social a:nth-child(2) {
+    background: url(../img/social.png) no-repeat -42px 0px;
+}
+.social a:nth-child(3) {
+    background: url(../img/social.png) no-repeat -83px 0px;
+}
+.social a:nth-child(4) {
+    background: url(../img/social.png) no-repeat -125px 0px;
+}
+.social a:nth-child(5) {
+    background: url(../img/social.png) no-repeat -168px 0px;
+}
+.social a:nth-child(6) {
+    width: 34px;
+    background: url(../img/social.png) no-repeat -210px 0px;
+}
+.social a:hover {
+    box-shadow: 0 2px 2px rgba(0,0,0,0.8);
+}
+.subscribe {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.subscribe button {
+    text-transform: uppercase;
+    font: 18px/40px Roboto-Regular;
+    color: white;
+    margin-right: 22px;
+    border:0;
+    outline: 0;
+    background: transparent;
+    cursor: pointer;
+}
+.subscribe button:hover {
+    text-decoration: underline;
+}
+.subscribe input {
+    width: 295px;
+    border-radius: 14px;
+    border: 0;
+    outline: 0;
+    padding-left: 24px;
+    font: 18px/40px Roboto-Regular;
+    color: #000;
+}
+.subscribe input::placeholder {
+    color: #000;
+}
+.copy {
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+    font: 18px/40px Roboto-Light;
+    color: white;
+}
+.copy a {
+    position: absolute;
+    right:0;
+    color: white;
+}
+
+/*Адаптив*/
+@media (max-width: 1170px) {
+    .header-menu {
+        flex-wrap: wrap;
+    }
+    .header-menu form {
+        margin: 10px 0;
+    }
+}
+@media (max-width: 1030px) {
+    .contacts {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .basket {
+        font-size: 15px;
+    }
+}
+@media (max-width: 768px) {
+                                /*Шапка - адаптив*/
+    .container {
+        width: 96%;
+    }
+    .header {                 
+        min-height: 215px;
+    }
+    .header-top {
+        padding: 0;
+    }
+    .logo {
+        padding-top: 10px;
+    }
+    .logo h6 {
+        display: none;
+    }
+    .basket {
+        background: 0;
+        padding: 0;
+    }
+    .basket p {
+        display: none;
+    }
+    .basket button {
+        top: 3px;
+    }
+    .menuToggle {
+        display: block;
+    }
+    .header-top + hr {
+        display: none;
+    }
+    .header-menu {
+        display: block;
+        padding: 11px 0;
+    }
+    .header-menu ul {
+        width: 100%;
+        position: absolute;
+        z-index: 1000;
+        top:0;
+        left:0;
+        display: none;
+        background: #f4e1f7;
+    }
+    .header-menu ul li {
+        display: block;
+        text-align: center;
+    }
+    .header-menu ul li a {
+        font: 30px/55px Roboto-Light;
+    }
+    .header-menu input {
+        width: 100%;
+    }
+    .owl-prev, .owl-next {
+        top: 40%;
+    }
+                                 /*Основное - адаптив*/    
+    .main {                        
+        flex-wrap: wrap;
+    }
+    .centercol {
+        order: 1;
+        flex-basis: 100%;
+        padding: 0;
+    }
+    .leftcol {
+        order: 2;
+        flex-basis: 100%;
+        padding: 0;
+    }
+    .centercol h1 {
+        margin-bottom: 10px;
+    }
+    .centercol h6 {
+        font-size: 16px;
+    }
+    .block-item {
+        flex-basis: 47%;
+    }
+    .block-item .image {
+        height: 240px;
+    }
+    .block-item p {
+        font: 20px/22px Roboto-Light;
+    }
+    .block-item button {
+        background-position: 15% center;
+        font: 20px/40px Roboto-Regular;
+    }
+    .block-item a {
+        font-size: 20px;
+    }
+    .leftcol h2 {
+        font: 30px/55px Roboto-Regular
+    }
+    .categories h2 {
+        background-position: 34% center;
+    }
+    .sale-item img, .recommed-item img, .idea-item img {
+        width: auto;
+        height: 140px;
+    }
+    .sale-item p, .recommed-item p, .idea-item p, .article-item p {
+        padding-left: 25px;
+    }
+    .article-item span {
+        width: 160px;
+    }
+    .link-item h3 {
+        font: 22px/24px Roboto-Regular; 
+    }
+    .link-item a {
+        font-size: 22px;
+    }
+    .hide + label {
+        font: 22px/45px Roboto-Light;
+    }
+    .hide + label + ul li a {
+        font: 20px/45px Roboto-Light;
+    }
+    .sale-item p, .recommed-item p, .idea-item p, .article-item p {
+        font: 20px/30px Roboto-Regular;
+    }
+    .empty {
+        padding-bottom: 700px;
+    }
+                                    /*Подвал*/
+    .footer-menu ul {
+        flex-direction: column;
+    }
+    .custom, .social, .subscribe {
+        justify-content: flex-start;
+    }
+    .copy {
+        text-align: left;
+    }
+
+}
+    
+    
+    
