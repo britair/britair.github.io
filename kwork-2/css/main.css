@@ -555,11 +555,20 @@ input[type="search"]::-webkit-search-cancel-button {
 
                                     /*Адаптив 1170*/ 
 @media (max-width: 1170px) {
+    .container {
+        width: 97%;
+    }
     .header-menu {
         flex-wrap: wrap;
     }
     .header-menu form {
         margin: 10px 0;
+    }
+    .leftcol {
+        flex-basis: 30%;
+    }
+    .centercol h1 {
+        margin-bottom: 10px;
     }
     .products {
         justify-content: space-around;
@@ -574,40 +583,36 @@ input[type="search"]::-webkit-search-cancel-button {
         padding-left: 10px;
     }
     .empty {
-        padding-bottom: 815px;
-    }
-    .footer-menu ul {
-        flex-direction: column;
+        padding-bottom: 480px;
     }
 }
+                                    /*Адаптив 1030*/ 
 @media (max-width: 1030px) {
     .contacts {
         display: none;
     }
-}
-@media (max-width: 992px) {
-    .basket {
-        font-size: 15px;
+    .owl-prev, .owl-next {
+        top: 40%;
+    }
+    .footer-menu ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer-menu ul li {
+        flex-basis: 33%;
     }
 }
-                                    /*Адаптив 768*/
-@media (max-width: 768px) {
+                                    /*Адаптив 992*/ 
+@media (max-width: 992px) {
     .container {
         width: 96%;
-    }
-    .header {                 
-        min-height: 215px;
     }
     .header-top {
         padding: 0;
     }
-    .logo {
-        padding-top: 10px;
-    }
-    .logo h6 {
-        display: none;
-    }
     .basket {
+        font-size: 15px;
         background: 0;
         padding: 0;
     }
@@ -619,9 +624,7 @@ input[type="search"]::-webkit-search-cancel-button {
     }
     .menuToggle {
         display: block;
-    }
-    .header-top + hr {
-        display: none;
+        margin-left: 20px;
     }
     .header-menu {
         display: block;
@@ -640,120 +643,225 @@ input[type="search"]::-webkit-search-cancel-button {
         display: block;
         text-align: center;
     }
-    .header-menu ul li a {
-        font: 40px/80px Roboto-Light;
-    }
     .header-menu input {
         width: 100%;
-        font: 20px/45px Roboto-Light;
     }
-    .header-menu form button {
-        height: 47px;
-        width: 65px;
-    }
-    .owl-prev, .owl-next {
-        top: 40%;
-    }
-                                 /*Основное - адаптив*/    
     .main {                        
         flex-wrap: wrap;
-    }
-    .centercol {
-        order: 1;
-        flex-basis: 100%;
-        padding: 0;
     }
     .leftcol {
         order: 2;
         flex-basis: 100%;
         padding: 0;
     }
+    .centercol {
+        order: 1;
+        flex-basis: 100%;
+        padding: 0;
+    }
     .centercol h1 {
-        margin: 10px 0;
-        font: 30px/45px Roboto-Regular;
+        margin: 20px 0;
     }
     .centercol h6 {
         display: none;
     }
     .block-item {
-        flex-basis: 47%;
+        flex-basis: 46%;
     }
     .block-item .image {
         height: 240px;
     }
-    .block-item p {
-        font: 20px/22px Roboto-Light;
-    }
-    .block-item button {
-        background-position: 9% center;
-        font: 25px/40px Roboto-Regular;
-    }
-    .block-item a {
-        font-size: 20px;
-    }
-    .leftcol h2 {
-        font: 40px/55px Roboto-Regular
-    }
     .categories h2 {
-        background-position: 25% center;
+        background-position: 40% center;
+    }
+    .hide + label {
+        padding-left: 27px;
+    }
+    .sale h2, .recommed h2, .ideas h2, .article h2 {
+       left: -4px;
     }
     .sale-item img, .recommed-item img, .idea-item img {
         width: auto;
-        height: 180px;
+        height: 140px;
         flex-basis: 35%;
     }
     .sale-item p, .recommed-item p, .idea-item p, .article-item p {
-        font: 30px/45px Roboto-Regular;
         flex-basis: 60%;
         padding-left: 20px;
     }
-    .pagination a {
-        font: 35px/40px Roboto-Regular;
-        margin-right: 30px;
-    }
     .article-item span {
-        width: 250px;
-        font: 30px/45px Roboto-Regular;
+        width: 35%;
     }
-    .link-item {
-        margin-bottom: 35px;
+    
+}
+                                    /*Адаптив 768*/
+@media (max-width: 768px) {
+    .header {                 
+        min-height: 215px;
     }
-    .link-item h3 {
-        font: 22px/24px Roboto-Regular; 
+    .logo {
+        padding-top: 20px;
     }
-    .link-item a {
-        font-size: 22px;
+    .logo h6 {
+        display: none;
     }
-    .hide + label {
-        font: 30px/65px Roboto-Light;
-        padding-left: 27px;
+    .header-top + hr {
+        display: none;
     }
-    .hide + label + ul li a {
-        font: 25px/65px Roboto-Light;
+    .block-item p {
+        margin: 20px 10px;
     }
-                                        /*Подвал*/
-    .footer-menu ul li a {
-        font: 30px/45px Roboto-Regular;
+    .pagination a {
+        margin-right: 20px;
+    }
+    .empty {
+        padding-bottom: 540px;
     }
     .custom, .social, .subscribe {
         justify-content: flex-start;
     }
+    .footer-menu ul li {
+        flex-basis: 50%;
+    }
     .subscribe {
         flex-wrap: wrap;
     }
-    .subscribe button {
-        font: 30px/45px Roboto-Regular;
-        margin-bottom: 20px;
-    }
-    .subscribe input {
-        width: 54%;
-        font: 30px/45px Roboto-Regular;
-    }
     .copy {
         text-align: left;
-        font: 22px/40px Roboto-Light;
     }
 }
-    
+                                    /*Адаптив 520*/
+@media (max-width: 520px) {
+    .header {
+        min-height: auto;
+    }
+    .container {
+        width: 93%;
+    }
+    .logo {
+        margin-right: 10px;
+    }
+    .basket {
+        font: 18px/30px Roboto-Regular;
+    }
+    .basket button {
+        top: 0;
+        height: 40px;
+        width: 40px;
+    }
+    .basket button span {
+        top: -16px;
+        left: 25px;
+        width: 27px;
+        line-height: 27px;
+    }
+    .menuToggle {
+        background-size: contain;
+        margin-left: 12px;
+        height: 40px;
+        width: 60px;
+    }
+    .header-menu input {
+        padding-left: 18%;
+    }
+    .header-menu form button {
+        width: 43px;
+    }
+    .slider {
+        display: none;
+    }
+    .products {
+        margin-right: 0;
+    }
+    .centercol h1 {
+        margin: 0 0 10px;
+        font: 17px/25px Roboto-Regular;
+    }
+    .block-item {
+        flex-basis: 100%;
+        margin: 0 0 20px 0;
+    }
+    .block-item .image {
+        height: 190px;
+    }
+    .block-item p {
+        margin: 10px;
+    }
+    .block-item span {
+        margin: 10px 0;
+        font: 20px/20px Roboto-Regular;
+    }
+    .block-item a:last-child {
+        margin: 10px 0;
+    }
+    .pagination {
+        margin: 0 0 20px;
+    }
+    .empty {
+        padding-bottom: 550px;
+    }
+    .pagination a {
+        font: 20px/30px Roboto-Regular;
+    }
+    .links {
+        margin-bottom: 20px;
+    }
+    .link-item h3 {
+        font: 16px/20px Roboto-Regular;
+    }
+    .categories h2 {
+        width: 100%;
+        margin: 0;
+        background-position: 26% center;
+    }
+    .sale h2, .recommed h2, .ideas h2, .article h2 {
+        left: -2px;
+    }
+    .sale-item img, .recommed-item img, .idea-item img {
+        height: 123px;
+        flex-basis: 45%;
+    }
+    .sale-item p, .recommed-item p, .idea-item p, .article-item p {
+        flex-basis: 55%;
+        padding-left: 10px;
+    }
+    .article-item span {
+        width: 45%;
+    }
+    .footer-menu ul {
+        padding: 20px 0 20px;
+    }
+    .footer-menu ul li a {
+        font: 14px/30px Roboto-Regular;
+    }
+    .custom, .social, .subscribe {
+        flex-wrap: wrap;
+    }
+    .social {
+        margin: 20px 0;
+    }
+    .subscribe {
+        margin-bottom: 10px;
+    }
+    .subscribe button {
+        font: 14px/40px Roboto-Regular;
+    }
+    .subscribe input {
+        font: 16px/30px Roboto-Regular;
+    }
+    .copy {
+        padding: 10px 0;
+        font: 14px/30px Roboto-Light;
+    }
+    .copy a {
+        position: static;
+    }
+}
+@media (max-width: 400px) {  
+    .menuToggle {
+        width: 80px;
+    }
+}
+
     
     
