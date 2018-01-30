@@ -674,7 +674,7 @@ input[type="search"]::-webkit-search-cancel-button {
         font: 40px/55px Roboto-Regular
     }
     .categories h2 {
-        background-position: 30% center;
+        background-position: 25% center;
     }
     .sale-item img, .recommed-item img, .idea-item img {
         width: auto;
@@ -704,10 +704,10 @@ input[type="search"]::-webkit-search-cancel-button {
         font-size: 22px;
     }
     .hide + label {
-        font: 30px/55px Roboto-Light;
+        font: 30px/65px Roboto-Light;
     }
     .hide + label + ul li a {
-        font: 25px/55px Roboto-Light;
+        font: 25px/65px Roboto-Light;
     }
     .empty {
         padding-bottom: 815px;
