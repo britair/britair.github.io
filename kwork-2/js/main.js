@@ -9,7 +9,8 @@ $(document).ready(function(){
        autoplayHoverPause:true,
        smartSpeed:1000,
        items: 1,
-       dots: false
+       dots: false,
+       responsiveClass:true,
     });
 });
 
