@@ -878,7 +878,7 @@ input[type="search"]::-webkit-search-cancel-button {
     display: flex;
     align-items: center;
 }
-.order_info .buyer form {
+.order_info .buyer .form {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
     width: 320px;
@@ -887,8 +887,8 @@ input[type="search"]::-webkit-search-cancel-button {
     margin-right: 30px;
     position: relative;
 }
-.order_info .buyer form sup,
-.order_info .receiver form sup {
+.order_info .buyer .form sup,
+.order_info .receiver .form sup {
     font: normal 14px/18px Roboto-Regular;
     color: #c93259;
     position: absolute;
@@ -907,7 +907,7 @@ input[type="search"]::-webkit-search-cancel-button {
     align-items: center;
     margin-bottom: 31px;
 }
-.order_info .receiver form {
+.order_info .receiver .form {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
     width: 320px;
@@ -916,8 +916,8 @@ input[type="search"]::-webkit-search-cancel-button {
     margin-right: 30px;
     position: relative;
 }
-.order_info .buyer form input,
-.order_info .receiver form input {
+.order_info .buyer .form input,
+.order_info .receiver .form input {
     height: 30px;
     width: 87%;
     margin-left: 19px;
@@ -928,8 +928,8 @@ input[type="search"]::-webkit-search-cancel-button {
     outline: 0;
     text-overflow: ellipsis;
 }
-.order_info .receiver form label,
-.order_info .buyer form label {
+.order_info .receiver .form label,
+.order_info .buyer .form label {
     position: absolute;
     top: 23px;
     left: 19px;
@@ -937,31 +937,23 @@ input[type="search"]::-webkit-search-cancel-button {
     font: normal 16px/18px Roboto-Regular;
     pointer-events: none;
 }
-.order_info .buyer form input:focus~label,
-.order_info .buyer form input:not(:focus):valid~label,
-.order_info .receiver form input:focus~label,
-.order_info .receiver form input:not(:focus):valid~label {
+.order_info .buyer .form input:focus~label,
+.order_info .buyer .form input:not(:focus):valid~label,
+.order_info .receiver .form input:focus~label,
+.order_info .receiver .form input:not(:focus):valid~label {
     top: 12px;
     font: normal 12px/14px Roboto-Regular;
     color: #a9a9a9;
 }
-.order_info .receiver form textarea:focus~label {
+.order_info .receiver .form textarea:focus~label {
     top: 12px;
     font: normal 12px/14px Roboto-Regular;
     color: #a9a9a9;
 }
-.order_info .receiver form textarea~.empty_label{
+.order_info .receiver .form textarea~.empty_label{
     top: 12px;
     font: normal 12px/14px Roboto-Regular;
     color: #a9a9a9;
-}
-.order_info .receiver form .label-up { /*Время доставки*/
-    position: absolute;
-    font: normal 12px/14px Roboto-Regular;
-    color: #a9a9a9;
-    top: 12px;
-    left: 19px;
-    display: none;
 }
 .prepend_label {
     position: absolute;
@@ -993,7 +985,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .order_info .receiver .address {
     width: 670px;
 }
-.order_info .receiver form + span {
+.order_info .receiver .form + span {
     color: #7c7c7c;
     font: normal 14px/18px Roboto-Regular;
     display: block;
@@ -1110,7 +1102,7 @@ input[type="search"]::-webkit-search-cancel-button {
     padding-left: 10px;
     white-space: nowrap;
 }
-.total form button {
+.total div button {
     margin-top: 22px;
     width: 198px;
 }
@@ -1213,28 +1205,28 @@ input[type="search"]::-webkit-search-cancel-button {
     .order_info .buyer {
         flex-wrap: wrap;
     }
-    .order_info .buyer form {
+    .order_info .buyer .form {
         width: 100%;    
         margin-right: 0;
         margin-bottom: 23px;
     }
     .order_info .buyer span,
-    .order_info .receiver form + span {
+    .order_info .receiver .form + span {
         width: 100%;
     }
     .order_info .receiver {
         flex-wrap: wrap;
         margin-bottom: 0;
     }    
-    .order_info .receiver form {
+    .order_info .receiver .form {
         width: 100%;
         margin-right: 0;
         margin-bottom: 31px; 
     }
-    .order_info .receiver form input {
+    .order_info .receiver .form input {
         width: 92%;
     }
-    .order_info .receiver form + span {
+    .order_info .receiver .form + span {
         margin: 0px 3px 25px 0;
     }
      .order_info .receiver .address {
@@ -1773,31 +1765,31 @@ input[type="search"]::-webkit-search-cancel-button {
         font: normal 40px/40px Roboto-Regular;
         margin: 30px 0 42px;
     }
-    .order_info .buyer form,
-    .order_info .receiver form {
+    .order_info .buyer .form,
+    .order_info .receiver .form {
         border: 2px solid #e0e0e0;
         height: 105px;
     }
-    .order_info .buyer form sup, 
-    .order_info .receiver form sup {
+    .order_info .buyer .form sup, 
+    .order_info .receiver .form sup {
         font: 20px/18px Roboto-Regular;
         top: 8px;
         left: 8px;
     }
     .order_info .buyer span,
-    .order_info .receiver form + span {
+    .order_info .receiver .form + span {
         font: normal 26px/30px Roboto-Regular;
     }
-    .order_info .buyer form input,
-    .order_info .receiver form input {
+    .order_info .buyer .form input,
+    .order_info .receiver .form input {
         font: normal 36px/36px Roboto-Regular;
         height: 60px;
         margin-left: 35px;
         padding-top: 35px;
         width: 90%;
     }
-    .order_info .buyer form label,
-    .order_info .receiver form label {
+    .order_info .buyer .form label,
+    .order_info .receiver .form label {
         position: absolute;
         top: 30px;
         left: 35px;
@@ -1805,10 +1797,10 @@ input[type="search"]::-webkit-search-cancel-button {
         font: 36px/42px Roboto-Regular;
         pointer-events: none;
     }
-    .order_info .buyer form input:focus~label,
-    .order_info .buyer form input:not(:focus):valid~label,
-    .order_info .receiver form input:focus~label,
-    .order_info .receiver form input:not(:focus):valid~label {
+    .order_info .buyer .form input:focus~label,
+    .order_info .buyer .form input:not(:focus):valid~label,
+    .order_info .receiver .form input:focus~label,
+    .order_info .receiver .form input:not(:focus):valid~label {
         top: 12px;
         font: 28px/28px Roboto-Regular;
         color: #a9a9a9;
@@ -1825,13 +1817,13 @@ input[type="search"]::-webkit-search-cancel-button {
         background-position: 92% 8%;
         width: 98%;
     }
-    .order_info .receiver form textarea~.empty_label{
+    .order_info .receiver .form textarea~.empty_label{
         font: normal 28px/28px Roboto-Regular;
     }
     #calendar {
         background-image: url(../icons/mobile/icon_calendar.svg);
     }
-    .order_info .receiver form + span {
+    .order_info .receiver .form + span {
         margin: -19px 0 25px 0;
     }
     .order_info .receiver .comments {
@@ -1842,7 +1834,7 @@ input[type="search"]::-webkit-search-cancel-button {
         font: normal 36px/36px Roboto-Regular;
         padding: 42px 0 0 35px;
     }
-    .order_info .receiver form textarea:focus~label {
+    .order_info .receiver .form textarea:focus~label {
         font: normal 28px/28px Roboto-Regular;
     }
     .order_info .checkbox label {
@@ -1912,7 +1904,7 @@ input[type="search"]::-webkit-search-cancel-button {
     .total p span {
         font: 200 43px/43px Roboto-Medium;
     }
-    .total form button {
+    .total div button {
         width: 100%;
         font: 200 46px/46px Roboto-Medium;
     }

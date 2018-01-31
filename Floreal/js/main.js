@@ -38,6 +38,13 @@ $(function () {
 	});
 });
 
+/*Удаление товара из корзины*/
+$(function () {
+    'use strict';
+    $('.delete').on('click', function () {
+        this.parentNode.parentNode.removeChild(this.parentNode);
+    });
+});
 
 /*Счетчик количества товаров*/
 var plusBtn = $('.button_plus');
@@ -115,7 +122,7 @@ $(document).ready(function(){
 });
 
 /*Подъем label при фокусе на форме*/
-$('.order_info .receiver form textarea').change(function () {
+$('.order_info .receiver .form textarea').change(function () {
     if ($.trim($(this).val()).length < 1) {
         console.log("Поле не заполнено");
         $(this).siblings('label').removeClass('empty_label');
