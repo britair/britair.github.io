@@ -10,8 +10,7 @@ body {
 }
 .container {
 	max-width: 1280px; 
-    width: 100%;
-	margin: 0 auto;
+    margin: 0 auto;
 	padding: 0 15px;
  }
 a {
@@ -555,9 +554,6 @@ input[type="search"]::-webkit-search-cancel-button {
 
                                     /*Адаптив 1170*/ 
 @media (max-width: 1170px) {
-    .container {
-        width: 97%;
-    }
     .header-menu {
         flex-wrap: wrap;
     }
@@ -605,9 +601,6 @@ input[type="search"]::-webkit-search-cancel-button {
 }
                                     /*Адаптив 992*/ 
 @media (max-width: 992px) {
-    .container {
-        width: 96%;
-    }
     .header-top {
         padding: 0;
     }
@@ -734,9 +727,6 @@ input[type="search"]::-webkit-search-cancel-button {
 @media (max-width: 520px) {
     .header {
         min-height: auto;
-    }
-    .container {
-        width: 93%;
     }
     .logo {
         margin-right: 10px;
