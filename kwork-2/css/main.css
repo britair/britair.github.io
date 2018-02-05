@@ -725,6 +725,7 @@ input[type="search"]::-webkit-search-cancel-button {
     .sale-item p, .recommed-item p, .idea-item p, .article-item p {
         flex-basis: 60%;
         padding-left: 20px;
+        height: 140px;
     }
     .article-item span {
         width: 35%;
@@ -874,6 +875,7 @@ input[type="search"]::-webkit-search-cancel-button {
     .sale-item p, .recommed-item p, .idea-item p, .article-item p {
         flex-basis: 55%;
         padding-left: 10px;
+        height: 123px;
     }
     .article-item span {
         width: 45%;
