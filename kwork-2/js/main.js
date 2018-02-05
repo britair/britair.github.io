@@ -25,3 +25,18 @@ $(function () {
 		});
     });
 });
+
+/*Маска ввода телефона*/
+$(function(){
+    $("#callback_phone").mask("8 (999) 999-99-99");
+});
+
+/*Заказать звонок*/
+$("#callback").click(function(){
+    $(".callback_form").fadeIn(200);
+});
+
+$(".callback_close").click(function(){
+    $(".callback_form").fadeOut(200);
+});
+
