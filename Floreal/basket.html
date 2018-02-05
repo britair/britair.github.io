@@ -86,10 +86,10 @@
                 </div> 
             </div> 
         </div>    
-        <!--Заказ--> 
-        <form action="" method="post">    
-            <div class="shadow-mobile">
-                <div class="container">    
+        <!--Форма заказа-->
+        <div class="shadow-mobile">
+            <div class="container">  
+                <form action="" method="post"> 
                     <div class="order shadow">
                         <h1>Ваш заказ</h1>
                         <div class="title">
@@ -138,123 +138,116 @@
                             <div class="delete"></div>
                         </div> 
                     </div> 
-                </div> 
-            </div>    
-            <!--Форма заказа--> 
-            <div class="shadow-mobile">    
-            <div class="container">
-                <div class="order_info shadow">
-                    <h1>Информация</h1>
-                    <h2>О покупателе</h2>
-                    <div class="buyer">
-                        <div class="form">
-                            <sup>*</sup>
-                            <input type="text" required>
-                            <label>Имя</label>
+                    <div class="order_info shadow">
+                        <h1>Информация</h1>
+                        <h2>О покупателе</h2>
+                        <div class="buyer">
+                            <div class="form">
+                                <sup>*</sup>
+                                <input type="text" required>
+                                <label>Имя</label>
+                            </div>
+                            <div class="form">
+                                <sup>*</sup>
+                                <input type="tel" id="phone_buyer" required>
+                                <label>Телефон</label>
+                            </div>
+                            <span>Для получения СМС - уведомлений о заказе, укажите мобильный телефон.</span>
                         </div>
-                        <div class="form">
-                            <sup>*</sup>
-                            <input type="tel" id="phone_buyer" required>
-                            <label>Телефон</label>
+                        <h2>О получателе</h2>
+                        <div class="receiver">
+                            <div class="form">
+                                <input type="text" required>
+                                <label>Имя</label>
+                            </div>
+                            <div class="form">
+                                <input type="tel" id="phone_receiver" required>
+                                <label>Телефон</label>
+                            </div>
                         </div>
-                        <span>Для получения СМС - уведомлений о заказе, укажите мобильный телефон.</span>
+                        <div class="receiver">
+                            <div class="form">
+                                <sup>*</sup>
+                                <input type="text" id="calendar" required>
+                                <label>Дата доставки</label>
+                            </div>
+                            <div class="form">
+                                <sup>*</sup>
+                                <select id="delivery_time" required>
+                                    <option>Время доставки</option>
+                                    <option>00:00 ― 01:00</option>
+                                    <option>01:00 ― 02:00</option>
+                                    <option>02:00 ― 03:00</option>
+                                    <option>03:00 ― 04:00</option>
+                                    <option>04:00 ― 05:00</option>
+                                    <option>05:00 ― 06:00</option>
+                                    <option>06:00 ― 07:00</option>
+                                    <option>07:00 ― 08:00</option>
+                                    <option>08:00 ― 09:00</option>
+                                    <option>09:00 ― 10:00</option>
+                                    <option>10:00 ― 11:00</option>
+                                    <option>11:00 ― 12:00</option>
+                                    <option>12:00 ― 13:00</option>
+                                    <option>13:00 ― 14:00</option>
+                                    <option>14:00 ― 15:00</option>
+                                    <option>15:00 ― 16:00</option>
+                                    <option>16:00 ― 17:00</option>
+                                    <option>17:00 ― 18:00</option>
+                                    <option>18:00 ― 19:00</option>
+                                    <option>19:00 ― 20:00</option>
+                                    <option>20:00 ― 21:00</option>
+                                    <option>21:00 ― 22:00</option>
+                                    <option>22:00 ― 23:00</option>
+                                    <option>23:00 ― 24:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="receiver">
+                            <div class="form address">
+                                <sup>*</sup>
+                                <input type="text" required>
+                                <label>Адрес доставки, ул, дом, кв</label>
+                            </div>
+                            <span>Если адрес не будет найден, мы перезвоним вам по номеру: <span id="phone_buyer_number"></span></span>
+                        </div>
+                        <div class="receiver">
+                            <div class="form comments">
+                                <textarea placeholder=""></textarea>
+                                <label>Текст для открытки</label>
+                            </div>
+                        </div>
+                        <div class="receiver">
+                            <div class="form comments">
+                                <textarea placeholder=""></textarea>
+                                <label>Пожелания, комментарии к заказу</label>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" class="hide" required checked><span></span>Даю согласие на обработку моих персональных данных в соответствии с условиями и <a href="">политикой конфиденциальности</a></label>
+                        </div>
                     </div>
-                    <h2>О получателе</h2>
-                    <div class="receiver">
-                        <div class="form">
-                            <input type="text" required>
-                            <label>Имя</label>
-                        </div>
-                        <div class="form">
-                            <input type="tel" id="phone_receiver" required>
-                            <label>Телефон</label>
-                        </div>
-                    </div>
-                    <div class="receiver">
-                        <div class="form">
-                            <sup>*</sup>
-                            <input type="text" id="calendar" required>
-                            <label>Дата доставки</label>
-                        </div>
-                        <div class="form">
-                            <sup>*</sup>
-                            <select id="delivery_time" required>
-                                <option>Время доставки</option>
-                                <option>00:00 ― 01:00</option>
-                                <option>01:00 ― 02:00</option>
-                                <option>02:00 ― 03:00</option>
-                                <option>03:00 ― 04:00</option>
-                                <option>04:00 ― 05:00</option>
-                                <option>05:00 ― 06:00</option>
-                                <option>06:00 ― 07:00</option>
-                                <option>07:00 ― 08:00</option>
-                                <option>08:00 ― 09:00</option>
-                                <option>09:00 ― 10:00</option>
-                                <option>10:00 ― 11:00</option>
-                                <option>11:00 ― 12:00</option>
-                                <option>12:00 ― 13:00</option>
-                                <option>13:00 ― 14:00</option>
-                                <option>14:00 ― 15:00</option>
-                                <option>15:00 ― 16:00</option>
-                                <option>16:00 ― 17:00</option>
-                                <option>17:00 ― 18:00</option>
-                                <option>18:00 ― 19:00</option>
-                                <option>19:00 ― 20:00</option>
-                                <option>20:00 ― 21:00</option>
-                                <option>21:00 ― 22:00</option>
-                                <option>22:00 ― 23:00</option>
-                                <option>23:00 ― 24:00</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="receiver">
-                        <div class="form address">
-                            <sup>*</sup>
-                            <input type="text" required>
-                            <label>Адрес доставки, ул, дом, кв</label>
-                        </div>
-                        <span>Если адрес не будет найден, мы перезвоним вам по номеру: <span id="phone_buyer_number"></span></span>
-                    </div>
-                    <div class="receiver">
-                        <div class="form comments">
-                            <textarea placeholder=""></textarea>
-                            <label>Текст для открытки</label>
-                        </div>
-                    </div>
-                    <div class="receiver">
-                        <div class="form comments">
-                            <textarea placeholder=""></textarea>
-                            <label>Пожелания, комментарии к заказу</label>
-                        </div>
-                    </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox" class="hide" required checked><span></span>Даю согласие на обработку моих персональных данных в соответствии с условиями и <a href="">политикой конфиденциальности</a></label>
-                    </div>
-                </div>
-            </div> 
-            </div>    
-            <div class="container">
-                <div class="order_info shadow">
-                    <h1>Cпособ оплаты</h1>
-                    <div class="payment">
-                        <div>
-                            <input type="radio" id="online" name="payment" value="online" hidden>
-                            <label for="online">Банковской картой<br>онлайн<span class="check-mark"></span></label>
-                            <input type="radio" id="cash" name="payment" value="cash" hidden>
-                            <label for="cash">Наличными курьеру<br>при получении<span class="check-mark"></span></label>
-                        </div>
-                        <div class="total">
-                            <p>Итого на сумму:<span>17 200 <s>Р</s></span></p>
+                    <div class="order_info shadow">
+                        <h1>Cпособ оплаты</h1>
+                        <div class="payment">
                             <div>
-                                <button type="submit">Оформить заказ</button>
-                            </div> 
+                                <input type="radio" id="online" name="payment" value="online" hidden>
+                                <label for="online">Банковской картой<br>онлайн<span class="check-mark"></span></label>
+                                <input type="radio" id="cash" name="payment" value="cash" hidden>
+                                <label for="cash">Наличными курьеру<br>при получении<span class="check-mark"></span></label>
+                            </div>
+                            <div class="total">
+                                <p>Итого на сумму:<span>17 200 <s>Р</s></span></p>
+                                <div>
+                                    <button type="submit">Оформить заказ</button>
+                                </div> 
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
                 <div class="empty"></div>
                 <div id="scroller"></div>
             </div>
-        </form>    
+        </div>    
         <!--Подвал--> 
         <div class="footer">
             <div class="container">

@@ -29,12 +29,12 @@ $(function () {
 $(function () {
     'use strict';
     $('.title_sub_menu').on('click', function () {
-        $('.sub_menu').slideToggle(300, function () {
+        $(this).next('ul').slideToggle(300, function () {
             if ($(this).css('display') === 'none') {
                 $(this).removeAttr('style');
 			}
 		});
-        $('.title_sub_menu').toggleClass('turn');
+        $(this).toggleClass('turn');
 	});
 });
 
