@@ -133,16 +133,17 @@ img {
     padding-left: 10px;
 }
 .menuToggle {
-    background-image: url(../img/menuToggle.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 80px;
-    width: 80px;
     cursor: pointer;
     background-color: #cb89d7;
     border-radius: 12px;
     box-shadow: 0 3px 3px #9b4ea9;
     display: none;
+}
+.menuToggle img {
+    text-align: center;
+    padding: 24px 20px;
+    object-fit: contain;
+    width: 40px;
 }
 .menuToggle:hover {
     background-color: #9b4ea9;
@@ -200,7 +201,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .header-menu form button {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 2px;
     height: 41px;
     width: 54px;
     background-image: url(../img/icon-search.png);
@@ -606,14 +607,7 @@ input[type="search"]::-webkit-search-cancel-button {
     }
     .basket {
         font-size: 15px;
-        background: 0;
         padding: 0;
-    }
-    .basket p {
-        display: none;
-    }
-    .basket button {
-        top: 3px;
     }
     .menuToggle {
         display: block;
@@ -631,6 +625,7 @@ input[type="search"]::-webkit-search-cancel-button {
         left:0;
         display: none;
         background: #f4e1f7;
+        border-radius: 0 0 12px 12px;
     }
     .header-menu ul li {
         display: block;
@@ -687,12 +682,24 @@ input[type="search"]::-webkit-search-cancel-button {
     }
     
 }
+                                    /*Адаптив 845*/
+@media (max-width: 845px) {
+    .basket {
+        background: 0;
+    }
+    .basket p {
+        display: none;
+    }
+    .basket button {
+        top: 3px;
+    }
+}
                                     /*Адаптив 768*/
 @media (max-width: 768px) {
     .header {                 
         min-height: 215px;
     }
-    .logo {
+    .header-top {
         padding-top: 20px;
     }
     .logo h6 {
@@ -705,7 +712,7 @@ input[type="search"]::-webkit-search-cancel-button {
         margin: 20px 10px;
     }
     .pagination a {
-        margin-right: 20px;
+        margin: 0 10px;
     }
     .empty {
         padding-bottom: 540px;
@@ -723,8 +730,8 @@ input[type="search"]::-webkit-search-cancel-button {
         text-align: left;
     }
 }
-                                    /*Адаптив 520*/
-@media (max-width: 520px) {
+                                    /*Адаптив 530*/
+@media (max-width: 530px) {
     .header {
         min-height: auto;
     }
@@ -738,6 +745,7 @@ input[type="search"]::-webkit-search-cancel-button {
         top: 0;
         height: 40px;
         width: 40px;
+        background-image: url(../img/icon-basket2.png);
     }
     .basket button span {
         top: -16px;
@@ -749,13 +757,19 @@ input[type="search"]::-webkit-search-cancel-button {
         background-size: contain;
         margin-left: 12px;
         height: 40px;
-        width: 60px;
+        width: 40px;
+    }
+    .menuToggle img {
+        text-align: center;
+        padding: 12px 10px;
+        object-fit: contain;
+        width: 20px;
     }
     .header-menu input {
         padding-left: 18%;
     }
     .header-menu form button {
-        width: 43px;
+        width: 41px;
     }
     .slider {
         display: none;
@@ -770,9 +784,6 @@ input[type="search"]::-webkit-search-cancel-button {
     .block-item {
         flex-basis: 100%;
         margin: 0 0 20px 0;
-    }
-    .block-item .image {
-        height: 190px;
     }
     .block-item p {
         margin: 10px;
@@ -822,7 +833,7 @@ input[type="search"]::-webkit-search-cancel-button {
         padding: 20px 0 20px;
     }
     .footer-menu ul li a {
-        font: 14px/30px Roboto-Regular;
+        font: 15px/30px Roboto-Regular;
     }
     .custom, .social, .subscribe {
         flex-wrap: wrap;
