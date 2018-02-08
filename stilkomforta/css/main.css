@@ -667,7 +667,7 @@ select option {
     background-position: 90% center;
     margin-right: 0;
 }
-                                            /*Текст в категориях*/
+                                    /*Текст в категориях*/
 .text {
     margin-bottom: 40px;
 }
@@ -1066,7 +1066,7 @@ table td input[type="number"]::-webkit-inner-spin-button {
 .order h2 {
     display: none;
 }
-.order p {
+.order .delivery-price {
     margin: 20px 0;
     font: 16px/20px Roboto-Light;
 }
