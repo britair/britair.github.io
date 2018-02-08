@@ -29,6 +29,7 @@ $(function () {
 /*Маска ввода телефона*/
 $(function(){
     $("#callback_phone").mask("8 (999) 999-99-99");
+    $("#feedback_phone").mask("8 (999) 999-99-99");
 });
 
 /*Заказать звонок*/
@@ -40,3 +41,19 @@ $(".callback_close").click(function(){
     $(".callback_form").fadeOut(200);
 });
 
+/*Карточка товара, фотографии*/
+$("[data-fancybox]").fancybox({
+    loop: true
+});
+
+/*Оценка товара*/
+$(function() {
+    $('#rate').barrating({
+        theme: 'css-stars'
+    });
+});
+
+/*Удаление товара из корзины*/
+$('.delete').click(function(){
+    $(this).closest('tr').remove();
+});

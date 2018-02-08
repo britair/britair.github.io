@@ -45,12 +45,12 @@ img {
 }
 .leftcol {
 	flex-basis: 23%;
-    padding: 0 20px;
+    padding: 0 1.6%;
 }
 .centercol {
 	overflow: hidden;
     flex-basis: 74%;
-    padding: 20px 20px 0 0;
+    padding: 23px 20px 0 0;
     color: #000;
 }
 .footer {
@@ -62,7 +62,7 @@ img {
 .empty {
     padding-bottom: 400px;
 }
-/*Шапка*/
+                                                /*Шапка*/
 .header {
 	background-image: url(../img/header-bg.jpg);
     background-repeat: no-repeat;
@@ -76,6 +76,9 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+}
+.logo {
+    display: block;
 }
 .logo h6 {
     font: 14px/28px Roboto-Regular;
@@ -405,6 +408,10 @@ input[type="search"]::-webkit-search-cancel-button {
     height: 40px;
     flex-basis: 178px;
 }
+                                    /*Виджеты соцсетей*/
+.widget {
+    margin: 0 auto;
+}
 
 /*Центральная колонка*/
 .centercol h1 {
@@ -450,7 +457,7 @@ input[type="search"]::-webkit-search-cancel-button {
     margin: 20px 0;
     font: 24px/20px Roboto-Regular;
 }
-.block-item button {
+.block-item button, .description button {
     background-image: url(../img/icon-basket2.png);
     background-repeat: no-repeat;
     background-position: 22% center;
@@ -504,7 +511,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .link-item a:hover {
     color: #000;
 }
-/*Подвал*/
+                                                /*Подвал*/
 .footer-menu ul {
     display: flex;
     justify-content: space-around;
@@ -601,8 +608,588 @@ input[type="search"]::-webkit-search-cancel-button {
     right:0;
     color: white;
 }
+                                            /*Категории*/ 
+.breadcrumbs {
+    margin-bottom: 20px;
+}
+.breadcrumbs a {
+    font: 14px/20px Roboto-Light;
+    color: #000;
+}
+.breadcrumbs a:hover,.breadcrumbs a:active {
+    color: #9b4ea9;
+}
+.breadcrumbs a::after {
+    content: "/";
+    padding-left: 4px;
+    vertical-align: text-bottom;
+}
+.breadcrumbs a:last-child:after {
+    content: "";
+}
+.sort {
+    margin-bottom: 40px;
+    font: 14px/40px Roboto-Light;
+}
+select {
+    border: 1px solid #dadada;
+    outline: 0;
+    margin-left: 20px;
+    margin-right: 13%;
+    padding-left: 15px;
+    color: #000;
+    width: 225px;
+    height: 40px;
+    -webkit-appearance: none;
+    background-color: white;
+    background-image: url('../img/select-arrow.png');
+    background-position: 93% center;
+    background-repeat: no-repeat;
+    font: 14px/40px Roboto-Light;
+    /* for FF */
+    -moz-appearance: none;
+    text-indent: 0.01px; 
+    text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none!important;
+    cursor: pointer;
+}
+select::-ms-expand {
+  display: none;
+}
+select option {
+    outline: 0;
+    border: 0;
+}
+.count_to_page {
+    width: 127px;
+    background-position: 90% center;
+    margin-right: 0;
+}
+                                            /*Текст в категориях*/
+.text {
+    margin-bottom: 40px;
+}
+.text p {
+    font: 16px/20px Roboto-Light;
+    color: #000;
+    text-align: justify;
+}
+.text .bold {
+    font: 16px/20px Roboto-Regular;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.text .violet {
+    font: 16px/20px Roboto-Regular;
+    color: #9b4ea9;
+    text-align: center;
+    margin: 20px 0;
+}
+                                        /*Доставка*/ 
+.centercol h2 {
+    font: 36px/46px Roboto-Regular;
+    margin-bottom: 2%;
+}
+.centercol .map {
+    text-align: center;
+}
+.centercol .map img {
+    width: 70%;
+}
+.centercol h4 {
+    font: 30px/40px Roboto-Regular;
+    margin: 40px 0;
+    text-align: center;
+}
+.delivery {
+    margin-bottom: 40px;
+}
+.delivery p {
+    font: 16px/20px Roboto-Light;
+    margin: 20px 0;
+}
+.delivery .violet {
+    font-family: Roboto-Regular;
+    color: #9b4ea9;
+    margin: 20px 0;
+}
+.delivery .violet2 {
+    text-decoration: underline;
+    text-decoration-skip: none;
+    text-decoration-skip-ink: none;
+    -weblit-text-decoration-skip: none;
+}
+.delivery .bold24 {
+    font: 24px/40px Roboto-Regular;
+    margin: 20px 0;
+    text-align: center;
+}
+.delivery .bold16 {
+    font: 16px/20px Roboto-Regular;
+    margin: 20px 0;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-skip: none;
+    text-decoration-skip-ink: none;
+    -weblit-text-decoration-skip: none;
+}
+.delivery .bold {
+    font: 16px/20px Roboto-Regular;
+    margin: 20px 0;
+}
+.delivery p .red {
+    font-family: Roboto-Regular;
+    color: #d50000;
+}
+.delivery p .black {
+    font-family: Roboto-Regular;
+    color: #000;
+}
+.delivery ul li {
+    font: 16px/20px Roboto-Light;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    background: url(../img//list-image.png) no-repeat left center;
+}
+.attention {
+    border-radius: 12px;
+    border: 1px solid #9b4ea9;
+    padding: 20px;
+}
+.attention h1 {
+    font: 30px/40px Roboto-Regular;
+    text-align: left;
+    padding: 10px 0 10px 80px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    background: url(../img/attention.png) no-repeat left center;
+}
+.attention a {
+    color: #9b4ea9;
+}
+.attention p {
+    font: 18px/20px Roboto-Light;
+}
+                                    /*Карточка товара*/
+.product_card h2 {
+    font: 24px/30px Roboto-Regular;
+}
+.product_item {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product_item .image {
+    flex-basis: 54%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product_item .image a {
+    outline: 0;
+    flex-basis: 31%;
+    height: 160px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.product_item .image a img {
+    height: 160px;
+    object-fit: cover;
+}
+.product_item .image a:first-child {
+    flex-basis: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+.product_item .image a:first-child img {
+    height: 400px;
+}
+.product_item .image a:nth-child(4) {
+    margin-right: 0;
+}
+.product_item .description {
+    flex-basis: 41%;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+.description .rate {
+    text-align: right;
+}
+.description .rate img {
+    height: 20px;
+    width: auto;
+}
+.description .factory {
+    margin: 20px 0 0;
+    font: 14px/30px Roboto-Regular;
+    color: #5e5e5e;
+}
+.description .choice {
+    margin: 20px 0 35px;
+    width: 190px;
+}
+.description .price {
+    font: 16px/30px Roboto-Regular;
+}
+.description .price span {
+    font: 30px/40px Roboto-Medium;
+}
+.description .stock {
+    font: 16px/30px Roboto-Light;
+    margin: 40px 0;
+}
+.description .stock span {
+    font-family: Roboto-Regular;
+}
+.description input[type="number"] {
+    width: 57px;
+    font: 18px/38px Roboto-Regular;
+    outline: 0;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 9%;
+    vertical-align: middle;
+}
+.description input[type="number"]::-webkit-outer-spin-button,
+.description input[type="number"]::-webkit-inner-spin-button,
+table td input[type="number"]::-webkit-outer-spin-button,
+table td input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.description input[type="number"], table td input{
+    -moz-appearance: textfield; /*убрать стрeлки в Mozilla*/
+}
+.tabs {
+    flex-basis: 100%;
+    margin-top: 8%;
+}
+.tabs section {
+	display: none;
+	padding: 20px;
+	border-radius: 12px;
+    border: 1px solid #e6e6e6;
+    position: relative;
+    top: -10px;
+    z-index: 1000;
+    background: white;
+}
+.tabs input {
+	display: none;
+}
+.tabs label {
+	display: inline-block;
+	padding: 15px 0 25px;
+	width: 33.2%;
+	text-align: center;
+	font: 18px/30px Roboto-Regular;
+	background: #f9f9f9;
+    margin-right: -4px;
+}
+.tabs label:hover {
+	cursor: pointer;
+}
+.tabs input:checked+label {
+	border: 1px solid #fff;
+	background: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 0;
+}
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+	display: block;
+}
+.tabs section p {
+    font: 14px/20px Roboto-Light;
+}
+.tabs section .violet {
+    color: #9b4ea9;
+    margin: 20px 0;
+}
+.tabs section .bold {
+    font-family: Roboto-Regular;
+}
+.tabs section p span {
+    text-decoration: underline;
+}
+.review h2 {
+    font: 18px/20px Roboto-Regular;
+}
+.review p {
+    font: 16px/20px Roboto-Regular;
+    margin-bottom: 20px;
+}
+.review input, .review textarea {
+    display: block;
+    width: 51%;
+    height: 40px;
+    border: 1px solid #b4b4b4;
+    outline: 0;
+    border-radius: 12px;
+    font: 16px/20px Roboto-Regular;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.review input::placeholder, .review textarea::placeholder {
+    font: 14px/20px Roboto-Light;
+    color: #b4b4b4;
+}
+.review textarea {
+    height: 180px;
+    padding-top: 15px;
+    resize:none;
+}
+.review select {
+    margin-bottom: 10px;
+}
+.review button {
+    width: 190px;
+    font: 16px/40px Roboto-Regular;
+    margin-top: 10px;
+}
+                                        /*Контакты*/ 
+.contacts-block h3 {
+    color: #9b4ea9;
+    text-align: center;
+    margin: 2% 0 0;
+    font: 24px/30px Roboto-Regular;
+}
+.contacts-block h4 {
+    font: 18px/20px Roboto-Light;
+    text-align: center;
+    margin: 0 0 4%;
+}
+.contacts-info {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts-info .left {
+    flex-basis: 43%;
+}
+.contacts-info .left p {
+    font: 16px/20px Roboto-Regular;
+    margin-bottom: 7%;
+}
+.contacts-info .left .bold {
+    font: 24px/40px Roboto-Regular;
+    margin-bottom: 0;
+    display: block;
+    color: #000;
+}
+.contacts-info .left .light {
+    font: 16px/20px Roboto-Light;
+    margin: 8% 0 5%;
+}
+.contacts-info .left .bold16 {
+    font: 16px/20px Roboto-Regular;
+    margin: 20px 0;
+}
+.contacts-info .map-container {
+    width: 505px;
+}
 
-                                    /*Адаптив 1170*/ 
+.feedback {
+    margin: 6% 0;
+}
+.feedback p {
+    font: 18px/20px Roboto-Regular;
+    margin-bottom: 20px;
+}
+.feedback .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.feedback .form input,
+.feedback .form textarea {
+    width: 49%;
+    height: 40px;
+    border: 1px solid #b4b4b4;
+    outline: 0;
+    border-radius: 12px;
+    font: 14px/20px Roboto-Light;
+    margin-bottom: 2%;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.feedback .form input::placeholder,
+.feedback .form textarea::placeholder {
+    font: 14px/20px Roboto-Light;
+    color: #b4b4b4;
+}
+.feedback .form textarea {
+    height: 180px;
+    padding: 15px 15px 0;
+    width: 100%;
+    resize:none;
+}
+.feedback .form select {
+    flex-basis: 49%;
+    margin: 0;
+    border: 1px solid #b4b4b4;
+    border-radius: 12px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+.feedback .form button {
+    width: 190px;
+    font: 16px/40px Roboto-Regular;
+    margin: 35px auto 10px;
+}
+.partners .partners-item {
+    display: inline-block;
+    margin-right: 20px;
+    color: #000;
+}
+.partners .partners-item:hover p {
+    text-decoration: underline;
+}
+.partners p {
+    font: 18px/20px Roboto-Regular;
+    margin-bottom: 20px;
+}
+.partners img {
+    width: 190px;
+    height: 200px;
+    object-fit: cover;
+}
+.partners .light {
+    font: 14px/20px Roboto-Light;
+    width: 190px;
+    text-align: center;
+    margin-top: 20px;
+}
+                                /*Корзина и заказ*/
+.order h2 {
+    display: none;
+}
+.order p {
+    margin: 20px 0;
+    font: 16px/20px Roboto-Light;
+}
+table {
+    border: 1px solid #e6e6e6;
+    border-collapse: collapse;
+    table-layout: auto;
+    width: 100%;
+}
+table tr {
+    border: 1px solid #e6e6e6;
+    font: 14px/20px Roboto-Regular;
+}
+table th,
+table td {
+    padding: 1.3% 0.5%;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+}
+table td {
+    padding: 4% 2%;
+}
+table td.image img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+table td.name {
+    text-align: left;
+    vertical-align: baseline;
+    width: 210px;
+}
+table td .light {
+    font: 13px/20px Roboto-Light;
+    margin-top: 20px;
+}
+table td.price {
+    white-space: nowrap;
+}
+table td input {
+    width: 40px;
+    font: 16px/30px Roboto-Regular;
+    outline: 0;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+table td .delete {
+    display: block;
+    width: 18px;
+    height: 22px;
+    margin: 0 auto;
+    cursor: pointer;
+    background: url(../img/icon-delete.png) no-repeat 0 0;
+}
+.total {
+    display: flex;
+    justify-content: flex-end;
+}
+.total div {
+    margin-right: 6%;
+}
+.total div:last-child {
+    margin-right: 0;
+}
+.total div p {
+    font: 18px/20px Roboto-Regular;
+}
+.order-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+}
+.order-footer a {
+    font: 16px/20px Roboto-Regular;
+    color: #9b4ea9;
+}
+.order-footer a::before {
+    content: url(../img/icon-back.png);
+    margin-right: 10px;
+}
+.order-footer button, .discount button {
+    width: 190px;
+    height: 40px;
+    font: 16px/20px Roboto-Regular;
+}
+.discount {
+    display: flex;
+    align-items: center;
+    margin-top: 6%;
+}
+.discount p {
+    font: 16px/20px Roboto-Regular;
+    margin-right: 2%;
+}
+.discount input {
+    outline: 0;
+    border: 1px solid #cdcdcd;
+    font: 16px/20px Roboto-Regular;
+    max-width: 295px;
+    width: 295px;
+    margin-right: 2%;
+    height: 40px;
+    padding-left: 10px;
+}
+.order .attention {
+    margin-top: 6%;
+    text-align: center;
+}
+.order .attention p {
+    font: 16px/40px Roboto-Regular;
+    margin: 0;
+}
+.order .attention .bold {
+    font: 24px/40px Roboto-Regular;
+    margin-top: 6%;
+}
+
+
+
+                                     /*Адаптив 1170*/ 
 @media (max-width: 1170px) {
     .header-menu {
         flex-wrap: wrap;
@@ -616,11 +1203,8 @@ input[type="search"]::-webkit-search-cancel-button {
     .centercol h1 {
         margin-bottom: 10px;
     }
-    .products {
-        justify-content: space-around;
-    }
     .block-item {
-        flex-basis: 45%;
+        flex-basis: 46%;
     }
     .categories h2 {
         background-position: 20% center;
@@ -630,6 +1214,15 @@ input[type="search"]::-webkit-search-cancel-button {
     }
     .empty {
         padding-bottom: 480px;
+    }
+    .description input[type="number"] {
+        margin-right: 2%;
+    }
+    .review input, .review textarea {
+        width: 100%;
+    }
+    table td {
+        padding: 4% 1.5%;
     }
 }
                                     /*Адаптив 1030*/ 
@@ -647,6 +1240,9 @@ input[type="search"]::-webkit-search-cancel-button {
     }
     .footer-menu ul li {
         flex-basis: 33%;
+    }
+    select {
+        margin-right: 10%;
     }
 }
                                     /*Адаптив 992*/ 
@@ -670,11 +1266,11 @@ input[type="search"]::-webkit-search-cancel-button {
         width: 100%;
         position: absolute;
         z-index: 1000;
-        top:0;
+        top: 20px;
         left:0;
         display: none;
         background: #f4e1f7;
-        border-radius: 0 0 12px 12px;
+        border-radius: 12px;
     }
     .header-menu ul li {
         display: block;
@@ -703,7 +1299,7 @@ input[type="search"]::-webkit-search-cancel-button {
         display: none;
     }
     .block-item {
-        flex-basis: 46%;
+        flex-basis: 47%;
     }
     .block-item .image {
         height: 240px;
@@ -729,6 +1325,12 @@ input[type="search"]::-webkit-search-cancel-button {
     }
     .article-item span {
         width: 35%;
+    }
+    .breadcrumbs {
+        margin: 20px 0;
+    }
+    .text {
+        display: none;
     }
     
 }
@@ -779,8 +1381,111 @@ input[type="search"]::-webkit-search-cancel-button {
     .copy {
         text-align: left;
     }
+    select {
+        margin-right: 10px;
+    }
+    .product_item .image {
+        flex-basis: 100%;
+    }
+    .product_item .description {
+        flex-basis: 100%;
+    }
+    .description .price {
+        display: inline-block;
+        margin-left: 6%;
+    }
+    .description .stock {
+        margin: 0 0 30px;
+    }
+    .tabs label {
+        font-size: 16px;
+    }
+    .order h2 {
+        display: block;
+    }
+    table {
+        border: 0;
+    }
+    table thead {
+        display: none;
+    }
+    table tr {
+        display: block;
+        margin-bottom: 20px;
+        font: 16px/30px Roboto-Regular;
+    }
+    table td {
+        display: block;
+        text-align: right;
+        padding: 3% 1.5%;
+    }
+    table td:before {
+        content: attr(aria-label);
+        float: left;
+    }
+    table td.image {
+        text-align: center;
+    }
+    table td.image img {
+        width: auto;
+        height: 140px;
+    }
+    table td.name {
+        text-align: right;
+        width: inherit;
+    }
+    table td input {
+        width: 80px;
+        font-size: 18px;
+    }
 }
-                                    /*Адаптив 530*/
+                                    /*Адаптив 695*/
+@media (max-width: 695px) {
+    .block-item {
+        flex-basis: 46%;
+    }
+    .contacts-info {
+        flex-wrap: wrap;
+    }
+    .contacts-info .left {
+        flex-basis: 100%;
+    }
+    .contacts-info .map-container {
+        width: 100%;
+    }
+    .contacts-info .left p {
+        margin-bottom: 3%;
+    }
+    .contacts-info .left .light {
+        margin: 3% 0 4%;
+    }
+}
+                                    /*Адаптив 630*/
+@media (max-width: 630px) {
+    .sort {
+        margin-bottom: 30px;
+    }
+    select {
+        margin-left: 0;
+        width: 100%;
+    }
+    .count_to_page {
+        width: 100%;
+        background-position: 93% center;
+    }
+    .tabs label {
+        display: block;
+        padding: 15px 0;
+        width: 99%;
+        border: 1px solid #e6e6e6;
+        border-radius: 12px 12px 0 0;
+        border-bottom: 0;
+    }
+    .tabs section {
+        top: 0;
+    }
+}
+                                   /*Адаптив 530*/
 @media (max-width: 530px) {
     .header {
         min-height: auto;
@@ -908,11 +1613,96 @@ input[type="search"]::-webkit-search-cancel-button {
     .copy a {
         position: static;
     }
+    .breadcrumbs {
+        display: none;
+    }
+    .product_card h2 {
+        font: 17px/25px Roboto-Regular;
+    }
+    .product_item .image a:first-child {
+        height: 250px;
+    }
+    .product_item .image a:first-child img {
+        height: 250px;
+    }
+    .product_item .image a {
+        height: 100px;
+    }
+    .product_item .image a img {
+        height: 100px;
+    }
+    .product_item .description {
+        margin-left: 0;
+    }
+    .description .factory {
+        margin: 10px 0 0;
+    }
+    .description .choice {
+        margin: 10px 0 20px;
+    }
+    .description .price span {
+        font: 22px/30px Roboto-Medium;
+    }
+    .centercol h2 {
+        font: 20px/30px Roboto-Regular;
+    }
+    .feedback .form input, .feedback .form textarea {
+        width: 100%;
+    }
+    .feedback .form select {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .contacts-block h3, .contacts-block h4 {
+        display: none;
+    }
+    .contacts-info .left .bold {
+        font-size: 20px;
+    }
+    .partners {
+        text-align: center;
+    }
+    .partners .light {
+        width: 100%;
+    }
+    .order p {
+        margin: 10px 0;
+    }
+    .discount {
+        flex-wrap: wrap;
+    }
+    .discount button {
+        margin: 20px 0;
+    }
+    .order .attention p {
+        font: 16px/20px Roboto-Regular;
+    }
+    .order .attention .bold {
+        font: 18px/30px Roboto-Regular;
+    }
 }
-@media (max-width: 400px) {  
+                                            /*Адаптив 400*/
+@media (max-width: 420px) {  
     .menuToggle {
         width: 80px;
     }
+    .product_item .image a {
+        flex-basis: 30%;
+    }
+    .description .price {
+        margin-left: 0;
+    }
+    .description .stock {
+        margin: 10px 0;
+    }
+    .description input[type="number"] {
+        margin-right: 6%;
+    }
+    .tabs label {
+        font: 15px/15px Roboto-Regular;
+    }
+    
+    
 }
 
     
