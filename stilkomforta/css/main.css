@@ -1135,6 +1135,7 @@ table td .delete {
 }
 .total div p {
     font: 18px/20px Roboto-Regular;
+    margin: 20px 0;
 }
 .order-footer {
     display: flex;
