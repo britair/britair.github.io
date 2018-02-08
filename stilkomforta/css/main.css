@@ -410,7 +410,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
                                     /*Виджеты соцсетей*/
 .widget {
-    margin: 0 auto;
+    margin: 0 auto 50px;
 }
 
 /*Центральная колонка*/
