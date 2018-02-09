@@ -1563,6 +1563,10 @@ table td .delete {
         margin: 0 0 10px;
         font: 17px/25px Roboto-Regular;
     }
+    .centercol h4 {
+        font: 25px/30px Roboto-Regular;
+        margin: 20px 0;
+    }
     .block-item {
         flex-basis: 100%;
         margin: 0 0 20px 0;
@@ -1703,6 +1707,9 @@ table td .delete {
     }
     .order .attention .bold {
         font: 18px/30px Roboto-Regular;
+    }
+    .delivery .bold24 {
+        font: 20px/30px Roboto-Regular;
     }
 }
                                             /*Адаптив 400*/
