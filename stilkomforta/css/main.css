@@ -1167,6 +1167,9 @@ table td .delete {
     font: 16px/20px Roboto-Regular;
     color: #9b4ea9;
 }
+.order-footer a:hover {
+    text-decoration: underline;
+}
 .order-footer a::before {
     content: url(../img/icon-back.png);
     margin-right: 10px;
@@ -1634,6 +1637,9 @@ table td .delete {
     .copy a {
         position: static;
     }
+    .attention h1 {
+        padding: 15px 0 20px 80px;
+    }
     .breadcrumbs {
         display: none;
     }
@@ -1685,9 +1691,6 @@ table td .delete {
     }
     .partners .light {
         width: 100%;
-    }
-    .order p {
-        margin: 10px 0;
     }
     .discount-code {
         flex-wrap: wrap;
