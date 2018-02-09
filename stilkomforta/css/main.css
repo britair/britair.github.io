@@ -352,8 +352,8 @@ input[type="search"]::-webkit-search-cancel-button {
     border-radius: 0 0 12px 12px;
     border: 0;
 }
-/*Распродажа, Рекомендуем, Идеи подарков*/
-.sale, .recommed, .ideas, .article {
+/*Новинки, Скидки, Идеи подарков*/
+.novelty, .discount, .ideas, .article {
     border-left: 1px solid #9b4ea9;
     border-bottom: 1px solid #9b4ea9;
     border-right: 1px solid #9b4ea9;
@@ -362,29 +362,29 @@ input[type="search"]::-webkit-search-cancel-button {
     padding-top: 52px;
     margin-bottom: 50px;
 }
-.sale h2, .recommed h2, .ideas h2, .article h2 {
+.novelty h2, .discount h2, .ideas h2, .article h2 {
     width: 101%;
     position: absolute; 
     top: -10px;
     left: -1px;
 }
-.sale-item, .recommed-item, .idea-item, .article-item {
+.novelty-item, .discount-item, .idea-item, .article-item {
     display: flex;
     padding: 0 7px 20px 10px;
 }
-.sale-item img, .recommed-item img, .idea-item img {
+.novelty-item img, .discount-item img, .idea-item img {
     width: 92px;
     height: 80px;
     object-fit: cover;
 }
-.sale-item p, .recommed-item p, .idea-item p, .article-item p {
+.novelty-item p, .discount-item p, .idea-item p, .article-item p {
     font: 16px/20px Roboto-Regular;
     color: #000;
     padding-left: 10px;
     height: 80px;
     overflow: hidden;
 }
-.sale-item:hover p, .recommed-item:hover p, .idea-item:hover p, .article-item:hover p {
+.novelty-item:hover p, .discount-item:hover p, .idea-item:hover p, .article-item:hover p {
     text-decoration: underline;
 }
 .article {
@@ -408,9 +408,28 @@ input[type="search"]::-webkit-search-cancel-button {
     height: 40px;
     flex-basis: 178px;
 }
-                                    /*Виджеты соцсетей*/
-.widget {
-    margin: 0 auto 50px;
+/*Группы в соцсетях*/
+.social-leftcol {
+    flex-wrap: wrap;
+}
+.social-leftcol p {
+    font: 16px/20px Roboto-Regular;
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.social-leftcol .social-link:nth-child(2) {
+    background: url(../img/social.png) no-repeat -168px 0px;
+}
+.social-leftcol .social-link:nth-child(3) {
+    background: url(../img/instagram.png) no-repeat;
+    background-size: contain;
+}
+.social-leftcol .social-link:nth-child(4) {
+    background: url(../img/social.png) no-repeat -125px 0px;
+}
+.social-leftcol .social-link:nth-child(5) {
+    background: url(../img/social.png) no-repeat 0px 0px;
 }
 
 /*Центральная колонка*/
@@ -1152,21 +1171,21 @@ table td .delete {
     content: url(../img/icon-back.png);
     margin-right: 10px;
 }
-.order-footer button, .discount button {
+.order-footer button, .discount-code button {
     width: 190px;
     height: 40px;
     font: 16px/20px Roboto-Regular;
 }
-.discount {
+.discount-code {
     display: flex;
     align-items: center;
     margin-top: 6%;
 }
-.discount p {
+.discount-code p {
     font: 16px/20px Roboto-Regular;
     margin-right: 2%;
 }
-.discount input {
+.discount-code input {
     outline: 0;
     border: 1px solid #cdcdcd;
     font: 16px/20px Roboto-Regular;
@@ -1312,15 +1331,15 @@ table td .delete {
     .hide + label {
         padding-left: 27px;
     }
-    .sale h2, .recommed h2, .ideas h2, .article h2 {
+    .novelty h2, .discount h2, .ideas h2, .article h2 {
        left: -4px;
     }
-    .sale-item img, .recommed-item img, .idea-item img {
+    .novelty-item img, .discount-item img, .idea-item img {
         width: auto;
         height: 140px;
         flex-basis: 35%;
     }
-    .sale-item p, .recommed-item p, .idea-item p, .article-item p {
+    .novelty-item p, .discount-item p, .idea-item p, .article-item p {
         flex-basis: 60%;
         padding-left: 20px;
         height: 140px;
@@ -1369,10 +1388,13 @@ table td .delete {
         margin: 0 10px;
     }
     .empty {
-        padding-bottom: 540px;
+        padding-bottom: 600px;
     }
     .custom, .social, .subscribe {
         justify-content: flex-start;
+    }
+    .social-leftcol {
+        justify-content: center;
     }
     .footer-menu ul li {
         flex-basis: 50%;
@@ -1555,9 +1577,6 @@ table td .delete {
     .pagination {
         margin: 0 0 20px;
     }
-    .empty {
-        padding-bottom: 550px;
-    }
     .pagination a {
         font: 20px/30px Roboto-Regular;
     }
@@ -1572,14 +1591,14 @@ table td .delete {
         margin: 0;
         background-position: 26% center;
     }
-    .sale h2, .recommed h2, .ideas h2, .article h2 {
+    .novelty h2, .discount h2, .ideas h2, .article h2 {
         left: -2px;
     }
-    .sale-item img, .recommed-item img, .idea-item img {
+    .novelty-item img, .discount-item img, .idea-item img {
         height: 123px;
         flex-basis: 45%;
     }
-    .sale-item p, .recommed-item p, .idea-item p, .article-item p {
+    .novelty-item p, .discount-item p, .idea-item p, .article-item p {
         flex-basis: 55%;
         padding-left: 10px;
         height: 123px;
@@ -1670,10 +1689,10 @@ table td .delete {
     .order p {
         margin: 10px 0;
     }
-    .discount {
+    .discount-code {
         flex-wrap: wrap;
     }
-    .discount button {
+    .discount-code button {
         margin: 20px 0;
     }
     .order .attention p {
