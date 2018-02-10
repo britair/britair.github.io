@@ -1259,7 +1259,7 @@ table td .delete {
     flex-basis: 170px;
     font: 15px/35px Roboto-Regular;
 }
-.step-row input[type="text"] {
+.step-row input {
     width: 300px;
     height: 40px;
     border: 1px solid #b4b4b4;
