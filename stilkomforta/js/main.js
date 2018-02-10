@@ -30,6 +30,8 @@ $(function () {
 $(function(){
     $("#callback_phone").mask("8 (999) 999-99-99");
     $("#feedback_phone").mask("8 (999) 999-99-99");
+    $("#order_phone").mask("8 (999) 999-99-99");
+    $("#order_phone2").mask("8 (999) 999-99-99");
 });
 
 /*Заказать звонок*/
