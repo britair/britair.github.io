@@ -62,7 +62,7 @@ img {
 .empty {
     padding-bottom: 400px;
 }
-                                                /*Шапка*/
+                                        /*Шапка*/
 .header {
 	background-image: url(../img/header-bg.jpg);
     background-repeat: no-repeat;
@@ -197,7 +197,7 @@ img {
     height: 1px;
     margin-top: 38px;
 }
-/*Меню*/
+                                        /*Меню*/
 .header-menu {
     display: flex;
     justify-content: space-between;
@@ -251,7 +251,7 @@ input[type="search"]::-webkit-search-cancel-button {
     background-repeat: no-repeat;
     background-position: center center;
 }
-/*Слайдер*/
+                                    /*Слайдер*/
 .slider {
     background-color: #fdf2ff;
     box-shadow: 0 3px 7px rgba(0,0,0,0.1);
@@ -273,14 +273,50 @@ input[type="search"]::-webkit-search-cancel-button {
 	top: 50%;
 	right: 30px;
 }	
-/*Основная часть*/
+                                    /*Основная часть*/
 .content {
     background-image: url(../img/content-bg.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
 }
-/*Категории*/
+                                    /*Каталог*/
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: -20px;
+}
+.catalog-item {
+    flex-basis: 31%;
+    text-align: center;
+    background: #f3f3f3;
+    margin: 0 20px 20px 0;
+}
+.catalog-item a {
+    font: 18px/20px Roboto-Regular;
+    display: block;
+    color: #000;
+}
+.catalog-item a:last-of-type {
+    margin: 10px 0;
+}
+.catalog-item a:hover, .catalog-item a:active {
+    text-decoration: underline;
+    text-decoration-skip: none;
+    text-decoration-skip-ink: none;
+    -weblit-text-decoration-skip: none;
+}
+.catalog-item a img {
+    height: 235px;
+    object-fit: cover;
+}
+.catalog-item span {
+    font: 14px/20px Roboto-Light;
+    padding: 0 10px 10px;
+    display: block;
+}
+                                    /*Категории*/
 .leftcol h2 {
     background-color: #cb89d7;
     text-align: center;
@@ -357,7 +393,7 @@ input[type="search"]::-webkit-search-cancel-button {
     border-radius: 0 0 12px 12px;
     border: 0;
 }
-/*Новинки, Скидки, Идеи подарков*/
+                    /*Новинки, Скидки, Идеи подарков*/
 .novelty, .discount, .ideas, .article {
     border-left: 1px solid #9b4ea9;
     border-bottom: 1px solid #9b4ea9;
@@ -413,7 +449,7 @@ input[type="search"]::-webkit-search-cancel-button {
     height: 40px;
     flex-basis: 178px;
 }
-/*Группы в соцсетях*/
+                            /*Группы в соцсетях*/
 .social-leftcol {
     flex-wrap: wrap;
 }
@@ -436,7 +472,7 @@ input[type="search"]::-webkit-search-cancel-button {
     background: url(../img/social.png) no-repeat 0px 0px;
 }
 
-/*Центральная колонка*/
+                                /*Центральная колонка*/
 .centercol h1 {
     font: 22px/40px Roboto-Regular;
     text-align: center;
@@ -455,7 +491,6 @@ input[type="search"]::-webkit-search-cancel-button {
     margin-right: -20px;
 }
 .block-item {
-    display: block;
     flex-basis: 31%;
     text-align: center;
     background: #f3f3f3;
@@ -498,7 +533,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .block-item a:hover {
     text-decoration: underline;
 }
-/*Пагинация*/
+                                    /*Пагинация*/
 .pagination {
     text-align: center;
     margin-top: 20px;
@@ -514,7 +549,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .pagination .active {
     border-bottom: 1px solid #9b4ea9;
 }
-/*Ссылки*/
+                                    /*Ссылки*/
 .links {
     margin-bottom: 40px;
 }
@@ -537,7 +572,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .link-item a:hover {
     color: #000;
 }
-                                                /*Подвал*/
+                                        /*Подвал*/
 .footer-menu ul {
     display: flex;
     justify-content: space-around;
@@ -635,7 +670,7 @@ input[type="search"]::-webkit-search-cancel-button {
     right:0;
     color: white;
 }
-                                            /*Категории*/ 
+                                     /*Категории*/ 
 .breadcrumbs {
     margin-bottom: 20px;
 }
@@ -714,7 +749,7 @@ select option {
     text-align: center;
     margin: 20px 0;
 }
-                                        /*Доставка*/ 
+                                    /*Доставка*/ 
 .centercol h2 {
     font: 36px/46px Roboto-Regular;
     margin-bottom: 2%;
@@ -827,7 +862,7 @@ select option {
 .attention p {
     font: 18px/20px Roboto-Light;
 }
-                                    /*Карточка товара*/
+                                /*Карточка товара*/
 .product_card h2 {
     font: 24px/30px Roboto-Regular;
 }
@@ -1005,7 +1040,7 @@ table td input[type="number"]::-webkit-inner-spin-button {
     font: 16px/40px Roboto-Regular;
     margin-top: 10px;
 }
-                                        /*Контакты*/ 
+                                    /*Контакты*/ 
 .contacts-block h3 {
     color: #9b4ea9;
     text-align: center;
@@ -1312,7 +1347,7 @@ section[id="yes"] {
     .centercol h1 {
         margin-bottom: 10px;
     }
-    .block-item {
+    .block-item, .catalog-item {
         flex-basis: 46%;
     }
     .categories h2 {
@@ -1407,7 +1442,7 @@ section[id="yes"] {
     .centercol h6 {
         display: none;
     }
-    .block-item {
+    .block-item, .catalog-item {
         flex-basis: 47%;
     }
     .block-item .image {
@@ -1569,7 +1604,7 @@ section[id="yes"] {
 }
                                     /*Адаптив 695*/
 @media (max-width: 695px) {
-    .block-item {
+    .block-item, .catalog-item {
         flex-basis: 46%;
     }
     .contacts-info {
@@ -1592,6 +1627,9 @@ section[id="yes"] {
 @media (max-width: 630px) {
     .sort {
         margin-bottom: 30px;
+    }
+    .catalog-item span {
+        display: none;
     }
     select {
         margin-left: 0;
@@ -1673,7 +1711,7 @@ section[id="yes"] {
     .slider {
         display: none;
     }
-    .products {
+    .products, .catalog {
         margin-right: 0;
     }
     .centercol h1 {
@@ -1684,7 +1722,7 @@ section[id="yes"] {
         font: 25px/30px Roboto-Regular;
         margin: 20px 0;
     }
-    .block-item {
+    .block-item, .catalog-item {
         flex-basis: 100%;
         margin: 0 0 20px 0;
     }
@@ -1829,10 +1867,13 @@ section[id="yes"] {
         font: 20px/30px Roboto-Regular;
     }
 }
-                                            /*Адаптив 400*/
+                                     /*Адаптив 400*/
 @media (max-width: 420px) {  
     .menuToggle {
         width: 80px;
+    }
+    .catalog-item a img {
+        height: 160px;
     }
     .product_item .image a {
         flex-basis: 30%;
