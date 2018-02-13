@@ -60,7 +60,7 @@ img {
 	bottom: 0;
 }
 .empty {
-    padding-bottom: 400px;
+    padding-bottom: 419px;
 }
                                         /*Шапка*/
 .header {
@@ -68,7 +68,7 @@ img {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    min-height: 240px;
+    min-height: 237px;
     box-shadow: 0 3px 7px rgba(0,0,0,0.1);
 }
 .header-top {
@@ -202,7 +202,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 11px 20px;
+    padding: 10px 20px;
     position: relative;
 }
 .header-menu ul li {
@@ -503,7 +503,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .block-item p {
     font: 16px/20px Roboto-Light;
-    margin: 20px 0;
+    margin: 15px 0 16px;
     height: 40px;
     overflow: hidden;
 }
@@ -529,7 +529,7 @@ input[type="search"]::-webkit-search-cancel-button {
     display: block;
     font: 16px/40px Roboto-Regular;
     color: #000;
-    margin: 20px 0 40px;
+    margin: 8px 0 31px;
 }
 .block-item a:hover {
     text-decoration: underline;
@@ -537,8 +537,8 @@ input[type="search"]::-webkit-search-cancel-button {
                                     /*Пагинация*/
 .pagination {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 4px;
+    margin-bottom: 29px;
 }
 .pagination a {
     display: inline-block;
@@ -577,7 +577,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .footer-menu ul {
     display: flex;
     justify-content: space-around;
-    padding: 20px 0 40px;
+    padding: 10px 0 31px;
 }
 .footer-menu ul li a {
     text-transform: uppercase;
@@ -673,7 +673,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
                                      /*Категории*/ 
 .breadcrumbs {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 .breadcrumbs a {
     font: 14px/20px Roboto-Light;
@@ -752,7 +752,7 @@ select option {
 }
                                     /*Доставка*/ 
 .centercol h2 {
-    font: 36px/46px Roboto-Regular;
+    font: 36px/50px Roboto-Regular;
     margin-bottom: 2%;
 }
 .centercol .map {
@@ -763,7 +763,7 @@ select option {
 }
 .centercol h4 {
     font: 30px/40px Roboto-Regular;
-    margin: 40px 0;
+    margin: 22px 0;
     text-align: center;
 }
 .text {
@@ -796,12 +796,12 @@ select option {
 }
 .text .bold24 {
     font: 24px/40px Roboto-Regular;
-    margin: 20px 0;
+    margin: 25px 0 0;
     text-align: center;
 }
 .text .bold16 {
     font: 16px/20px Roboto-Regular;
-    margin: 20px 0;
+    margin: 16px 0 20px;
     text-align: center;
     text-decoration: underline;
     text-decoration-skip: none;
@@ -998,6 +998,7 @@ table td input[type="number"]::-webkit-inner-spin-button {
 }
 .tabs section .violet {
     color: #9b4ea9;
+    font: 16px/20px Roboto-Regular;
 }
 .tabs section .bold {
     font-family: Roboto-Regular;
@@ -1045,7 +1046,7 @@ table td input[type="number"]::-webkit-inner-spin-button {
 .contacts-block h3 {
     color: #9b4ea9;
     text-align: center;
-    margin: 2% 0 0;
+    margin: 2.2% 0 0;
     font: 24px/30px Roboto-Regular;
 }
 .contacts-block h4 {
@@ -1062,7 +1063,7 @@ table td input[type="number"]::-webkit-inner-spin-button {
 }
 .contacts-info .left p {
     font: 16px/20px Roboto-Regular;
-    margin-bottom: 7%;
+    margin-bottom: 8%;
 }
 .contacts-info .left .bold {
     font: 24px/40px Roboto-Regular;
@@ -1072,7 +1073,7 @@ table td input[type="number"]::-webkit-inner-spin-button {
 }
 .contacts-info .left .light {
     font: 16px/20px Roboto-Light;
-    margin: 8% 0 5%;
+    margin: 7% 0 5%;
 }
 .contacts-info .left .bold16 {
     font: 16px/20px Roboto-Regular;
@@ -1083,7 +1084,7 @@ table td input[type="number"]::-webkit-inner-spin-button {
 }
 
 .feedback {
-    margin: 6% 0;
+    margin: 4.5% 0;
 }
 .feedback p {
     font: 18px/20px Roboto-Regular;
@@ -1128,7 +1129,7 @@ table td input[type="number"]::-webkit-inner-spin-button {
 .feedback .form button {
     width: 190px;
     font: 16px/40px Roboto-Regular;
-    margin: 35px auto 10px;
+    margin: 24px auto 18px;
 }
 .partners .partners-item {
     display: inline-block;
@@ -1151,14 +1152,17 @@ table td input[type="number"]::-webkit-inner-spin-button {
     font: 14px/20px Roboto-Light;
     width: 190px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 16px;
 }
                                 /*Корзина и заказ*/
+.order {
+    margin: 36px 0 0;
+} 
 .order h2 {
     display: none;
 }
 .order .delivery-price {
-    margin: 20px 0;
+    margin: 17px 0;
     font: 16px/20px Roboto-Light;
 }
 table {
@@ -1226,7 +1230,7 @@ table td .delete {
 }
 .total div p {
     font: 18px/20px Roboto-Regular;
-    margin: 20px 0;
+    margin: 22px 0;
 }
 .order-footer {
     display: flex;
@@ -1253,7 +1257,7 @@ table td .delete {
 .discount-code {
     display: flex;
     align-items: center;
-    margin-top: 6%;
+    margin-top: 7.5%;
 }
 .discount-code p {
     font: 16px/20px Roboto-Regular;
@@ -1270,8 +1274,9 @@ table td .delete {
     padding-left: 10px;
 }
 .order .attention {
-    margin-top: 6%;
+    margin-top: 4.2%;
     text-align: center;
+    padding: 10px 10px 3.5%;
 }
 .order .attention p {
     font: 16px/40px Roboto-Regular;
@@ -1279,7 +1284,7 @@ table td .delete {
 }
 .order .attention .bold {
     font: 24px/40px Roboto-Regular;
-    margin-top: 6%;
+    margin-top: 4%;
 }
 .order .step {
     text-align: center;
@@ -1548,6 +1553,9 @@ section[id="yes"] {
     }
     .tabs label {
         font-size: 16px;
+    }
+    .order {
+        margin: 0;
     }
     .order h2 {
         display: block;
