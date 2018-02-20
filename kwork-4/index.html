@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>У нас есть все — от шпателя до краски</title>
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+
+<body>
+<header>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12 header_top">
+
+        <div class="col-md-8 header_top-left">
+          <div class="logo">
+            <img src="img/logo.png" alt="У нас есть все — от шпателя до краски" class="img-responsive">
+          </div>
+          <h2><span>«У нас есть все —</span>
+            от шпателя до краски»</h2>
+        </div>
+        <div class="col-md-4 header_phone">
+          <a href="#" class="card">Ваша корзина пока пуста</a>
+          <a href="tel:+74955100542" class="phone">+7 (495) 510-05-42</a>
+
+          <form action="">
+            <input type="text" name="search" placeholder="поиск по товарам">
+            <button type="submit"></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-12 menu">
+        <ul class="main_mnu">
+          <li><a href="#" class="catalog">Каталог продукции</a>
+            <ul class="dropdown">
+              <li><a href="#">ЛКМ</a>
+                <ul class="sup_dropdown">
+                  <li><a href="#">Растворители</a></li>
+                  <li><a href="#">Лаки</a></li>
+                  <li><a href="#">Эмали</a></li>
+                  <li><a href="#">Краски</a>
+                    <ul class="dropdown2">
+                      <li><a href="#">- Декоративные</a></li>
+                      <li><a href="#">- Для наружных работ</a></li>
+                      <li><a href="#">- Для внутренних работ</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Грунтовки</a></li>
+                  <li><a href="#">Защитные материалы</a></li>
+                  <li><a href="#">Очистители</a></li>
+                  <li><a href="#">Пропитки</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Строительные материалы</a>
+                <ul class="sup_dropdown">
+                  <li><a href="#">4</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Изоляция</a></li>
+              <li><a href="#">Строительные смеси</a></li>
+              <li><a href="#">Напольные покрытия</a></li>
+              <li><a href="#">Электрика</a></li>
+              <li><a href="#">Клей, пена, герметики</a></li>
+              <li><a href="#">Инструмент</a></li>
+              <li><a href="#">IC_GROUP0</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="delivery">Доставка</a></li>
+          <li><a href="#" class="coloring">Колеровка</a></li>
+          <li><a href="#" class="contacts">Контакты</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+<div class="content">
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-offset-3 col-md-9 main_content">
+        <div class="col-md-12">
+          <ul>
+            <li><a href="#">Главная /</a></li>
+            <li><a href="#">Каталог /</a></li>
+            <li><a href="#">ЛКМ /</a></li>
+            <li><a href="#">Краски /</a></li>
+            <li><a href="#"> Краски для внутренних работ</a></li>
+          </ul>
+
+          <h2>Краски для внутренних работ</h2>
+
+          <div class="col-md-12 filter">
+            <div class="top_line">
+              <p>Подобрать товар:</p>
+              <div class="block-right">
+                <a href="#" class="block-img"><img src="img/icon5.png" alt="" class="img-responsive"></a>
+                <a href="#" class="block-img"><img src="img/icon6.png" alt="" class="img-responsive"></a>
+
+                <a href="#">20</a>
+                <a href="#" class="center">40</a>
+                <a href="#">100</a>
+              </div>
+            </div>
+
+            <div class="col-md-12 bottom_line">
+              <div class="wrapper-dropdown-1"><span>Цена</span>
+                <label class="it-1 price">
+                  <span>от</span><input type="text" name="price" id="minCost2" value="0">
+                  <span>до</span><input type="text" name="price" id="maxCost2" value="200000">
+                  <div id="slider"></div>
+                  <span class="block-btn"><button>Применить</button></span>
+                </label>
+              </div>
+                             
+              <div class="wrapper-dropdown-1"><span>Бренд</span>
+                <label class="it-1">
+                  <input type="text" name="price">
+                  <input type="text" name="price">
+                  <span class="block-btn"><button>Применить</button></span>
+                </label>
+              </div>
+
+              <div class="wrapper-dropdown-1"><span>Помещение</span>
+                <label class="it-1">
+                  <input type="text" name="price">
+                  <input type="text" name="price">
+                  <span class="block-btn"><button>Применить</button></span>
+                </label>
+              </div>
+
+              <div class="wrapper-dropdown-1"><span>Виды работ</span>
+                <label class="it-1">
+                  <input type="text" name="price">
+                  <input type="text" name="price">
+                  <span class="block-btn"><button>Применить</button></span>
+                </label>
+              </div>
+
+              <div class="wrapper-dropdown-1"><span>Назначение</span>
+
+                <div class="check it-1">
+                  <label class="it-2">
+                    <input type="checkbox" name="checkbox"><span>Для пола<span class="amount">(34)</span></span>
+                  </label>
+
+                  <label class="it-2">
+                    <input type="checkbox" name="checkbox"><span>Для потолка<span class="amount">(13)</span></span>
+                  </label>
+                    
+                  <label class="it-2">
+                    <input type="checkbox" name="checkbox"><span>Для стен<span class="amount">(12)</span></span>
+                  </label>
+                    
+                  <label class="it-2">
+                    <input type="checkbox" name="checkbox"><span>Для фасадов<span class="amount">(564)</span></span>
+                  </label>
+                
+                  <button class="all">Все варианты</button>    
+                  <span class="block-btn"><button>Применить</button></span>
+                </div>
+
+              </div>
+              <div id="modal_form_all" class="col-md-12">
+                <div class="modal_close"><a href="#"></a> <i class="fal fa-times"></i></div> <!-- Кнoпкa зaкрыть -->
+                <form class="modal_form col-md-12" method="post">
+                  <label class="it-2 pl">
+                    <input type="checkbox" name="checkbox"><span>Для пола<span class="amount">(34)</span></span>
+                  </label>
+                  <label class="it-2">
+                    <input type="checkbox" name="checkbox"><span>Для потолка<span class="amount">(13)</span></span>
+                  </label>    
+                  <label class="it-2 pl">
+                    <input type="checkbox" name="checkbox"><span>Для стен<span class="amount">(12)</span></span>
+                  </label>
+                  <label class="it-2">
+                    <input type="checkbox" name="checkbox"><span>Для фасадов<span class="amount">(564)</span></span>
+                  </label>    
+                  <label class="it-2 pl">
+                    <input type="checkbox" name="checkbox"><span>Для пола<span class="amount">(34)</span></span>
+                  </label>
+                  <label class="it-2">
+                    <input type="checkbox" name="checkbox"><span>Для потолка<span class="amount">(13)</span></span>
+                  </label>
+                  <label class="it-2 pl">
+                    <input type="checkbox" name="checkbox"><span>Для стен<span class="amount">(12)</span></span>
+                  </label>
+                  <label class="it-2">
+                    <input type="checkbox" name="checkbox"><span>Для фасадов<span class="amount">(564)</span></span>
+                  </label>
+                  <label class="it-2 pl">
+                    <input type="checkbox" name="checkbox"><span>Для пола<span class="amount">(34)</span></span>
+                  </label>
+                   <label class="it-2">
+                    <input type="checkbox" name="checkbox"><span>Для потолка<span class="amount">(13)</span></span>
+                  </label>
+                  <label class="it-2 pl">
+                    <input type="checkbox" name="checkbox"><span>Для стен<span class="amount">(12)</span></span>
+                  </label>
+                  <label class="it-2">
+                    <input type="checkbox" name="checkbox"><span>Для фасадов<span class="amount">(564)</span></span>
+                  </label>
+                <div class="it-1">    
+                  <span class="block-btn"><button>Применить</button></span>
+                </div>
+                </form>
+              </div>
+              <div id="overlay1"></div>
+                  
+              <div class="wrapper-dropdown-1"><span>Материал</span>
+                <label class="it-1">
+                  <input type="text" name="price">
+                  <input type="text" name="price">
+                  <span class="block-btn"><button>Применить</button></span>
+                </label>
+              </div>
+                
+
+            </div>
+
+            <div class="col-md-12 bottom_line">
+
+              <label class="it-3">
+                <input type="checkbox" name="checkbox"><span>Без запаха</span>
+              </label>
+
+              <label class="it-3">
+                <input type="checkbox" name="checkbox"><span>Огнезащитность</span>
+                <button class="close"></button>
+              </label>
+
+
+              <div class="wrapper-dropdown-1"><span>Виды работ</span>
+                <label class="it-1">
+                  <input type="text" name="price">
+                  <input type="text" name="price">
+                  <span class="block-btn"><button>Применить</button></span>
+                </label>
+              </div>
+
+              <div class="wrapper-dropdown-1"><span>Назначение</span>
+
+                <div class="check it-1">
+                  <label class="it-2">
+                    <input type="checkbox" name="checkbox"><span>Для пола</span>
+                  </label>
+
+                  <label class="it-2">
+                    <input type="checkbox" name="checkbox"><span>Для потолка</span>
+                  </label>
+                  
+                  <label class="it-2">
+                    <input type="checkbox" name="checkbox"><span>Для стен</span>
+                  </label>
+                  <label class="it-2">
+                    <input type="checkbox" name="checkbox"><span>Для фасадов</span>
+                  </label>
+
+                  <span class="block-btn"><button>Применить</button></span>
+                </div>
+
+              </div>
+
+              <div class="wrapper-dropdown-1"><span>Материал</span>
+                <label class="it-1">
+                  <input type="text" name="price">
+                  <input type="text" name="price">
+                  <span class="block-btn"><button>Применить</button></span>
+                </label>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="filter_block">
+            <a href="#">Dulux</a>
+            <a href="#">Краска для металла</a>
+            <a href="#">Огнеустойчивая</a>
+          </div>
+
+          <div class="col-md-12 product-item">
+
+            <div class="col-md-4 item">
+              <div class="block-img">
+                <img src="img/item1.png" alt="" class="img-responsive">
+              </div>
+
+              <h3>Краска для полов
+                  Краско Текстил
+                  <span>для внутренних работ</span></h3>
+
+              <div class="block-color">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+
+              <p class="article">Артикул: 1036</p>
+              <h6>0</h6>
+
+              <div class="exchange">
+                <img src="img/icon7.png" alt="" class="img-responsive">
+                <p>возможен самовывоз</p>
+              </div>
+
+              <a href="#" class="popup-btn">купить</a>
+            </div>
+
+            <div class="col-md-4 item">
+              <div class="block-img">
+                <img src="img/item1.png" alt="" class="img-responsive">
+              </div>
+
+              <h3>Краска для полов
+                  Краско Текстил</h3>
+
+              <div class="block-color">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+
+              <p class="article">Артикул: 1036</p>
+              <h6>0</h6>
+
+              <div class="exchange">
+                <img src="img/icon7.png" alt="" class="img-responsive">
+                <p>возможен самовывоз</p>
+              </div>
+
+              <a href="#" class="popup-btn">купить</a>
+            </div>
+
+            <div class="col-md-4 item">
+              <div class="block-img">
+                <img src="img/item1.png" alt="" class="img-responsive">
+              </div>
+
+              <h3>Краска для полов
+                  Краско Текстил
+                  <span>для внутренних работ</span></h3>
+
+              <div class="block-color">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+
+              <p class="article">Артикул: 1036</p>
+              <h6>0</h6>
+
+              <div class="exchange">
+                <img src="img/icon7.png" alt="" class="img-responsive">
+                <p>возможен самовывоз</p>
+              </div>
+
+              <a href="#" class="popup-btn">купить</a>
+            </div>
+
+            <div class="col-md-4 item">
+              <div class="block-img">
+                <img src="img/item1.png" alt="" class="img-responsive">
+              </div>
+
+              <h3>Краска для полов
+                  Краско Текстил
+                  <span>для внутренних работ</span></h3>
+
+              <div class="block-color">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+
+              <p class="article">Артикул: 1036</p>
+              <h6>0</h6>
+
+              <div class="exchange">
+                <img src="img/icon7.png" alt="" class="img-responsive">
+                <p>возможен самовывоз</p>
+              </div>
+
+              <a href="#" class="popup-btn">купить</a>
+            </div>
+
+            <div class="col-md-4 item">
+              <div class="block-img">
+                <img src="img/item1.png" alt="" class="img-responsive">
+              </div>
+
+              <h3>Краска для полов
+                  Краско Текстил <span>для внутренних работ</span></h3>
+
+              <div class="block-color">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+
+              <p class="article">Артикул: 1036</p>
+              <h6>0</h6>
+
+              <div class="exchange">
+                <img src="img/icon7.png" alt="" class="img-responsive">
+                <p>возможен самовывоз</p>
+              </div>
+
+              <a href="#" class="popup-btn">купить</a>
+            </div>
+
+            <div class="col-md-4 item">
+              <div class="block-img">
+                <img src="img/item1.png" alt="" class="img-responsive">
+              </div>
+
+              <h3>Краска для полов
+                  Краско Текстил</h3>
+
+              <div class="block-color">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+
+              <p class="article">Артикул: 1036</p>
+              <h6>0</h6>
+
+              <div class="exchange">
+                <img src="img/icon7.png" alt="" class="img-responsive">
+                <p>возможен самовывоз</p>
+              </div>
+
+              <a href="#" class="popup-btn">купить</a>
+            </div>
+
+            <div class="col-md-4 item">
+              <div class="block-img">
+                <img src="img/item1.png" alt="" class="img-responsive">
+              </div>
+
+              <h3>Краска для полов
+                  Краско Текстил</h3>
+
+              <div class="block-color">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+
+              <p class="article">Артикул: 1036</p>
+              <h6>0</h6>
+
+              <div class="exchange">
+                <img src="img/icon7.png" alt="" class="img-responsive">
+                <p>возможен самовывоз</p>
+              </div>
+
+              <a href="#" class="popup-btn">купить</a>
+            </div>
+
+            <div class="col-md-4 item">
+              <div class="block-img">
+                <img src="img/item1.png" alt="" class="img-responsive">
+              </div>
+
+              <h3>Краска для полов
+                  Краско Текстил</h3>
+
+              <div class="block-color">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+
+              <p class="article">Артикул: 1036</p>
+              <h6>0</h6>
+
+              <div class="exchange">
+                <img src="img/icon7.png" alt="" class="img-responsive">
+                <p>возможен самовывоз</p>
+              </div>
+
+              <a href="#" class="popup-btn">купить</a>
+            </div>
+
+            <div class="col-md-4 item">
+              <div class="block-img">
+                <img src="img/item1.png" alt="" class="img-responsive">
+              </div>
+
+              <h3>Краска для полов
+                  Краско Текстил</h3>
+
+              <div class="block-color">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+
+              <p class="article">Артикул: 1036</p>
+              <h6>0</h6>
+
+              <div class="exchange">
+                <img src="img/icon7.png" alt="" class="img-responsive">
+                <p>возможен самовывоз</p>
+              </div>
+
+              <a href="#" class="popup-btn">купить</a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-12 footer_top">
+        <div class="col-md-3">
+          <h2>О НАС</h2>
+          <ul>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Производители</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h2>ДОСТАВКА</h2>
+          <ul>
+            <li><a href="#">по Москве и МО</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h2>ВАЖНО</h2>
+          <ul>
+            <li><a href="#">Акции</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5 foot_phone">
+          <a href="tel:+74955100542" class="phone">+ 7 (495) 510-05-42</a>
+        </div>
+      </div>
+
+      <div class="col-md-12 footer_bottom">
+        <span>© 2014–2018 «Все краски для жизни»
+г. Москва</span>
+
+        <div class="block-img">
+          <img src="img/sochial.png" alt="" class="img-responsive">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="modal_form" class="col-md-12">
+    <div class="modal_close"><a href="#">Закрыть</a> <i class="fal fa-times"></i></div> <!-- Кнoпкa зaкрыть -->
+
+    <div class="col-md-6 block-img">
+      <img src="img/photo.png" alt="" class="img-responsive">
+    </div>
+    <div class="col-md-6 block-form">
+        <div class="col-md-8 block-left">
+          <h3>Краска для полов
+              ТЕКСИЛ</h3>
+          <p class="article">Артикул: 1036</p>
+        </div>
+
+        <div class="col-md-4 logo">
+          <img src="img/logo2.png" alt="" class="img-responsive">
+        </div>
+
+      <form class="modal_form col-md-12" method="post">
+
+        <div class="block-color col-md-10">
+          <p>Выберите цвет:</p>
+
+          <a href="#"></a>
+          <p class="colorless">Бесцветный</p>
+
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+
+        <div class="col-md-12 amount">
+          <a href="#" class="it1">2,5 L</a>
+          <div class="it2">
+            <i class="fal fa-caret-left"></i>
+            <span>1</span>
+            <i class="fal fa-caret-right"></i>
+          </div>
+          <input type="text" class="it3"> <label>руб.</label>
+          <span class="it1 it4">2500 руб.</span>    
+        </div>
+
+        <div class="col-md-12 amount">
+          <a href="#" class="it1">5 L</a>
+          <div class="it2">
+            <i class="fal fa-caret-left"></i>
+            <span>1</span>
+            <i class="fal fa-caret-right"></i>
+          </div>
+          <input type="text" class="it3"> <label>руб.</label>
+          <span class="it1 it4">2500 руб.</span>  
+        </div>
+
+        <div class="col-md-12 amount">
+          <a href="#" class="it1">10 L</a>
+          <div class="it2">
+            <i class="fal fa-caret-left"></i>
+            <span>1</span>
+            <i class="fal fa-caret-right"></i>
+          </div>
+          <input type="text" class="it3"> <label>руб.</label>
+          <span class="it1 it4">2500 руб.</span>  
+        </div>
+
+        <div class="col-md-12 total">
+          <span>Итого:</span>
+          <input type="text" class="it3">
+          <label> руб.</label>
+        </div>
+
+        <div class="col-md-10 block-btn">
+          <button class="btn-card"><i class="fas fa-shopping-cart"></i> ДОБАВИТЬ В КОРЗИНУ</button>
+
+          <span class="close-btn modal_close">Продолжить покупки</span>
+
+          <button type="submit" class="order-btn">Оформить заказ</button>
+
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+  <div id="overlay"></div><!-- Пoдлoжкa -->
+
+</footer>
+<script src="js/scripts.min.js"></script>
+<script src="js/jquery.js"></script>    
+<script src="js/jquery-ui.js"></script>  
+<script src="js/slider.js"></script>   
+</body>
+</html>
