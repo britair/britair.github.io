@@ -2723,7 +2723,6 @@ header .container .row .menu .main_mnu li .contacts:before
 	color: #404040;
 	display: inline-block;
 	height: 40px;
-	padding: 10px 15px;
 	text-decoration: none;
 	width: 45%;
 }
@@ -2734,6 +2733,7 @@ header .container .row .menu .main_mnu li .contacts:before
 	height: 55px;
 	margin-top: 10px;
 	width: 100%;
+    padding-right: 0;
 }
 .it-1 .block-btn:before
 {
@@ -2784,6 +2784,7 @@ header .container .row .menu .main_mnu li .contacts:before
 	display: inline-block;
 	text-align: left;
 	width: 45%;
+    white-space: nowrap;
 }
 .it-3:nth-child(1)
 {
