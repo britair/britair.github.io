@@ -486,6 +486,7 @@ input.checkbox:checked+i:before{
     .course-name {
         width: 420px;
     }
+    
 }
 @media (max-width: 768px) {
     .courses .container {
@@ -549,6 +550,7 @@ input.checkbox:checked+i:before{
     }
     .course-name {
         width: auto;
+        top: 0;
     }
 }
 @media (max-width: 480px) {
