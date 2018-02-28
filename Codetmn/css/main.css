@@ -1,0 +1,574 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,body {
+	height: 100%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+}
+.container {
+	max-width: 1140px; 
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.wrap {
+	background-color: white;
+	min-height: 100%; 
+	position: relative;
+}	
+.empty {
+    height: 128px;
+}
+.header {
+	background: url(../img/header.jpg) no-repeat top center;
+    background-size: cover;
+    min-height: 691px;
+    color: #fff;
+    position: relative;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    padding-top: 25px;
+}
+h1 {
+    font-size: 18px;
+    flex-basis: 215px;
+}
+.navbar {
+    list-style-type: none;
+}
+.navbar li {
+    display: inline-block;
+}
+.navbar li a {
+    padding: 0 19px;
+    color: inherit;
+    font-size: 14px;
+}
+.navbar li a:hover, .navbar li a:active, .navbar li a.active {
+    text-decoration: underline;
+}
+.phone {
+    font-size: 18px;
+    color: inherit;
+}
+.menuToggle {
+    display: none;
+    cursor: pointer;
+    background-image: url(../img/menuToggle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+.header .container h2 {
+    font: bold 54px/65px 'Open Sans';
+    margin-top: 30%;
+    text-transform: uppercase;
+}
+.header .container h3 {
+    font: 600 36px/54px 'Open Sans';
+    text-transform: uppercase;
+}
+.reg-form {
+    position: absolute;
+    right: 0;
+    top: 150px;
+    background: #282829;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width:465px; 
+    padding: 16px 0 28px 31px;
+}
+.form-group {
+    margin-top: 14px;
+}
+.form-control {
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #535353;
+    border-radius: 0px;
+    background: none;
+    box-shadow: none;
+    color: #fff;
+    padding: 0;
+    font-size: 15px;
+    display: block;
+    width: 360px;
+    height: 30px;
+    margin-bottom: 7px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.select-arrow {
+    background: url(../img/arrow-select.png) no-repeat 100% 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none!important;
+}
+option {
+    color: #282828;
+}
+.form-group label {
+    font-weight: normal;
+    opacity: 0.5;
+    text-transform: lowercase;
+    font-size: 14px;
+}
+.form-group input::placeholder {
+    color: #fff;
+}
+.form-group label.checkbox, .form-group label.radio {
+    opacity: 1;
+}
+.form-group label .muted {
+    opacity: .5;
+    margin-left: 12px;
+    font-size: 14px;
+}
+input.radio, input.checkbox {
+    display: none;
+}
+.checkbox {
+	display: block;
+    margin-top: 23px;
+}
+input.radio+i{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	line-height: 13px;
+	border: 3px solid white;
+	background: white;
+}
+input.radio:checked+i{
+	background: #e52846;
+}
+input.checkbox+i{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	border-radius: 0px;
+	width: 13px;
+	height: 13px;
+	line-height: 13px;
+	background: white;
+}
+input.checkbox:checked+i:before{
+	content: "\2714";
+	font-size: 14px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #f36e15;
+}
+.btn, .submiq {
+    border: 0px;
+    border-radius: 2px;
+    box-shadow: none;
+    padding: 15px 22px;
+    font-size: 15px;
+    cursor: pointer;
+    background: linear-gradient(to top, #f36e15, #f89725);
+    color: white;
+    font-weight: bold;
+    margin-top: 29px;
+    font-family: 'Open Sans', sans-serif;
+    width: 206px;
+}
+.btn:hover {
+    text-decoration: underline;
+}
+.about-school {
+	background: linear-gradient(to right, #282829 34.5%, #fff 34.5%);
+}
+.about-school .container {
+    display: flex;
+    justify-content: space-between;
+}
+.about-school .left  {
+    flex-basis: 33%;
+    padding: 10px 20px 10px 15px;
+}
+.about-school .left div {
+    margin-top: 42px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+.about-school .left div span {
+    color: #ff9c0f;
+    display: block;
+    margin-bottom: 3px;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.about-school .right {
+    flex-basis: 67%;
+    padding: 40px 0 0 25px;
+}
+.about-school .right h4 {
+    font: 400 30px/57px 'Open Sans';
+    color: #282828;
+    margin-bottom: 8px;
+}
+.about-school .right p {
+    font: 15px/26px 'Open Sans';
+    color: #646464;
+    margin-bottom: 47px;
+}
+.about-offers {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -3%;
+}
+.about-offers .offer {
+    flex-basis: 47%;
+    margin: 0 3% 6% 0;
+    display: flex;
+    font: 600 15px/26px 'Open Sans';
+    color: #282828;
+}
+.about-offers img {
+    margin-right: 27px;
+    width: 50px;
+    height: 50px;
+}
+.courses .container {
+    display: flex;
+    justify-content: space-between;
+}
+.courses .left {
+    padding: 40px 25px 25px 3px;
+    flex-basis: 33%;
+}
+.courses .left h4 {
+    font: 400 30px/57px 'Open Sans';
+    color: #282828;
+    margin-bottom: 8px;
+}
+.courses .left p {
+    font: 15px/26px 'Open Sans';
+    color: #646464;
+    margin-top: 10px;
+}
+.courses .right {
+    flex-basis: 67%;
+}
+.courses img {
+    display: block;
+    cursor: pointer;
+}
+.course-name {
+    display: none; 
+    background: #fff;
+    position: fixed;
+    top: 5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 10;
+    width: 945px;
+}
+.course-name .left {
+    padding: 0;
+    flex-basis: 50%;
+}
+.course-name .right {
+    padding: 22px 30px 0;
+    flex-basis: 50%;
+}
+.course-name .right h5 {
+    font: 30px/57px 'Open Sans';
+    color: #282828;
+    margin-bottom: 11px;
+}
+.course-name .right p {
+    font: 600 15px/17px 'Open Sans';
+    color: #fb9549;
+    margin-bottom: 10px;
+}
+.course-name .right p span {
+    color: #282828;
+    display: block;
+    line-height: 22px;
+}
+.course-name .right p span.prepod {
+    color: #646464;
+    font: 400 15px/26px 'Open Sans';
+}
+.course-name .right p:first-of-type span {
+    display: inline;
+}
+.course-name .right .btn {
+    margin-top: 5px;
+}
+.close {
+    cursor: pointer;
+    height: 17px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    text-decoration: none;
+    top: 20px;
+    width: 17px;
+    z-index: 3;
+    background: url(../img/close.png) no-repeat;
+}
+.map_container {
+    text-align: center;
+    position: relative;
+    padding-bottom: 463px;
+    height: 0;
+    overflow: hidden;
+}
+.contacts {
+    position: absolute;
+    top: 80px;
+    right: 120px;
+    background: white;
+    padding: 22px 43px 19px 30px;
+    text-align: left;
+}
+.contacts h5 {
+    font: 500 30px/35px 'Open Sans';
+    color: #282828;
+    margin-bottom: 27px;
+}
+.contacts div {
+    margin-bottom: 27px;
+    color: #282828;
+    font: 600 15px/18px 'Open Sans';
+}
+.contacts span {
+    color: #fa7a1b;
+    display: block;
+    margin-bottom: 7px;
+}
+.contacts a {
+    color: inherit;
+}
+.contacts-bottom {
+    display: none;
+}
+.footer {
+	width: 100%;
+	background-color: #252526;
+	position: absolute; 
+	bottom: 0;
+    padding: 37px 0;
+    color: white;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .container p span {
+    display: block;
+    margin-top: 10px;
+}
+.footer .container .navbar {
+    text-transform: uppercase;
+}
+.footer .container div {
+    text-align: right;
+}
+.footer .container div span {
+    display: block;
+    margin-top: 10px;
+}
+.footer .container div span a {
+    color: white;
+    text-decoration: underline;
+}
+@media (max-width: 1120px) {
+    .reg-form {
+        width: 390px;
+    }
+    .header .container h2 {
+        font: bold 40px/55px 'Open Sans';
+    }
+    .header .container h3 {
+        font: 600 30px/54px 'Open Sans';
+    }
+}
+
+
+@media (max-width: 992px) {
+    .header .container h2 {
+        margin: 7% auto 0;
+        text-align: center;
+    }
+    .header .container h3 {
+        text-align: center;
+        margin-bottom: 8%;
+    }
+    .reg-form {
+        position: static;
+        margin: 0 auto;
+    }
+    .about-school {
+        background: linear-gradient(to bottom, #fff 67%, #282829 34.5%)
+    }
+    .about-school .container {
+        flex-wrap: wrap;
+    }
+    .about-school .left {
+        flex-basis: 100%;
+        order: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .about-school .left div {
+        margin: 20px 0;
+        flex-basis: 40%;
+        text-align: center;
+    }
+    .about-school .right {
+        flex-basis: 100%;
+        order: 0;
+    }
+    .menuToggle {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 84px;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background: #282829;
+        display: none;
+    }
+    .navbar li {
+        display: block;
+        padding: 10px 0;
+    }
+    .navbar li a {
+        padding: 0 19px;
+        font: 300 20px/30px 'Open Sans';
+        display: block;
+    }
+    .about-school {
+        padding: 0;
+    }
+    .contacts {
+        position: absolute;
+        top: 80px;
+        right: 14px;
+        background: white;
+        padding: 22px 15px 19px 16px;
+        text-align: left;
+    }
+    .course-name .left {
+        display: none;
+    }
+    .course-name .right {
+        padding: 22px 30px;
+        flex-basis: 100%;
+    }
+    .course-name {
+        width: 420px;
+    }
+}
+@media (max-width: 768px) {
+    .courses .container {
+        flex-wrap: wrap;
+    }
+    .courses .left {
+        padding: 25px 25px 25px 3px;
+        flex-basis: 100%;
+    }
+    .courses .right {
+        flex-basis: 100%;
+    }
+    .courses .right img {
+        width: 150px;
+    }
+} 
+
+
+@media (max-width: 600px) {
+    .header .container h2 {
+        font: bold 30px/40px 'Open Sans';
+    }
+    .header .container h3 {
+        font: 600 20px/40px 'Open Sans';
+    }
+    .navbar li a {
+        padding: 0 19px;
+        font: 300 16px/25px 'Open Sans';
+    }
+    .about-school .right {
+        padding: 20px 0 0;
+    }
+    .about-school .right h4 {
+        font: 400 25px/40px 'Open Sans';
+    }
+    .about-school .right p {
+        margin-bottom: 16px;
+    }
+    .about-offers .offer {
+        flex-basis: 100%;
+        align-items: center;
+    }
+    .about-school .left div {
+        flex-basis: 100%;
+    }
+    .about-school {
+        background: linear-gradient(to bottom, #fff 58%, #282829 34.5%);
+    }
+    .courses .left h4 {
+        font: 400 25px/40px 'Open Sans';
+    }
+    .contacts h5 {
+        font: 400 25px/40px 'Open Sans';
+    }
+    .contacts {
+        display: none;
+    }
+    .contacts-bottom {
+        display: block;
+        position: static;
+    }
+    .course-name {
+        width: auto;
+    }
+}
+@media (max-width: 480px) {
+    .phone {
+        display: none;
+    }
+    .header .container h2 {
+        font: bold 24px/40px 'Open Sans';
+    }
+    .reg-form {
+        padding: 15px 15px 15px 20px;
+        width: 89%;
+    }
+    .form-control {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .about-school {
+        background: linear-gradient(to bottom, #fff 64%, #282829 34.5%);
+    }
+}

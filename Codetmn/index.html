@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <link href="css/main.css" rel="stylesheet">
+	<title>Школа программирования</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="container">
+            <div class="header-top">
+                <h1>Школа программирования</h1>
+                <ul class="navbar" id="menuMobile">
+                    <li><a href="#reg_form">Регистрация</a></li>
+                    <li><a href="#about_school">О школе</a></li>
+                    <li><a href="#courses">Курсы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+                <a href="tel:+79220020942" class="phone">+7 (922) 002-09-42</a>
+                <div class="menuToggle"></div>
+            </div>
+            <h2>Зарегистрируйтесь<br>на курсы</h2>
+            <h3>В школу программирования</h3>
+        </div>
+        <div class="reg-form" id="reg_form">
+            <div class="form-group">
+                <select class="form-control select-arrow" name="course" required="">
+                    <option value="" selected="" disabled="">курс</option>
+                    <option value="C#">C#</option>
+                </select>
+                <label>Название курса</label>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Иванов Иван" name="user_name" required>
+				<label>Имя, фамилия</label>
+            </div>
+            <div class="form-group">
+                <input type="text" class="mask form-control" placeholder="+7 (444) 444-44-44" name="telephone" data-inputmask="'mask': '+7 (999) 999-99-99'" required>
+				<label>Телефон</label>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="test@mail.com" required name="user_email">
+                <label>E-mail</label>
+            </div>
+            <div class="form-group">
+                <label class="checkbox">
+				    <input class="checkbox" type="checkbox" name="agree" required>
+                    <i></i>
+				    <span class="muted">согласен на обработку персональных данных</span>
+			     </label>
+            </div>
+            <input type="hidden" name="PARAMS_HASH" value="506d61c97074c6a579582e0f008a8658">	
+            <input class="subm btn" type="submit" name="submit" value="Зарегистрироваться">
+            <input type="hidden" id="inp_captcha" name="inp_captcha">
+        </div>
+    </div>
+    <div class="about-school" id="about_school">
+        <div class="container">
+			<div class="about-school container">
+                <div class=left>
+				    <div>
+					   <span>12 курсов</span>
+                        разной степени сложности в 2018 году</div>
+				    <div>
+					   <span>Более 100</span>
+                        заявок на обучение в группу</div>
+                    <div>
+					   <span>23 человека</span>численность группы				</div>
+				    <div>
+					   <span>от 5 часов</span>в неделю</div>
+                </div>
+                <div class="right">
+				    <h4>О школе программирования</h4>
+                    <p>Школа программирования – это совместный проект Правительства Тюменской области, 
+                        Агентства инфраструктурного развития и Тюменского технопарка. Обучение проходит 
+                        на базе арт-пространства «Work space». Зачисление в группу происходит на основании
+                        конкурсного отбора. Участниками Школы могут стать совершеннолетние физические лица,
+                        прошедшие предварительное тестирование. Обучение бесплатное.</p>
+                    <div class="about-offers">
+                        <div class="offer">
+                            <img src="img/about1.png" class="about-img">						<div class="">
+                                Преподаем новейшие технологии проверенными методами</div>
+                        </div>
+                        <div class="offer">
+                            <img src="img/about2.png" class="about-img">						<div class="">
+                                Сертификат после окончания обучения</div>
+                        </div>
+                        <div class="offer">
+                            <img src="img/about3.png" class="about-img">						<div class="">
+                                Преподаватели с опытом реальной разработки</div>
+                        </div>
+                        <div class="offer">
+                            <img src="img/about4.png" class="about-img">						<div class="">
+                                Удобный график обучения в школе</div>
+                        </div>
+                    </div>
+			</div>
+		</div>
+	
+        </div>
+    </div>
+    <div class="courses" id="courses">
+        <div class="container">
+            <div class="left">
+                <h4>Наши курсы</h4>
+                <p>Мы следим за трендами разработки и предлагаем пройти 
+                    обучения инструментам, пользующимся спросом на рынке IT.</p>
+            </div>
+            <div class="right">
+                <a class="open_course"><img src="img/a5e388e9931605f18d94fc4aec770b85.png"></a>
+            </div>
+            <div id="window_registration" class="course-name">
+                <div class="left">
+                    <img src="img/a5e388e9931605f18d94fc4aec770b85.png">
+                </div>
+                <div class="right">
+                    <h5>C#</h5>		
+                    <p>Срок обучения:<span> 3 месяца</span></p>
+                    <p>Дата начала курса:<span>15 марта 2018</span></p>
+                    <p>Количество занятий в неделю:<span>2</span></p>
+                    <p>Продолжительность одного занятия:<span>2,5 часа</span></p>					
+                    <p>Уровень знаний:<span>С небольшим опытом разработки</span></p>										
+                    <p>Преподаватель:<span class="prepod">Дмитрий Долгушин, Ведущий разработчик ООО &quot;Джемс Девелопмент&quot;, к.т.н.</span></p>
+				    <input class="submit btn" type="submit" name="submit" value="Зарегистрироваться" data-name="C#">
+                </div>
+                <a title="Закрыть" class="close"></a>
+            </div>
+        </div>
+    </div>
+    <div class="map_container" id="contacts">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae4025402f70f12e5cdaaa480d7ebad26236657ba47f5589451913c827eeab646&amp;source=constructor" width="100%" height="463" frameborder="0"></iframe>
+        <div class="contacts">
+            <h5>Контакты</h5>
+            <div>
+                <span>Адрес</span>
+                г. Тюмень, ул. Республики, 142</div>
+            <div>
+                <span>Телефон</span>
+                <a class="hrefs_contacts" href="tel:+79220020942">
+                    +7 (922) 002-09-42</a>
+            </div>
+            <div>
+                <span>E-mail</span>
+                <a class="hrefs_contacts href-email" href="mailto:lobity@gmail.com">
+                    lobity@gmail.com</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="contacts contacts-bottom">
+            <h5>Контакты</h5>
+            <div>
+                <span>Адрес</span>
+                г. Тюмень, ул. Республики, 142</div>
+            <div>
+                <span>Телефон</span>
+                <a class="hrefs_contacts" href="tel:+79220020942">
+                    +7 (922) 002-09-42</a>
+            </div>
+            <div>
+                <span>E-mail</span>
+                <a class="hrefs_contacts href-email" href="mailto:lobity@gmail.com">
+                    lobity@gmail.com</a>
+            </div>
+        </div>
+    </div>
+    <div class="empty"></div>
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2017.<span>Школа программирования</span></p>
+            <ul class="navbar">
+                <li><a href="">Регистрация</a></li>
+                <li><a href="">О школе</a></li>
+                <li><a href="">Курсы</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+            <div>
+                <a href="tel:+79220020942" class="phone">+7 (922) 002-09-42</a><br>
+                <span>Создание сайта: <a href="">ИК &laquo;Приоритет&raquo;</a></span>
+            </div>    
+        </div>
+    </div>		
+</div>
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>   
+<script src="js/main.js"></script> 
+</html>	
