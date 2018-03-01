@@ -578,6 +578,21 @@ input.checkbox:checked+i:before{
     .map_container {
         padding-bottom: 350px;
     }
+    .contacts h5 {
+        margin-bottom: 15px;
+    }
+    .footer {
+        padding: 20px 0;
+    }
+    .footer .container {
+        display: block;
+    }
+    .footer .container div {
+        text-align: left;
+    }
+    .footer .container div span {
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 400px) {
