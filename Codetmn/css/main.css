@@ -558,7 +558,12 @@ input.checkbox:checked+i:before{
         display: none;
     }
     .header .container h2 {
-        font: bold 24px/40px 'Open Sans';
+        font: bold 27px/60px 'Open Sans';
+        margin: 32% auto 0%;
+    }
+    .header .container h3 {
+        font: 600 25px/60px 'Open Sans';
+        margin-bottom: 54%;
     }
     .reg-form {
         padding: 15px 15px 15px 20px;
@@ -566,6 +571,12 @@ input.checkbox:checked+i:before{
     }
     .form-control {
         width: 100%;
+    }
+    .btn, .submiq {
+        margin: 29px auto 0;
+    }
+    .map_container {
+        padding-bottom: 350px;
     }
 }
 
