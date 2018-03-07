@@ -14,7 +14,29 @@ $(function () {
 	});
 });
 
-/*Slider-news*/
+/*Slider-news-bottom*/
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    mouseDrag: true,
+       loop: true,
+       nav: true,
+       navText: [""],
+       autoplay:false,
+       items: 5,
+       dots: false,
+       responsiveClass:true,
+});
+owl.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+});
+
+
+/*Slider-news-right*/
 $(document).ready(function(){
     $('.bxslider').bxSlider({
         mode: 'vertical',
@@ -31,7 +53,6 @@ $(document).ready(function(){
     });
 });
 
-
 $('.read_more').click(function(){
     $('.news-text').css('height', 'auto');
     $('.ellipsis').css('display', 'none');
@@ -39,6 +60,18 @@ $('.read_more').click(function(){
     $('.news-full').css('display', 'block');
 });
 
+$(function() {
+    $('.news-block-title').on('click', function(e) {
+        e.preventDefault();
+        $('.news-block').each(function() {
+            $(this).css('display', 'none');
+            $(this).prev('.news-block-title').css('color','#333');
+        });
+        var block = $(this).attr('href');
+        $(block).css('display', 'block');
+        $(block).prev('.news-block-title').css('color','#426bb0');
+    });
+});
 $(function() {
     $('.tab-link').on('click', function(e) {
         e.preventDefault();
@@ -59,6 +92,64 @@ $(function() {
         $(block).css('display', 'block');
     });
 });
+
+
+
+$(function(){
+    $('#form').validate({
+    validClass: "success", 
+    success: function() {
+        $('#submit').removeAttr('disabled').addClass('active');
+      },    
+    rules: {
+        name: {
+            required: true,
+            minlength: 2
+        }
+    },
+    messages: {
+    name: {
+    required: "Вы пропустили поле",
+    minlength: "min. допустимое количество знаков: 2"
+    },
+    email: {
+    required: "Вы пропустили поле",
+    email: "недопустимые символы" 
+    },
+    }
+    });
+    if($("#name").hasClass('error'))
+        $("#name").siblings(".sb-icon").css('background','#ffb71d');
+}); 
+
+$(function(){
+    $('#form_comment').validate({
+    validClass: "success",
+    errorClass: "invalid",    
+    success: function() {
+        $('#public').removeAttr('disabled').addClass('active');
+      },    
+    rules: {
+        name_user: {
+            required: true,
+            minlength: 2
+        }
+    },
+    messages: {
+        comment: {
+            required: "Вы пропустили поле",
+        },  
+        name_user: {
+            required: "Вы пропустили поле",
+            minlength: "min. количество знаков: 2"
+        },
+        email_user: {
+            required: "Вы пропустили поле",
+            email: "Адреса не существует"
+        },
+    }
+    });
+}); 
 
 
 

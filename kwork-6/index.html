@@ -6,6 +6,7 @@
 	<link href="css/fonts.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/jquery.bxslider.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 	<title>Главная</title>
     <link rel="shortcut icon" href="img/favicon.ico">
@@ -14,12 +15,12 @@
 <div class="wrap">
     <div class="header">
         <div class="container">
-            <div class="social">
-                <a href="" title="Перейти на Facebook"><i class="fa fa-facebook"></i></a>
-                <a href="" title="Перейти в Instagram"><i class="fa fa-instagram"></i></a>
-                <a href="" title="Перейти в Вконтакте"><i class="fa fa-vk"></i></a>
-                <a href="" title="Перейти на Telegram"><i class="fa fa-send"></i></a>
-                <a href="" title="Перейти на Youtube"><i class="fa fa-youtube-play"></i></a>
+            <div class="social social-header">
+                <a href="" data-title="Перейти на Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="" data-title="Перейти в Instagram"><i class="fa fa-instagram"></i></a>
+                <a href="" data-title="Перейти в Вконтакте"><i class="fa fa-vk"></i></a>
+                <a href="" data-title="Перейти на Telegram"><i class="fa fa-send"></i></a>
+                <a href="" data-title="Перейти на You Tube"><i class="fa fa-youtube-play"></i></a>
             </div>
             <a href="" class="logo"><img src="img/logo.png"></a>
             <ul class="menu">
@@ -83,21 +84,131 @@
                             <span class="read_more">читать далее</span>
                         </div>
                         <div class="news-full">
-                            <div class="news-block">
-                                <h3>Теги</h3>
+                            <a href="#news-block1" class="news-block-title">Теги</a>
+                            <div id="news-block1" class="news-block tag-cloud-news">
+                                <a class="tag" href="">грим</a>
+                                <a class="tag" href="">театральный</a>
                             </div>
-                            <div class="news-block">
-                                <h3>Показать все комментарии</h3>
+                            <a href="#news-block2" class="news-block-title">Показать все комментарии</a>
+                            <div id="news-block2" class="news-block">
+                                <div class="comment-item">
+                                    <p class="breadcrumbs"><span>Анатолий</span> // 6 января 2018 г</p>
+                                    <div>
+                                        <img src="img/avatar.jpg">
+                                        <p>Учитывая ключевые сценарии поведения, постоянный количественный рост 
+                                            и сфера нашей активности обеспечивает актуальность прогресса профессионального сообщества.</p>
+                                    </div>
+                                </div>
+                                <div class="comment-item">
+                                    <p class="breadcrumbs"><span>Ольга</span> // 8 января 2018 г</p>
+                                    <div>
+                                        <img src="img/avatar.jpg">
+                                        <p>Высокий уровень вовлечения представителей целевой аудитории является четким 
+                                            доказательством простого факта: укрепление и развитие внутренней структуры представляет собой интересный
+                                            эксперимент проверки первоочередных требований. С учетом сложившейся международной обстановки,
+                                            экономическая повестка сегодняшнего дня говорит о возможностях поэтапного и последовательного развития общества. </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="news-block">
-                                <h3>Оставить комментарий</h3>
+                            <a href="#news-block3" class="news-block-title">Оставить комментарий</a>
+                            <div id="news-block3" class="news-block form-comment">
+                                <form action="" method="post" id="form_comment">
+                                    <p>Ваш адрес электронной почты не будет опубликован. Обязательные поля помечены *</p>
+                                    <textarea id="comment" name="comment" required></textarea>
+                                    <div class="form-bottom">
+                                        <div>
+                                            <div style="position: relative; margin-bottom: ">
+                                                <p>Имя <sup>*</sup></p>
+                                                <input type="text" id="name_user" name="name_user" required>
+                                            </div>
+                                            <div style="position: relative;">
+                                                <p>email <sup>*</sup></p>
+                                                <input type="email" id="email_user" name="email_user" required> 
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>Войти через</p>
+                                            <div class="social social-comments">
+                                                <a href="" data-title="facebook"><i class="fa fa-facebook"></i></a>
+                                                <a href="" data-title="instagram"><i class="fa fa-instagram"></i></a>
+                                                <a href="" data-title="вконтакте"><i class="fa fa-vk"></i></a>
+                                                <a href="" data-title="telegram"><i class="fa fa-send"></i></a>
+                                                <a href="" data-title="youtube"><i class="fa fa-youtube-play"></i></a>
+                                            </div>
+                                            <input type="button" id="public" value="Опубликовать" disabled>
+                                        </div>
+                                        <div>
+                                            <span>Вы вошли как</span><br>
+                                            <p class="avatar"><img src="img/avatar.jpg"><br>Марина<br>Романова</p>
+                                        </div>
+                                    </div>
+                                </form>    
                             </div>
-                            <div class="news-block">
-                                <h3>Поделитесь этой статьей</h3>
-                            </div>
-                            <div class="news-block">
-                                <h3>Все публикации раздела</h3>
-                            </div>
+                            <a href="#news-block4" class="news-block-title">Поделитесь этой статьей</a>
+                            <div id="news-block4" class="news-block social share">
+                                <a href="" data-title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="" data-title="Instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="" data-title="Вконтакте"><i class="fa fa-vk"></i></a>
+                                <a href="" data-title="Telegram"><i class="fa fa-send"></i></a>
+                                <a href="" data-title="Youtube"><i class="fa fa-youtube-play"></i></a>
+                               </div>
+                            <span class="slider-title">Все публикации раздела</span>
+                            <ul class="owl-carousel">
+                                <li class="news-item news-item-bottom">
+                                    <img src="img/slider-news1.jpg">
+                                    <a href="" class="overlay">
+                                        <span>Описание новости в слайдере</span>
+                                    </a>
+                                </li>
+                                <li class="news-item news-item-bottom">
+                                    <img src="img/slider-news2.jpg">
+                                    <a href="" class="overlay">
+                                        <span>Описание новости в слайдере</span>
+                                    </a>
+                                </li>
+                                <li class="news-item news-item-bottom">
+                                    <img src="img/slider-news3.jpg">
+                                    <a href="" class="overlay">
+                                        <span>Возможности профессионального театрального грима</span>
+                                    </a>
+                                </li>
+                                <li class="news-item news-item-bottom">
+                                    <img src="img/slider-news4.jpg">
+                                    <a href="" class="overlay">
+                                        <span>Описание новости в слайдере</span>
+                                    </a>
+                                </li>
+                                <li class="news-item news-item-bottom">
+                                    <img src="img/slider-news5.jpg">
+                                    <a href="" class="overlay">
+                                        <span>Описание новости в слайдере</span>
+                                    </a>
+                                </li>
+                                <li class="news-item news-item-bottom">
+                                    <img src="img/slider-news6.jpg">
+                                    <a href="" class="overlay">
+                                        <span>Описание новости в слайдере</span>
+                                    </a>
+                                </li>
+                                <li class="news-item news-item-bottom">
+                                    <img src="img/slider-news1.jpg">
+                                    <a href="" class="overlay">
+                                        <span>Описание новости в слайдере</span>
+                                    </a>
+                                </li>
+                                <li class="news-item news-item-bottom">
+                                    <img src="img/slider-news2.jpg">
+                                    <a href="" class="overlay">
+                                        <span>Описание новости в слайдере</span>
+                                    </a>
+                                </li>
+                                <li class="news-item news-item-bottom">
+                                    <img src="img/slider-news3.jpg">
+                                    <a href="" class="overlay">
+                                        <span>Возможности профессионального театрального грима</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <ul class="right bxslider">
@@ -193,7 +304,25 @@
                     </div>
                     <div class="tab">
                         <a href="#tab4" class="tab-link">Отзывы</a>
-                        <div class="tab-block" id="tab4">
+                        <div class="tab-block reviews" id="tab4">
+                            <div class="comment-item review">
+                                <p class="breadcrumbs"><span>Анатолий</span> // 6 января 2018 г</p>
+                                <div>
+                                    <img src="img/avatar.jpg">
+                                    <p>Учитывая ключевые сценарии поведения, постоянный количественный рост 
+                                        и сфера нашей активности обеспечивает актуальность прогресса профессионального сообщества.</p>
+                                </div>
+                            </div>
+                            <div class="comment-item review">
+                                <p class="breadcrumbs"><span>Ольга</span> // 8 января 2018 г</p>
+                                <div>
+                                    <p>Высокий уровень вовлечения представителей целевой аудитории является четким 
+                                        доказательством простого факта: укрепление и развитие внутренней структуры представляет собой интересный
+                                        эксперимент проверки первоочередных требований. С учетом сложившейся международной обстановки,
+                                        экономическая повестка сегодняшнего дня говорит о возможностях поэтапного и последовательного развития общества. </p>
+                                    <img src="img/avatar.jpg">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="tab">
@@ -219,9 +348,10 @@
                     </div>
                 </div>
             </div>
+<!--Sidebar-->            
             <div class="sidebar">
                 <input type="search" placeholder="Поиск">
-                <a href="" type="submit" class="sb-icon"><i class="fa fa-search"></i></a>
+                <a href="" type="submit" class="sb-icon error-icon"><i class="fa fa-search"></i></a>
                 <p class="error-massage">Жаль, но ничего не соответствуют критериям Вашего поиска.<br>Пожалуйста, сформулируйте запрос иначе.</p>
                 <ul class="sidebar-menu">
                     <li class="title">Рубрики
@@ -318,23 +448,25 @@
                         <img src="img/slider-news4.jpg">
                     </div>
                 </div>
-                <form action="" method="post">
+                <form action="" method="post" id="form">
                     <h3>Оформить подписку</h3>
                     <label class="subscribe"><input type="radio" name="subs" value="news" class="hide" checked><span></span>Подписаться на новости</label>
                     <label class="subscribe"><input type="radio" name="subs" value="info" class="hide"><span></span>Подписаться на получение бесплатной информации</label>
-                    <input type="text" placeholder="Ваше Имя" required>
-                    <a href="" class="sb-icon"><i class="fa fa-user"></i></a>
-                    <p class="error-massage">Вы пропустили поле</p>
-                    <input type="email" placeholder="Ваш e-mail" required>
-                    <a href="" class="sb-icon"><i class="fa fa-envelope"></i></a>
-                    <p class="error-massage">недопустимые символы</p>
+                    <div style="position: relative;">
+                        <input type="text" placeholder="Ваше Имя" id="name" name="name" required>
+                        <a href="" class="sb-icon"><i class="fa fa-user"></i></a>
+                    </div>
+                    <div style="position: relative;">
+                        <input type="email" placeholder="Ваш e-mail" id="email" name="email" required>
+                        <a href="" class="sb-icon"><i class="fa fa-envelope"></i></a>
+                    </div>
                     <div class="btn">
-                        <button>Подписаться</button>
+                        <input type="button" id="submit" value="Подписаться" disabled>
                     </div> 
-                    <img class="banner-sm" src="img/banner300x250.jpg">
-                    <img class="banner-sm" src="img/banner300x250.jpg">
-                    <img class="banner-sm" src="img/banner300x250.jpg">
-                </form>
+                </form>    
+                <img class="banner-sm" src="img/banner300x250.jpg">
+                <img class="banner-sm" src="img/banner300x250.jpg">
+                <img class="banner-sm" src="img/banner300x250.jpg">
             </div>
         </div>
     </div>
@@ -391,6 +523,9 @@
 </div>
 </body>
 <script src="js/jquery-3.2.1.min.js"></script> 
-<script src="js/jquery.bxslider.min.js"></script>   
+<script src="js/jquery.bxslider.min.js"></script> 
+<script src="js/jquery.validate.min.js"></script> 
+<script src="js/owl.carousel.min.js"></script>   
+<script src="js/jquery.mousewheel.min.js"></script>     
 <script src="js/main.js"></script> 
 </html>	
