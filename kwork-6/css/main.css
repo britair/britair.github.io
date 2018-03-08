@@ -528,7 +528,6 @@ label.invalid {
     width: 570px;
     height: 72px;
     margin-bottom: 24px;
-    overflow: hidden;
 }
 .owl-prev,.owl-next {
     background: url(../img/slider-arrows2.png) no-repeat 0px 0px;
