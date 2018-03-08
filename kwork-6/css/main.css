@@ -316,7 +316,7 @@ h2 {
 .news-text p span {
     color: #ffa41d;
 }
-.excerpt {
+.news-text .excerpt {
     font: 13px/24px 'Arimo-Italic';
     color: #999;
     margin: 25px 0;
@@ -337,11 +337,13 @@ h2 {
 .after-news a span {
     color: #80b0ff;
 }
-.after-news .read_more {
+.after-news .read_more,
+.read-more-article {
     color: #333;
     font: 16px/24px 'Arimo-Italic';
 }
-.after-news .read_more:hover {
+.after-news .read_more:hover,
+.read-more-article:hover {
     color: #ffb71d;
     cursor: pointer;
 }       
@@ -602,7 +604,7 @@ label.invalid {
     border-bottom: 1px solid #fff;
     box-shadow: 0 4px 0 0 #d5d5d5;
 }
-                                     /*Рубрика*/
+                                     /*Рубрики*/
 .rubrika-title {
     display: block;
     border-bottom: 1px solid #e1e1e1;
@@ -613,7 +615,9 @@ label.invalid {
     background-color: #f5f5f5;
     box-shadow: 0 1px 0 0 #f1f1f1;
     text-shadow: 0 2px 1px rgba(0,0,0,0.3);
-    background: url(../img/arrow.png) no-repeat 14px center;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 14px center;
 }
 .rubrika-title:last-of-type {
     border-bottom: 0;
@@ -622,13 +626,93 @@ label.invalid {
 .rubrika-block {
     display: none;
 }
+.article-title {
+    margin: 45px 0 5px;
+    font: 32px/36px 'Oswald-DemiBold';
+    color:#333;
+    display: block;
+    text-transform: uppercase;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.3);
+}
+.article-title:hover {
+    color: #426bb0;
+}
+.article-preview {
+    margin: 27px 0 10px;
+    display: flex;
+}
+.article-preview p {
+    margin: 0;
+}
+.article-preview img {
+    width: 270px;
+    height: 148px;
+    object-fit: cover;
+    padding: 3px;
+    border: 1px solid #80b0ff;
+    margin-right: 23px;
+}
+.article-item:nth-child(even) .article-preview img {
+    margin: 0 0 0 23px;
+}
+.article-item:nth-child(even) .article-after:after {
+    left:0;
+    width:73%;
+}
+.article-text {
+    font: 16px/24px 'Arimo-Regular';
+    text-align: justify;
+    color: #333;
+    margin: 15px 0;
+}
+.article-block {
+    display: none;
+}
+.article-text span {
+    color: #ffa41d;
+}
+.article-text .ellipsis2 {
+    color: #333;
+}
+.excerpt {
+    font: 16px/24px 'Arimo-Italic';
+    color: #999;
+    margin: 25px 0;
+    padding-left: 24px;
+    background: url(../img/excerpt.jpg) repeat-y left;
+}
 
 
+.article-after {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.article-after:after {
+    content: "";
+    display: block;
+    width: 74%;
+    height: 1px;
+    background: transparent;
+    border-bottom: 1px dashed #999;
+    position: absolute;
+    top: 27px;
+    right: 0;
+}
+.pagination-article {
+    background: #f5f5f5;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    padding: 24px 24px 24px 0;
+}
+.pagination-article a {
+    margin-bottom: 24px;
+}
 
                                 /*Полезные материалы*/
 .useful-materials {
     background: #f5f5f5;
-    padding: 18px 24px 24px;
+    padding: 18px 0 24px;
 }
 .useful-materials ul {
     list-style-type: none;

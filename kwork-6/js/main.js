@@ -97,6 +97,32 @@ $(function() {
         $(block).css('display', 'block');
     });
 });
+$(function() {
+    $('.article-title').on('click', function(e) {
+        e.preventDefault();
+        $('.article-block').each(function() {
+            $(this).css('display', 'none');
+        });
+        var block = $(this).attr('href');
+        $(block).css('display', 'block');
+    });
+});
+
+$('.read-more-article').click(function(){
+    $(this).parent().css('display','none');
+    $(this).parent().siblings('.article-block').css('display', 'block');
+    $(this).parent().siblings('.article-preview').css({
+        'flex-wrap':'wrap',
+        'margin':'15px 0 10px'
+    });
+    $(this).parent().siblings('.article-preview').children("img").css({
+        'margin':'15px 0',
+        'width':'100%',
+        'height':'auto'
+    });
+    $(this).parent().siblings('.article-preview').children('p').children('.ellipsis2').css('display','none');
+   
+});
 
 
 
