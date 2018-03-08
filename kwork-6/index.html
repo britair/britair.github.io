@@ -111,13 +111,13 @@
                                 </div>
                             </div>
                             <a href="#news-block3" class="news-block-title">Оставить комментарий</a>
-                            <div id="news-block3" class="news-block form-comment">
+                            <div id="news-block3" class="news-block form-feedback">
                                 <form action="" method="post" id="form_comment">
                                     <p>Ваш адрес электронной почты не будет опубликован. Обязательные поля помечены *</p>
                                     <textarea id="comment" name="comment" required></textarea>
                                     <div class="form-bottom">
                                         <div>
-                                            <div style="position: relative; margin-bottom: ">
+                                            <div style="position: relative;">
                                                 <p>Имя <sup>*</sup></p>
                                                 <input type="text" id="name_user" name="name_user" required>
                                             </div>
@@ -304,16 +304,17 @@
                     </div>
                     <div class="tab">
                         <a href="#tab4" class="tab-link">Отзывы</a>
-                        <div class="tab-block reviews" id="tab4">
-                            <div class="comment-item review">
-                                <p class="breadcrumbs"><span>Анатолий</span> // 6 января 2018 г</p>
-                                <div>
-                                    <img src="img/avatar.jpg">
-                                    <p>Учитывая ключевые сценарии поведения, постоянный количественный рост 
-                                        и сфера нашей активности обеспечивает актуальность прогресса профессионального сообщества.</p>
+                        <div class="tab-block" id="tab4">
+                            <div class="reviews">
+                                <div class="comment-item review">
+                                    <p class="breadcrumbs"><span>Анатолий</span> // 6 января 2018 г</p>
+                                    <div>
+                                        <img src="img/avatar.jpg">
+                                        <p>Учитывая ключевые сценарии поведения, постоянный количественный рост 
+                                            и сфера нашей активности обеспечивает актуальность прогресса профессионального сообщества.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="comment-item review">
+                                <div class="comment-item review">
                                 <p class="breadcrumbs"><span>Ольга</span> // 8 января 2018 г</p>
                                 <div>
                                     <p>Высокий уровень вовлечения представителей целевой аудитории является четким 
@@ -322,6 +323,44 @@
                                         экономическая повестка сегодняшнего дня говорит о возможностях поэтапного и последовательного развития общества. </p>
                                     <img src="img/avatar.jpg">
                                 </div>
+                            </div>
+                            </div>
+                            <div class="write-review">
+                                <h3>Оставить отзыв</h3>
+                                <form action="" method="post" id="form_review" class="form-feedback review">
+                                    <p>Ваш адрес электронной почты не будет опубликован. Обязательные поля помечены *</p>
+                                    <textarea id="review" name="review" required></textarea>
+                                    <div class="form-bottom">
+                                        <div>
+                                            <div style="position: relative;">
+                                                <p>Имя <sup>*</sup></p>
+                                                <input type="text" id="user_review" name="user_review" required>
+                                            </div>
+                                            <div style="position: relative;">
+                                                <p>email <sup>*</sup></p>
+                                                <input type="email" id="email_review" name="email_user" required> 
+                                            </div>
+                                            <input type="button" id="public" value="Опубликовать" disabled>
+                                        </div>
+                                        <div>
+                                            <p>Войти через</p>
+                                            <div class="social social-comments">
+                                                <a href="" data-title="facebook"><i class="fa fa-facebook"></i></a>
+                                                <a href="" data-title="instagram"><i class="fa fa-instagram"></i></a>
+                                                <a href="" data-title="вконтакте"><i class="fa fa-vk"></i></a>
+                                                <a href="" data-title="telegram"><i class="fa fa-send"></i></a>
+                                                <a href="" data-title="youtube"><i class="fa fa-youtube-play"></i></a>
+                                            </div>
+                                            <p class="grav">Есть ли у вас Gravatar?</p>
+                                            <label class="gravatar"><input type="radio" name="gravatar" value="да" class="hide"><span></span>да</label>
+                                            <label class="gravatar"><input type="radio" name="gravatar" value="нет" class="hide"><span></span>нет</label>
+                                        </div>
+                                        <div>
+                                            <span>Вы вошли как</span><br>
+                                            <p class="avatar2"><img src="img/avatar.jpg"></p>
+                                        </div>
+                                    </div>
+                                </form>    
                             </div>
                         </div>
                     </div>

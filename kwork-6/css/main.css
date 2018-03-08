@@ -385,16 +385,16 @@ h2 {
     font: 13px/24px 'Arimo-Italic';
     color: #999;
 }
-.form-comment {
+.form-feedback {
     padding-bottom: 35px;
 }
-.form-comment p {
+.form-feedback p {
     font: 13px/24px 'Arimo-Regular';
     color: #333;
 }
-.form-comment textarea, 
-.form-comment input[type="text"],
-.form-comment input[type="email"] {
+.form-feedback textarea, 
+.form-feedback input[type="text"],
+.form-feedback input[type="email"] {
     font: 13px/24px 'Arimo-Regular';
     color: #999;
     border: 1px solid #ccc;
@@ -407,8 +407,8 @@ h2 {
     box-sizing: border-box;
     outline: 0;
 }
-.form-comment input[type="text"],
-.form-comment input[type="email"] {
+.form-feedback input[type="text"],
+.form-feedback input[type="email"] {
     width: 190px;
     height: 36px;
     padding: 0 0 0 19px;
@@ -614,6 +614,7 @@ label.invalid {
 .reviews {
     background: #f5f5f5;
     padding: 45px 55px;
+    border-bottom: 1px dashed #80b0ff;
 }
 .reviews .review .breadcrumbs {
     margin-left: 94px;
@@ -650,10 +651,61 @@ label.invalid {
 .reviews .review:nth-child(even) .breadcrumbs::after {
     right: 0;
 }
-
-
-
-
+.write-review {
+    padding: 15px 0 45px;
+}
+.write-review h3 {
+    font: 13px/24px 'Oswald-Medium';
+    color: #426bb0;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.3);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.review input[type="text"], 
+.review input[type="email"] {
+    width: 278px;
+}
+.form-feedback .form-bottom .grav {
+    margin: 25px 0 0 0;
+    color: #999;
+}
+.form-feedback .form-bottom .gravatar {
+    padding-left: 23px;
+    font: 13px/24px 'Arimo-Regular';
+    color: #999;
+    cursor: pointer;
+    position: relative;
+    margin-right: 35px;
+}
+.form-feedback .form-bottom .gravatar .hide {
+    display: none;
+}
+.form-feedback .form-bottom .gravatar input[type="radio"] + span {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    background: url(../img/radio.png) no-repeat 0 -13px;
+    cursor: pointer;
+}
+.form-feedback .form-bottom .gravatar input[type="radio"]:checked + span {
+    background-position: 0 0;
+}
+.form-feedback .form-bottom .avatar2 {
+    padding: 24px;
+    text-align: center;
+    background: #f5f5f5;
+    margin: 0;
+}
+.form-feedback .form-bottom .avatar2 img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    box-sizing: border-box;
+    border: 3px solid #f5f5f5;
+    box-shadow: 0 0 0 1px #80b0ff;
+}
 
                                         /*Облако тегов*/
 .tag-cloud {
