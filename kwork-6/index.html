@@ -277,7 +277,9 @@
                             <a href="#rubrika1" class="rubrika-title">Видеоблогер</a>
                             <div id="rubrika1" class="rubrika-block">текст</div>
                             <a href="#rubrika2" class="rubrika-title">Художник-гример</a>
-                            <div id="rubrika2" class="rubrika-block">текст</div>
+                            <div id="rubrika2" class="rubrika-block">
+                                    
+                            </div>
                             <a href="#rubrika3" class="rubrika-title">Видео-маркетинг и видеосъемка</a>
                             <div id="rubrika3" class="rubrika-block">текст</div>
                             <a href="#rubrika4" class="rubrika-title">Интернет-маркетинг</a>
@@ -294,7 +296,26 @@
                     </div>
                     <div class="tab">
                         <a href="#tab2" class="tab-link">Полезные материалы</a>
-                        <div class="tab-block" id="tab2">
+                        <div class="tab-block useful-materials" id="tab2">
+                            <ul>
+                                <li><a href="">Физические основы телевидения</a></li>
+                                <li><a href="">Световое излучение и его восприятие человеком</a>
+                                <li><a href="">Основные принципы телевидения</a></li>
+                                <li><a href="">Сигнал изображения</a></li>
+                                <li><a href="">Телевизионное изображение и его качество</a></li>
+                                <li><a href="">Телевизионные преобразователи оптических изображений в электрические сигналы</a></li>
+                                <li><a href="">Преобразователи свет-сигнал и их общая характеристика</a></li>
+                                <li><a href="">Диссектор</a></li>
+                            </ul>
+                            <hr>
+                            <div class="pagination">
+                                <span>Страница</span>
+                                <a href="" class="active">1</a>
+                                <a href="">2</a>
+                                <a href="">3</a>
+                                <a href="">...</a>
+                                <a href="">8</a>
+                            </div>
                         </div>
                     </div>
                     <div class="tab">
@@ -304,7 +325,7 @@
                     </div>
                     <div class="tab">
                         <a href="#tab4" class="tab-link">Отзывы</a>
-                        <div class="tab-block" id="tab4">
+                        <div class="tab-block" id="tab4" style="border-bottom: 0;">
                             <div class="reviews">
                                 <div class="comment-item review">
                                     <p class="breadcrumbs"><span>Анатолий</span> // 6 января 2018 г</p>
@@ -338,9 +359,9 @@
                                             </div>
                                             <div style="position: relative;">
                                                 <p>email <sup>*</sup></p>
-                                                <input type="email" id="email_review" name="email_user" required> 
+                                                <input type="email" id="email_review" name="email_review" required> 
                                             </div>
-                                            <input type="button" id="public" value="Опубликовать" disabled>
+                                            <input type="button" id="public_review" value="Опубликовать" disabled>
                                         </div>
                                         <div>
                                             <p>Войти через</p>
@@ -366,22 +387,58 @@
                     </div>
                     <div class="tab">
                         <a class="tab-link">Облако тегов</a>
+                        <div class="articles-tag">
+                            <div class="article-tag-item">
+                                <img src="img/news-image.jpg">
+                                <div>
+                                    <a href="" class="title">Телеведущий или ведущий видеоканала. Введение в профессию</a>
+                                    <a href="" class="rubrika">Видеомаркетинг и Видеосъемка</a>
+                                    <div class="breadcrumbs">
+                                        <i class="fa fa-clock-o"></i> 9 февраля 2018 //
+                                        <i class="fa fa-eye"></i> 12 //
+                                        <i class="fa fa-comments-o"></i> нет комментариев
+                                    </div>
+                                    <div class="tag-cloud">
+                                        <a class="tag">видео</a>
+                                        <a class="tag">ведущий</a>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="article-tag-item">
+                                <img src="img/news-image.jpg">
+                                <div>
+                                    <a href="" class="title">Как стать успешным видеоблогером</a>
+                                    <a href="" class="rubrika">Видеоблогер</a>
+                                    <div class="breadcrumbs">
+                                        <i class="fa fa-clock-o"></i> 16 декабря 2017 //
+                                        <i class="fa fa-eye"></i> 82 //
+                                        <i class="fa fa-comments-o"></i> 46 комментариев
+                                    </div>
+                                    <div class="tag-cloud">
+                                        <a class="tag">видео</a>
+                                        <a class="tag">видеоблогер</a>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
                         <div class="tag-cloud">
-                            <a class="tag" href="">пользователь</a>
-                            <a class="tag" href="">веб</a>
-                            <a class="tag" href="">веб-блогер</a>
-                            <a class="tag" href="">бизнес</a>
-                            <a class="tag" href="">социальные сети</a>
-                            <a class="tag" href="">трафик</a>
-                            <a class="tag" href="">видеосъемка</a>
-                            <a class="tag" href="">гример</a>
-                            <a class="tag" href="">интернет маркетинг</a>
-                            <a class="tag" href="">обучение</a>
-                            <a class="tag" href="">реализация</a>
-                            <a class="tag" href="">порядок</a>
-                            <a class="tag" href="">модернизация</a>
-                            <a class="tag" href="">условия</a>
-                            <a class="tag" href="">финансовые исследования</a>
+                            <a class="tag">пользователь</a>
+                            <a class="tag">веб</a>
+                            <a class="tag">веб-блогер</a>
+                            <a class="tag">бизнес</a>
+                            <a class="tag">социальные сети</a>
+                            <a class="tag">трафик</a>
+                            <a class="tag">видеосъемка</a>
+                            <a class="tag">гример</a>
+                            <a class="tag">интернет маркетинг</a>
+                            <a class="tag">обучение</a>
+                            <a class="tag">реализация</a>
+                            <a class="tag">порядок</a>
+                            <a class="tag">модернизация</a>
+                            <a class="tag">условия</a>
+                            <a class="tag">финансовые исследования</a>
+                            <a class="tag active">видео</a>
+                            <a class="tag">репетиция</a>
                             <a class="arrow" href=""></a>
                         </div>
                     </div>
@@ -390,7 +447,7 @@
 <!--Sidebar-->            
             <div class="sidebar">
                 <input type="search" placeholder="Поиск">
-                <a href="" type="submit" class="sb-icon error-icon"><i class="fa fa-search"></i></a>
+                <a href="" type="submit" class="sb-icon"><i class="fa fa-search"></i></a>
                 <p class="error-massage">Жаль, но ничего не соответствуют критериям Вашего поиска.<br>Пожалуйста, сформулируйте запрос иначе.</p>
                 <ul class="sidebar-menu">
                     <li class="title">Рубрики
@@ -451,34 +508,35 @@
                     <a href="" class="active">Свежие новости</a> /
                     <a href="">Топ новости</a>
                 </div>
-                <div class="sidebar-news">
-                    <p class="breadcrumbs">17 января 2018 / <span>Интернет-маркетинг</span></p>
-                    <div>
-                        <img src="img/slider-news1.jpg">
-                        <ul><li><a href="">Почему не получается заработать в интернете?</a></li>
-                        <span>4 комментария</span>
-                        </ul>
+                <div>
+                    <div class="sidebar-news">
+                        <p class="breadcrumbs">17 января 2018 / <span>Интернет-маркетинг</span></p>
+                        <div>
+                            <img src="img/slider-news1.jpg">
+                            <ul><li><a href="">Почему не получается заработать в интернете?</a></li>
+                            <span>4 комментария</span>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="sidebar-news">
-                    <p class="breadcrumbs">9 января 2018 / <span>Площадка электронной коммерции</span></p>
-                    <div>
-                        <ul><li><a href="">Ключевые тенденции цифрового обучения в 2018 ...</a></li>
-                        <span>12 комментариев</span>
-                        </ul>
-                        <img src="img/slider-news2.jpg">
+                    <div class="sidebar-news">
+                        <p class="breadcrumbs">9 января 2018 / <span>Площадка электронной коммерции</span></p>
+                        <div>
+                            <ul><li><a href="">Ключевые тенденции цифрового обучения в 2018 ...</a></li>
+                            <span>12 комментариев</span>
+                            </ul>
+                            <img src="img/slider-news2.jpg">
+                        </div>
                     </div>
-                </div>
-                <div class="sidebar-news">
-                    <p class="breadcrumbs">24 декабря 2017 / <span>Художник-гример</span></p>
-                    <div>
-                        <img src="img/slider-news3.jpg">
-                        <ul><li><a href="">Возможности профессионального театраль...</a></li>
-                        <span>46 комментариев</span>
-                        </ul>
+                    <div class="sidebar-news">
+                        <p class="breadcrumbs">24 декабря 2017 / <span>Художник-гример</span></p>
+                        <div>
+                            <img src="img/slider-news3.jpg">
+                            <ul><li><a href="">Возможности профессионального театраль...</a></li>
+                            <span>46 комментариев</span>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="sidebar-news">
+                    <div class="sidebar-news">
                     <p class="breadcrumbs">11 ноября 2017 / <span>Трафик из соцсетей</span></p>
                     <div>
                         <ul><li><a href="">Инструменты привлечения трафика на сайт</a></li>
@@ -487,6 +545,7 @@
                         <img src="img/slider-news4.jpg">
                     </div>
                 </div>
+                </div>    
                 <form action="" method="post" id="form">
                     <h3>Оформить подписку</h3>
                     <label class="subscribe"><input type="radio" name="subs" value="news" class="hide" checked><span></span>Подписаться на новости</label>
@@ -545,11 +604,11 @@
                     <a href="">> Оформить подписку</a>
                     <a href="">> Мы в соцсетях</a>
                     <div class="social">
-                        <a href="" title="Facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="" title="Instagram"><i class="fa fa-instagram"></i></a>
-                        <a href="" title="Вконтакте"><i class="fa fa-vk"></i></a>
-                        <a href="" title="Telegram"><i class="fa fa-send"></i></a>
-                        <a href="" title="Youtube"><i class="fa fa-youtube-play"></i></a>
+                        <a href="" data-title="Facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="" data-title="Instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="" data-title="Вконтакте"><i class="fa fa-vk"></i></a>
+                        <a href="" data-title="Telegram"><i class="fa fa-send"></i></a>
+                        <a href="" data-title="Youtube"><i class="fa fa-youtube-play"></i></a>
                     </div>
                 </div>
             </div>
@@ -563,8 +622,9 @@
 </body>
 <script src="js/jquery-3.2.1.min.js"></script> 
 <script src="js/jquery.bxslider.min.js"></script> 
+<script src="js/bxslider.mousewheel.min.js"></script>     
 <script src="js/jquery.validate.min.js"></script> 
 <script src="js/owl.carousel.min.js"></script>   
-<script src="js/jquery.mousewheel.min.js"></script>     
+<script src="js/jquery.mousewheel.min.js"></script> 
 <script src="js/main.js"></script> 
 </html>	

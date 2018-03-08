@@ -49,7 +49,8 @@ $(document).ready(function(){
         pager: false,
         nextText: '',
         prevText: '',
-        controls: true
+        controls: true,
+        mouseDrag: true
     });
 });
 
@@ -58,6 +59,10 @@ $('.read_more').click(function(){
     $('.ellipsis').css('display', 'none');
     $('.after-news').css('display', 'none');
     $('.news-full').css('display', 'block');
+    $('.bxslider').css('display', 'none');
+    $('.bx-controls-direction').css('display', 'none');
+    $('.news .left').css('flex-basis', 'auto');
+    $('.news-image').css({'width':'100%', 'height':'auto'});
 });
 
 $(function() {
@@ -151,6 +156,38 @@ $(function(){
     });
 }); 
 
+$(function(){
+    $('#form_review').validate({
+    validClass: "success",
+    errorClass: "invalid",    
+    success: function() {
+        $('#public_review').removeAttr('disabled').addClass('active');
+      },    
+    rules: {
+        user_review: {
+            required: true,
+            minlength: 2
+        }
+    },
+    messages: {
+        review: {
+            required: "Вы пропустили поле",
+        },  
+        user_review: {
+            required: "Вы пропустили поле",
+            minlength: "min. количество знаков: 2"
+        },
+        email_review: {
+            required: "Вы пропустили поле",
+            email: "Адреса не существует"
+        },
+    }
+    });
+}); 
+
+$('.tag').click(function(){
+    $('.articles-tag').css('display','block');
+});
 
 
 
