@@ -4,27 +4,26 @@
 /*Mobile-menu*/
 $(function () {
     'use strict';
-    $('.menuToggle').on('click', function () {
-        $('.menuMobile').slideToggle(300, function () {
+    $('.fa-bars').on('click', function () {
+        $('.menu').slideToggle(300, function () {
             if ($(this).css('display') === 'none') {
                 $(this).removeAttr('style');
 			}
 		});
-        $('.menuToggle').toggleClass('close');
-	});
+    });
 });
 
 /*Slider-news-bottom*/
 var owl = $('.owl-carousel');
 owl.owlCarousel({
     mouseDrag: true,
-       loop: true,
-       nav: true,
-       navText: [""],
-       autoplay:false,
-       items: 5,
-       dots: false,
-       responsiveClass:true,
+    loop: true,
+    nav: true,
+    navText: [""],
+    autoplay:false,
+    dots: false,
+    responsiveClass:true,
+    items: 5
 });
 owl.on('mousewheel', '.owl-stage', function (e) {
     if (e.deltaY>0) {
@@ -97,42 +96,6 @@ $(function() {
         $(block).css('display', 'block');
     });
 });
-$(function() {
-    $('.article-title').on('click', function(e) {
-        e.preventDefault();
-        $('.article-block').each(function() {
-            $(this).css('display', 'none');
-            $(this).siblings('.article-after').css('display','flex');
-            $(this).siblings('.article-preview').css('flex-wrap','nowrap');
-            $(this).siblings('.article-preview').children("img").css({
-                'margin':'0 23px 0 0',
-                'width':'270px',
-                'height':'148px'
-            });
-            $(this).siblings('.article-preview').children('p').children('.ellipsis2').css('display','inline');
-        });
-        var block = $(this).attr('href');
-        $(block).css('display', 'block');
-    });
-});
-
-$('.read-more-article').click(function(){
-    $(this).parent().css('display','none');
-    $(this).parent().siblings('.article-block').css('display', 'block');
-    $(this).parent().siblings('.article-preview').css({
-        'flex-wrap':'wrap',
-        'margin':'15px 0 10px'
-    });
-    $(this).parent().siblings('.article-preview').children("img").css({
-        'margin':'15px 0',
-        'width':'100%',
-        'height':'auto'
-    });
-    $(this).parent().siblings('.article-preview').children('p').children('.ellipsis2').css('display','none');
-   
-});
-
-
 
 $(function(){
     $('#form').validate({
