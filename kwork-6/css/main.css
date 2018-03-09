@@ -146,7 +146,6 @@ a {
     background: url(../img/shapka-bg.jpg) no-repeat top center;                         
     background-size: cover; 
     background-attachment: fixed;
-    min-height: 840px;
     padding-bottom: 42px;
 }
 .elements {
@@ -665,9 +664,6 @@ label.invalid {
     color: #333;
     margin: 15px 0;
 }
-.article-block {
-    display: none;
-}
 .article-text span {
     color: #ffa41d;
 }
@@ -680,6 +676,20 @@ label.invalid {
     margin: 25px 0;
     padding-left: 24px;
     background: url(../img/excerpt.jpg) repeat-y left;
+}
+.article-open {
+    flex-wrap: wrap;
+}
+.article-open img {
+    margin: 20px 0 0 0 !important;
+    width: 100%;
+    height: 392px;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 0 0 2px #d6d6d6;
+    box-sizing: border-box;
+}
+.article-bottom {
+    display: block;
 }
 
 
@@ -1372,12 +1382,17 @@ label.error {
 }
 
 
-
-@media (max-width: 992px) {
+                                    /*Адаптив*/
+@media (max-width: 1190px) {
     
 }
+
+
+
 @media (max-width: 768px) {
-    
+    .shapka {
+        background-image: url(../img/shapka-bg-mobile.jpg);
+    }
 }
 @media (max-width: 480px) {
     

@@ -102,6 +102,14 @@ $(function() {
         e.preventDefault();
         $('.article-block').each(function() {
             $(this).css('display', 'none');
+            $(this).siblings('.article-after').css('display','flex');
+            $(this).siblings('.article-preview').css('flex-wrap','nowrap');
+            $(this).siblings('.article-preview').children("img").css({
+                'margin':'0 23px 0 0',
+                'width':'270px',
+                'height':'148px'
+            });
+            $(this).siblings('.article-preview').children('p').children('.ellipsis2').css('display','inline');
         });
         var block = $(this).attr('href');
         $(block).css('display', 'block');
