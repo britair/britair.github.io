@@ -1511,22 +1511,19 @@ label.error {
     .slider, .slider-title {
         display: none;
     }
+    .sidebar .btn {
+        text-align: left;
+    }
     
 }
 
 
 @media (max-width: 768px) {
-    .shapka {
-        background-image: url(../img/shapka-bg-mobile.jpg);
-    }
     h1, .elements {
         display: none;
     }
     .main {
         margin-top: 0;
-    }
-    .sidebar .btn {
-        text-align: left;
     }
     .sidebar-social h6 {
         width: 144px;
@@ -1590,6 +1587,12 @@ label.error {
     }
     .article-item:nth-child(even) .article-preview img {
         margin: 0;
+    }
+    .shapka {
+        background-image: url(../img/shapka-bg-mobile.jpg);
+    }
+    .article-tag-item {
+        flex-wrap: wrap;
     }
 }
 
