@@ -173,6 +173,9 @@ h1 span {
 }
 .banner-big {
     margin-bottom: 30px;
+    width: 728px;
+    min-width: 270px;
+    max-width: 100%;
 }
 .banner-big img {
     width: 728px;
@@ -1502,7 +1505,8 @@ label.error {
         width: 100%;
     }
     .banner-big img {
-        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
     .sorting, .tab-link {
         background-size: cover;
@@ -1617,9 +1621,6 @@ label.error {
     }
     .banner-big {
         margin-bottom: 15px;
-    }
-    .banner-big img {
-        height: 52px;
     }
     .social-header {
         display: none;
