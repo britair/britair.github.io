@@ -1503,7 +1503,7 @@ label.error {
     .sidebar input[type="search"], 
     .sidebar input[type="text"], 
     .sidebar input[type="email"] {
-        width: 93%;
+        width: 50%;
     }
     .footer-group {
         padding: 15px;
@@ -1556,11 +1556,6 @@ label.error {
 
 
 @media (max-width: 630px) {
-    .sidebar input[type="search"], 
-    .sidebar input[type="text"], 
-    .sidebar input[type="email"] {
-        width: 85%;
-    }
     .form-feedback textarea, .form-feedback input[type="text"], .form-feedback input[type="email"] {
         margin-bottom: 0;
     }
@@ -1668,6 +1663,11 @@ label.error {
     }
     .review:nth-child(even) div img {
         order: 0;
+    }
+    .sidebar input[type="search"], 
+    .sidebar input[type="text"], 
+    .sidebar input[type="email"] {
+        width: 85%;
     }
 }
 
