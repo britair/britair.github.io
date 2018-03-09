@@ -117,7 +117,7 @@ a {
 .menu {
     list-style-type: none;
     text-align: right;
-    margin-top: 9px;
+    margin-top: -2px;
 }
 .menu li {
     display: inline-block;
@@ -140,7 +140,7 @@ a {
     box-shadow: 0 0 0 1px #fff, 0 -1px 0px 1px #ec981b, 0 4px 0 1px #13469c;
     border-color: transparent;
     border-radius: 3px 3px 0 0;
-    line-height: 33px;
+    line-height: 44px;
 }
 .fa-bars {
     font-size: 36px;
@@ -338,7 +338,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     border-top: 1px dashed #999;
-    margin-bottom: 20px;
+    margin: -5px 0 20px;
 }
 .after-news a {
     font: 13px/24px 'Arimo-Italic';
