@@ -1,0 +1,558 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,body {
+	height: 100%;
+}
+body {
+	background-color: #f5f5f5;
+}
+a {
+    text-decoration: none;
+}
+.container {
+	max-width: 1008px; 
+    margin: 0 auto;
+}
+.wrap {
+	background-color: white;
+	min-height: 100%; 
+	position: relative;
+}	
+.header {
+	background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 417px;
+}
+.main {
+	display: flex;
+    justify-content: space-between;
+    margin-top: -15px;
+}
+.centercol {
+	overflow: hidden;
+    flex-basis: 66.6%;
+}
+.rightcol {
+	flex-basis: 31.1%;
+}
+.footer {
+	width: 100%;
+	position: absolute; 
+	bottom: 0;
+}
+.empty {
+    padding-bottom: 200px;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    font: 51px/26px 'MyriadPro-Semibold';
+    color: #333;
+    padding: 10px 0 0 96px;
+}
+.logo sup {
+    color: #0d6e73;
+    font-size: 25px;
+    line-height: 26px;
+    padding-left: 8px;
+}
+.phone {
+    padding: 10px 75px 0 0;
+}
+.phone a {
+    display: block;
+    font: 20px/30px 'MyriadPro-Semibold';
+    color: #333;
+}
+.phone a span {
+    font-size: 33px;
+}
+.btn {
+    width: 144px;
+    height: 29px;
+    text-align: center;
+    color: #202020 !important;
+    border-radius: 2px;
+    text-shadow: 1px 1px 0 #fff;
+    background-image: linear-gradient(to right, #ff8400, #ffdd1f);
+}
+                        /*Центральная колонка*/
+.tabs section {
+	display: none;
+	padding: 8px;
+	border-radius: 2px;
+    border: 1px solid #d1cfd3;
+    position: relative;
+    background: white;
+    text-align: justify;
+    margin: 15px 0 25px;
+}
+.tabs input {
+	display: none;
+}
+.tabs label {
+	display: inline-block;
+	margin: 5px 25px 5px 0;
+	font: bold 21px/31px Tahoma;
+    color: #202020;
+    border-bottom: 1px dashed #363438;
+    text-shadow: 1px 1px 0 #fff;
+}
+.tabs label:hover {
+	cursor: pointer;
+}
+.tabs input:checked+label {
+	border-radius: 2px;
+    background-image: url(../img/menu-active.jpg);
+    background-repeat: repeat-x;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.75);
+    border-bottom: 0;
+    line-height: 41px;
+    padding: 0 13px;
+    position: relative;
+}
+.tabs input:checked+label:before {
+    content: url(../img/menu-before.png);
+    position: absolute;
+    left: 50%;
+    bottom: -33px;
+    z-index: 10;
+}
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+	display: flex;
+}
+.tariff {
+    justify-content: space-around;
+}
+.tariff img {
+    vertical-align: bottom;
+}
+.tariff p {
+    font: 12px/30px Arial;
+    color: #333;
+    text-align: center;
+}
+.tariff p.over {
+    padding-left: 28px;
+}
+.tariff p span {
+    font: 23px/30px Arial;
+    color: #000;
+}
+.tariff p span.dark {
+    color: #333;
+}
+                            /*Заказ такси*/
+.main_form {
+    border-radius: 2px;
+    background: #ebebeb;
+    padding: 20px;
+}
+h1 {
+    font: bold 24px/31px Tahoma;
+    color: #202020;
+    margin-bottom: 10px;
+}
+.form {
+    display: flex;
+}
+.form .left {
+    flex-basis: 65%;
+    margin-right: 20px;
+}
+.form .right {
+    flex-basis: 30%;
+}
+.line {
+    margin-bottom: 10px;
+}
+.line p {
+    font: bold 12px/31px Arial;
+    color: #202020;
+    display: inline-block;
+    width: 64px;
+}
+select {
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    outline: 0;
+    margin-right: 9px;
+    padding: 0 31px 0 13px;
+    color: #000;
+    -webkit-appearance: none;
+    background-color: white;
+    background-image: url(../img/select.jpg);
+    background-position: 93% center;
+    background-repeat: no-repeat;
+    font: bold 12px/35px Arial;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    -ms-appearance: none;
+    appearance: none!important;
+    cursor: pointer;
+}
+.line input {
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    width: 80%;
+    padding-left: 10px;
+    font: bold 12px/35px Arial;
+    color: #000;
+    outline: 0;
+    text-overflow: ellipsis;
+}
+.line input::placeholder {
+    color: #666;
+    font-weight: 300;
+}
+.red  {
+    text-align: right;
+    display: block;
+    font: 12px/31px Arial;
+    color: #cf0000;
+    text-decoration: underline;
+}
+.form .right p {
+    font: bold 12px/31px Arial;
+    color: #202020;
+    position: relative;
+}
+.form .right span {
+    font-weight: 300;
+    position: absolute;
+    bottom: 2px;
+    left: 18px
+}
+.form .right .btn {
+    font: bold 19px/31px Tahoma;
+    text-transform: uppercase;
+    padding: 20px 15px;
+    display: block;
+    width: 90%;
+    height: initial;
+    margin-top: 10px;
+}
+                            /*CEO-текст*/
+.text {
+    color: #202020;
+}
+h2 {
+    font: bold 24px/31px Tahoma;
+    margin: 30px 0 10px; 
+}
+.text ul {
+    padding-left: 30px;
+}
+.text ul li {
+    font: 12px/18px Arial;
+}
+h3 {
+    font: normal 18px/31px Tahoma;
+    margin: 20px 0 10px; 
+}
+.text p {
+    font: 12px/14px Arial;
+    margin: 10px 0;
+    text-align: justify;
+}
+                            /*Правая колонка*/
+.payment {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+}
+.payment span {
+    font: 12px/31px Arial;
+    color: #202020;
+}
+.payment img {
+    margin-left: 10px;
+}
+.services {
+    padding: 15px 0;
+    border-radius: 2px;
+    border: 1px solid #d1d0d0;
+    margin-top: 9px;
+}
+h4 {
+    font: bold 18px/31px Tahoma;
+    color: #202020;
+    padding-left: 20px;
+}
+.services ul li {
+    list-style-type: none;
+    padding-left: 20px;
+}
+.services ul li:before {
+    content: url(../img/list-style.png);
+    margin-right: 10px;
+    vertical-align: text-bottom;
+}
+.services ul li a {
+    font: 12px/24px Arial;
+    color: #df0022;
+    box-shadow: 0px 1px 0px #df0224;
+}
+.dark-line {
+    min-height: 22px;
+    background-image: url(../img/services-bg.jpg);
+    background-repeat: repeat-x;
+    margin: 10px 0;
+}
+.car {
+    display: flex;
+    align-items: center;
+    padding: 15px 0 0 10px;
+}
+.car span {
+    font: 12px/20px Arial;
+    padding-left: 7px;
+}
+.services .red {
+    text-align: center;
+}
+.reviews h4 {
+    font: bold 18px/31px Tahoma;
+    color: #202020;
+    padding: 20px 0;
+}
+.reviews p {
+    font: 12px/14px Arial;
+    color: #666;
+}
+.reviews span {
+    color: #202020;
+}
+.reviews a.review-site {
+    color: #cf0000;
+    box-shadow: 0px 1px 0px #cf0000;
+}
+.reviews p.text-review {
+    color: #333;
+    background: #ebebeb;
+    margin: 15px 0 30px;
+    padding: 10px;
+    position: relative;
+    border-radius: 4px;
+    text-align: justify;
+}
+.reviews p.text-review:before {
+    content: "";
+    border: 9px solid transparent;
+    border-bottom: 10px solid #ebebeb;
+    position: absolute;
+    left: 20px;
+    z-index: 10;
+    top: -18px;
+}
+                                        /*Футер*/
+.footer-top {
+    border-radius: 4px;
+    padding: 20px 0;
+    border: 1px solid #ebebeb;
+    display: flex;
+    justify-content: space-around;
+}
+.promo p {
+    text-align: center;
+    font: 11px/9px Arial;
+    color: #464749;
+    margin-bottom: 5px;
+}
+.footer-block p {
+    font: bold 12px/16px Arial;
+    color: #000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.footer-block ul li {
+    list-style-type: none;
+}
+.footer-block ul li:before {
+    content: url(../img/list-style.png);
+    margin-right: 10px;
+    vertical-align: text-bottom;
+}
+.footer-block ul li a {
+    font: 12px/24px Arial;
+    color: #cf0000;
+    box-shadow: 0px 1px 0px #d52f2f;
+}
+
+.footer-bottom {
+    padding: 19px 0;
+    text-align: center;
+    font: 12px/14px Arial;
+    color: #202020;
+}
+@media (max-width: 1020px) {
+    .main {
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+    .centercol {
+        flex-basis: 100%;
+    }
+    .rightcol {
+        flex-basis: 100%;
+    }
+    .line input {
+        width: 100%;
+    }
+    .car {
+        display: inline-block;
+        width: 30%;
+    }
+    .car span {
+        display: block;
+    }
+}
+@media (max-width: 800px) {
+    .footer-top {
+        padding: 20px 10px;
+        flex-wrap: wrap;
+    }
+    .empty {
+        padding-bottom: 330px;
+    }
+    .promo img {
+        display: block;
+        margin: 0 auto;
+    }
+    .promo, .footer-block {
+        flex-basis: 30%;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 710px) {
+    .red {
+        font-size: 14px;
+    }
+    .tabs label {
+        width: 100%;
+        text-align: center;
+        border-bottom: 0;
+    }
+    .tabs input:checked+label {
+        padding: 0;
+    }
+    .tabs input:checked+label:before {
+        content: initial;
+    }
+    #tab1:checked~#content-tab1, 
+    #tab2:checked~#content-tab2, 
+    #tab3:checked~#content-tab3, 
+    #tab4:checked~#content-tab4 {
+        flex-wrap: wrap;
+    }
+    .form {
+        flex-wrap: wrap;
+    }
+    .form .left {
+        flex-basis: 100%;
+    }
+    .form .right {
+        flex-basis: 100%;
+    }
+    .line input {
+        width: 100%;
+    }
+    .form .right .btn {
+        width: auto;
+    }
+    .text ul li {
+        font: 14px/18px Arial; 
+    }
+    .text p {
+        font: 14px/18px Arial;
+    }
+    .payment span {
+        font: 14px/31px Arial;
+    }
+    .line p {
+        font: bold 16px/31px Arial;
+    }
+    select {
+        font: bold 16px/35px Arial;
+    }
+    .line input {
+        font: bold 16px/35px Arial;
+    }
+    .form .right p {
+        font: bold 16px/31px Arial;
+        margin: 10px 0;
+    }
+    .services ul li a {
+        font: 16px/30px Arial;
+    }
+    .car span {
+        font: 14px/20px Arial;
+    }
+    .reviews p {
+        font: 14px/18px Arial;
+    }
+    
+}
+@media (max-width: 620px) {
+    .header-top {
+        justify-content: space-around;
+    }
+    .logo {
+        padding: 10px 0 0 0px;
+        font-size: 40px;    }
+    .phone {
+        padding: 10px 0px 0 0;
+    }
+    .phone a span {
+        font-size: 30px;
+    }
+    .car {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .empty {
+        padding-bottom: 400px;
+    }
+      
+}
+@media (max-width: 430px) {
+    .header-top {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    .tabs {
+        display: none;
+    }
+    .line p {
+        display: block;
+    }
+    .main_form {
+        padding: 20px 10px;
+    }
+    select {
+        margin-right: -2px;
+    }
+    .text {
+        display: none;
+    }
+    .payment {
+        justify-content: space-around;
+        padding: 15px 0;
+    }
+    .payment span {
+        display: none;
+    }
+    .footer-top {
+        display: none;
+    }
+    .empty {
+        padding-bottom: 60px;
+    }
+}

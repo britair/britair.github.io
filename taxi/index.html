@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/main.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+	<title>Такси</title>
+    <link rel="shortcut icon" href="">
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="container header-top">
+            <div class="logo">Taxi940<sup>ru</sup></div>
+            <div class="phone">
+                <a href="tel:+74952273007">+7 (495) <span>227-30-07</span></a>
+                <a href="tel:+79269150015">+7 (926) <span>915-00-15</span></a>
+                <a href="#order" class="btn">Online-заказ</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="centercol">
+                <div class="tabs"> <!--Меню-->
+                    <input id="tab1" type="radio" name="tabs" checked>
+                    <label for="tab1" title="Вкладка 1">Такси по городу</label>
+                    <input id="tab2" type="radio" name="tabs">
+                    <label for="tab2" title="Вкладка 2">Такси в аэропорт</label>
+                    <input id="tab3" type="radio" name="tabs">
+                    <label for="tab3" title="Вкладка 3">Такси на вокзал</label>
+                    <section id="content-tab1" class="tariff">
+                        <div>
+                            <p>День <img src="img/day.jpg"> (7:00 - 21:00)</p>
+                            <p>Минимальный тариф: <span>350 руб.</span> (20 минут)</p>
+                            <p class="over">Далее: <span class="dark">11</span> руб./минута</p>
+                        </div>
+                        <div>
+                            <p>Ночь <img src="img/night.jpg"> (21:00 - 7:00)</p>
+                            <p>Минимальный тариф: <span>400 руб.</span> (20 минут)</p>
+                            <p class="over">Далее: <span class="dark">11</span> руб./минута</p>
+                        </div>
+                    </section>
+                    <section id="content-tab2" class="tariff">
+                        <div>
+                            <p>День <img src="img/day.jpg"> (7:00 - 21:00)</p>
+                            <p>Минимальный тариф: <span>500 руб.</span> (20 минут)</p>
+                            <p class="over">Далее: <span class="dark">20</span> руб./минута</p>
+                        </div>
+                        <div>
+                            <p>Ночь <img src="img/night.jpg"> (21:00 - 7:00)</p>
+                            <p>Минимальный тариф: <span>600 руб.</span> (20 минут)</p>
+                            <p class="over">Далее: <span class="dark">30</span> руб./минута</p>
+                        </div>
+                    </section>
+                    <section id="content-tab3" class="tariff">
+                        <div>
+                            <p>День <img src="img/day.jpg"> (7:00 - 21:00)</p>
+                            <p>Минимальный тариф: <span>400 руб.</span> (20 минут)</p>
+                            <p class="over">Далее: <span class="dark">15</span> руб./минута</p>
+                        </div>
+                        <div>
+                            <p>Ночь <img src="img/night.jpg"> (21:00 - 7:00)</p>
+                            <p>Минимальный тариф: <span>450 руб.</span> (20 минут)</p>
+                            <p class="over">Далее: <span class="dark">15</span> руб./минута</p>
+                        </div>
+                    </section>
+                </div> 
+                <div class="main_form" id="order"> <!--Заказ такси-->
+                    <h1>Заказ такси</h1>
+                    <div class="form">
+                        <div class="left">
+                            <div class="line">
+                                <p>Когда:</p>
+                                <select name="day" required>
+                                    <option value="today">Сегодня</option>
+                                    <option value="tomorrow">Завтра</option>
+                                </select>
+                                <select name="hours" required>
+                                    <option>00</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>...</option>
+                                </select>
+                                <select name="minutes" required>
+                                    <option>00</option>
+                                    <option>05</option>
+                                    <option>10</option>
+                                    <option>15</option>
+                                    <option>20</option>
+                                    <option>25</option>
+                                    <option>30</option>
+                                    <option>35</option>
+                                    <option>40</option>
+                                    <option>45</option>
+                                    <option>50</option>
+                                    <option>55</option>
+                                </select>    
+                            </div>
+                            <div class="line">
+                                <p>Куда:</p>
+                                <input type="text" name="direction" required placeholder="например, Шлюзовая наб, 4">    
+                            </div>
+                            <div class="line">
+                                <p>Откуда:</p>
+                                <input type="text" name="address" required placeholder="например, Шлюзовая наб, 4">    
+                            </div>
+                            <div class="line">
+                                <a href="" class="red">Сколько это займет времени?</a>
+                            </div> 
+                            <div class="line">
+                                <p>Представьтесь</p>
+                            </div>
+                            <div class="line">
+                                <p></p>
+                                <input type="text" name="name" required placeholder="Ваше имя">    
+                            </div>
+                            <div class="line">
+                                <p></p>
+                                <input type="tel" name="tel" id="phone" required placeholder="+7 (926) 369-25-26">    
+                            </div>
+                        </div>
+                        <div class="right">
+                            <p>Тип автомобиля:</p>
+                            <p><input type="radio" name="car" value="econom" checked><span>Эконом</span></p>
+                            <p><input type="radio" name="car" value="comfort"><span>Комфорт</span></p>
+                            <p><input type="radio" name="car" value="universal"><span>Универсал</span></p>
+                            <p>Пожелания:</p>
+                            <p><input type="checkbox" checked><span>детское кресло</span></p>
+                            <p><input type="checkbox"><span>салон для курящих</span></p>
+                            <p><input type="checkbox"><span>женское такси</span></p>
+                            <p><input type="checkbox"><span>большой багажник</span></p>
+                            <a href="" class="red">еще...</a>
+                            <a href="" class="btn">вызвать такси</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text"> <!--CEO-текст-->
+                    <h2>Компания Такси940</h2>
+                    <ul>
+                        <li>Номер #1 в рейтинге московскиx такси по версии Таксодром</li>
+                        <li>Подача машины за 20 минут с момента заказа</li>
+                        <li>Автомобили, оборудованные GPS</li>
+                        <li>В парке только иномарки комфорт и эконом класса</li>
+                    </ul>
+                    <h3>Простой способ заказать быстрое и недорогое такси:</h3>
+                    <p>Ваши люди в булочную на такси не ездят. А наши - ездят! Это быстро, просто и недорого.</p>
+                    <ul>
+                        <li>Заказ такси в три клика,</li>
+                        <li>подача машины за 15 минут,</li>
+                        <li>опытные водители,</li>
+                        <li>gps-навигация в каждой машине<br>и другие радости, необходимые при поездке в булочную.</li>
+                    </ul>
+                    <p>Или просто нет желания ехать в метро - Такси 940 понимает вас. И знает, что вам нужно: 
+                        хорошая иномарка с тихим водителем, который знает названный адрес и не задает лишних вопросов.</p>
+                    <p>Вчера я был счастлив, чрезмерно счастлив, донельзя счастлив! Вы хоть раз в жизни, упрямица, меня 
+                        послушались. Вечером, часов в восемь, просыпаюсь (вы знаете, маточка, что я часочек-другой люблю 
+                        поспать после должности), свечку достал, приготовляю бумаги, чиню перо, вдруг, невзначай, подымаю 
+                        глаза, -- право, у меня сердце нот так и запрыгало! Так вы-таки поняли, чего мне хотелось, чего 
+                        сердчишку моему хотелось! Вижу, уголочек занавески у окна вашего загнут и прицеплен к горшку с 
+                        бальзамином, точнехонько так, как я вам тогда намекал; тут же показалось мне, что и личико ваше 
+                        мелькнуло у окна, что и вы ко мне из комнатки вашей смотрели, что и вы обо мне думали. И как же 
+                        мне досадно было, голубчик мой, что миловидного личика-то вашего я не мог разглядеть хорошенько! 
+                        Вижу, уголочек занавески у окна вашего загнут и прицеплен к горшку с бальзамином, точнехонько так, 
+                        как я вам тогда намекал; тут же показалось мне, что и личико ваше мелькнуло у окна, что и вы ко мне
+                        из комнатки вашей смотрели, что и вы обо мне думали. И как же мне досадно было, голубчик мой, что 
+                        миловидного личика-то вашего я не мог разглядеть хорошенько! Вижу, уголочек занавески у окна вашего
+                        загнут и прицеплен к горшку!</p>
+                    <p>И как же мне досадно было, голубчик мой, что миловидного личика-то вашего я не мог разглядеть 
+                        хорошенько! Вижу, уголочек занавески у окна вашего загнут и прицеплен к горшку с бальзамином,
+                        точнехонько так, как я вам тогда намекал; тут же показалось мне, что и личико ваше мелькнуло у 
+                        окна, что и вы ко мне из комнатки вашей смотрели, что и вы обо мне думали. И как же мне досадно 
+                        было, голубчик мой, что миловидного личика-то вашего я не мог разглядеть хорошенько! Вижу, уголочек 
+                        занавески у окна вашего загнут и прицеплен к горшку!</p>
+                    <p>И как же мне досадно было, голубчик мой, что миловидного личика-то вашего я не мог разглядеть
+                        хорошенько! Вижу, уголочек занавески у окна вашего загнут и прицеплен к горшку с бальзамином!</p>
+                </div>
+            </div>
+            <div class="rightcol">
+                <div class="payment">
+                    <span>Мы принимаем</span>
+                    <a href=""><img src="img/visa.png"></a>
+                    <a href=""><img src="img/mastercard.png"></a>
+                </div>
+                <div class="services">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="">Встречи в аэропортах</a></li>
+                        <li><a href="">Встречи на вокзалах</a></li>
+                        <li><a href="">Аренда авто с водителем</a></li>
+                        <li><a href="">Корпоративным клиентам</a></li>
+                    </ul>
+                    <p class="dark-line"></p>
+                    <h4>Автомобили</h4>
+                    <div class="car">
+                        <img src="img/car1.jpg">
+                        <span>Комфорт</span>
+                    </div>
+                    <div class="car">
+                        <img src="img/car2.jpg">
+                        <span>Бизнес</span>
+                    </div>
+                    <div class="car">
+                        <img src="img/car3.jpg">
+                        <span>Представительский</span>
+                    </div>
+                    <a href="" class="red">... и еще много автомобилей</a>
+                </div>
+                <div class="reviews">
+                    <h4>О нас пишут</h4>
+                    <p>Обсуждение: <span>Лучший перевозчик</span></p>
+                    <p>На сайте: <a href="" class="review-site">Таксофорум.ру</a></p>
+                    <p class="text-review">Лучшее такси в городе. 
+                        Никто еще не отвозил меня домой так, как это 
+                        сделал водитель службы Такси 940. Потрясающе! 
+                        Буду пользоваться услугами службы ежедневно, 
+                        даже если никуда не поеду.</p>
+                    <p>Обсуждение: <span>Лучший перевозчик</span></p>
+                    <p>На сайте: <a href="" class="review-site">Таксофорум.ру</a></p>
+                    <p class="text-review">Лучшее такси в городе. 
+                        Никто еще не отвозил меня домой так, как это 
+                        сделал водитель службы Такси 940. Потрясающе! 
+                        Буду пользоваться услугами службы ежедневно, 
+                        даже если никуда не поеду.</p>
+                    <p>Обсуждение: <span>Лучший перевозчик</span></p>
+                    <p>На сайте: <a href="" class="review-site">Таксофорум.ру</a></p>
+                    <p class="text-review">Лучшее такси в городе. 
+                        Никто еще не отвозил меня домой так, как это 
+                        сделал водитель службы Такси 940. Потрясающе! 
+                        Буду пользоваться услугами службы ежедневно, 
+                        даже если никуда не поеду.</p>
+                    <a href="" class="red">Посмотреть еще отзывы</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="empty"></div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="promo">
+                    <p>Продвижение сайта</p>
+                    <a href=""><img src="img/logo.jpg"></a>
+                </div>
+                <div class="footer-block">
+                    <p>Такси в аэропорт</p>
+                    <ul>
+                        <li><a href="">Шереметьево</a></li>
+                        <li><a href="">Домодедово</a></li>
+                        <li><a href="">Внуково</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <p>Дополнительные услуги</p>
+                    <ul>
+                        <li><a href="">Такси на свадьбу</a></li>
+                        <li><a href="">Ночное такси</a></li>
+                        <li><a href="">Женское такси</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <p>Информация</p>
+                    <ul>
+                        <li><a href="">Варианты оплаты</a></li>
+                        <li><a href="">Расчет стоимости поездки</a></li>
+                        <li><a href="">Как выбрать такси</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <p>О компании</p>
+                    <ul>
+                        <li><a href="">Скидки и акции</a></li>
+                        <li><a href="">Расчет стоимости поездки</a></li>
+                        <li><a href="">Диспечерская служба</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">© 2005–2018 Такси940</div>
+        </div>
+    </div>		
+</div>
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>  
+<script src="js/jquery.maskedinput.min.js"></script>   
+<script src="js/main.js"></script> 
+</html>	
